@@ -125,3 +125,51 @@ export interface StoryCard {
   answersQuestions: string[];
   basis: Basis;
 }
+
+/** Nature du document interne d'où vient une inspiration. */
+export type SourceKind = "close-out" | "best-practices" | "playbook" | "reunion" | "slack";
+
+export type InspirationTheme =
+  | "deal-complexe"
+  | "echec"
+  | "churn"
+  | "c-level"
+  | "prix"
+  | "priorisation"
+  | "agence"
+  | "analytique";
+
+/**
+ * `source-directe` : le mécanisme est écrit tel quel dans le document lu.
+ * `reconstitue` : le document donne le résultat et le contexte, le mécanisme
+ * est une déduction. À dire à voix haute si on te demande la source.
+ */
+export type InspirationConfidence = "source-directe" | "reconstitue";
+
+/**
+ * Réussite commerciale d'un autre vendeur Indeed, lue dans un document interne.
+ *
+ * Ces entrées ne sont pas du vécu de Nathan : elles servent de munition d'exemple
+ * et de mécanisme à transposer, jamais d'histoire à raconter à la première personne.
+ * Aucun nom de collègue n'y figure, seul le titre du document est conservé pour la
+ * traçabilité.
+ */
+export interface Inspiration {
+  id: string;
+  title: string;
+  theme: InspirationTheme;
+  /** Le mécanisme reproductible, en une phrase. */
+  pattern: string;
+  /** Ce que le commercial a fait, trois à six phrases. */
+  story: string;
+  /** Chiffres cités dans la source. Vide si la source n'en donne aucun. */
+  numbers: string[];
+  /** Titre du document interne, et date si connue. */
+  source: string;
+  sourceKind: SourceKind;
+  /** Comment Nathan transpose le mécanisme sur son propre portefeuille. */
+  adaptation: string;
+  /** `id` des questions du site auxquelles cette inspiration sert de munition. */
+  questionIds: string[];
+  confidence: InspirationConfidence;
+}

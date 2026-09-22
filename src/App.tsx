@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink, Route, Routes, useLocation } from "react-router-dom";
-import { BookOpen, Database, Dices, Menu, MessageCircleQuestion, Moon, Pencil, Sun, X } from "lucide-react";
+import { BookOpen, Database, Dices, Lightbulb, Menu, MessageCircleQuestion, Moon, Pencil, Sun, X } from "lucide-react";
 import { categories } from "./content/categories";
 import { byCategory, questions } from "./content/questions";
 import { useLocalStorage, useTheme } from "./lib/hooks";
@@ -9,6 +9,7 @@ import { CategoryPage } from "./pages/CategoryPage";
 import { QuestionPage } from "./pages/QuestionPage";
 import { DrillPage } from "./pages/DrillPage";
 import { StoriesPage } from "./pages/StoriesPage";
+import { InspirationsPage } from "./pages/InspirationsPage";
 import { FactsPage } from "./pages/FactsPage";
 import { AskPage } from "./pages/AskPage";
 import { EditsPage } from "./pages/EditsPage";
@@ -76,6 +77,7 @@ export default function App() {
             <ul className="space-y-0.5">
               <SideLink to="/entrainement" icon={Dices} label="Tirage aléatoire" />
               <SideLink to="/histoires" icon={BookOpen} label="Mes 9 histoires" />
+              <SideLink to="/inspirations" icon={Lightbulb} label="Inspirations internes" />
               <SideLink to="/questions-a-poser" icon={MessageCircleQuestion} label="Questions à poser" />
               <SideLink to="/faits" icon={Database} label="Banque de faits" />
               <SideLink to="/mes-reponses" icon={Pencil} label="Mes réponses" />
@@ -119,6 +121,7 @@ export default function App() {
             <Route path="/question/:id" element={<QuestionPage />} />
             <Route path="/entrainement" element={<DrillPage />} />
             <Route path="/histoires" element={<StoriesPage />} />
+            <Route path="/inspirations" element={<InspirationsPage />} />
             <Route path="/faits" element={<FactsPage />} />
             <Route path="/questions-a-poser" element={<AskPage />} />
             <Route path="/mes-reponses" element={<EditsPage />} />

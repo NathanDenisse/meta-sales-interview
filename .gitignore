@@ -3,5 +3,6 @@ dist
 .DS_Store
 *.local
 .vite
+.playwright-mcp
 docs/screenshots
 docs/screenshots

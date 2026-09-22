@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, BookOpen, CheckCircle2, Dices, MessageCircleQuestion, Sparkles, Target } from "lucide-react";
+import { ArrowRight, BookOpen, CheckCircle2, Dices, Lightbulb, MessageCircleQuestion, Sparkles, Target } from "lucide-react";
+import { inspirations } from "../content/inspirations";
 import { categories } from "../content/categories";
 import { byCategory, priorityQuestions, questions } from "../content/questions";
 import { stories } from "../content/stories";
@@ -45,6 +46,13 @@ export function Home() {
           >
             <BookOpen className="h-4 w-4" aria-hidden />
             Les 9 histoires à maîtriser
+          </Link>
+          <Link
+            to="/inspirations"
+            className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-medium text-slate-700 transition-colors hover:border-slate-300 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-200"
+          >
+            <Lightbulb className="h-4 w-4" aria-hidden />
+            {inspirations.length} inspirations internes
           </Link>
           <Link
             to="/questions-a-poser"
