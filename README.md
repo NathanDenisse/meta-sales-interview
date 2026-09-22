@@ -15,12 +15,35 @@ npm run dev      # http://localhost:5191, ou le port suivant s'il est occupé
 
 Autres commandes : `npm run typecheck`, `npm run build`, `npm run preview`.
 
-## Dépôt privé, et pourquoi
+## Dépôt privé, et pourquoi Pages reste désactivé
 
 Le dépôt [NathanDenisse/meta-sales-interview](https://github.com/NathanDenisse/meta-sales-interview)
-est **privé** et le restera : le contenu cite du revenu par compte client nommé, donc de la donnée
-interne Indeed. Aucun workflow GitHub Pages n'est configuré, précisément pour éviter une mise en ligne
-accidentelle. Si un accès mobile devient nécessaire, il faut un hébergement authentifié.
+est **privé**, vérifié avec `gh repo view --json visibility` qui renvoie `PRIVATE`.
+
+GitHub Pages n'est **pas** activé, et ce n'est pas un oubli. Sur GitHub, un dépôt privé peut avoir
+Pages activé, mais le site publié devient alors **accessible à quiconque connaît son URL**. La
+visibilité privée d'un site Pages n'existe que sur GitHub Enterprise Cloud, et uniquement pour des
+dépôts appartenant à une organisation. Ce dépôt appartient à un compte personnel (`type: User`), donc
+l'option n'existe pas ici, quel que soit le plan.
+
+Comme le contenu cite du revenu par compte client nommé, publier reviendrait à exposer de la donnée
+interne Indeed. Aucun workflow de déploiement n'est présent dans le projet, précisément pour éviter
+qu'un `git push` ne mette le site en ligne par accident.
+
+### Consulter le site depuis un téléphone
+
+Deux options qui ne passent par aucun hébergeur tiers.
+
+Sur le même réseau Wi-Fi que le Mac, expose le serveur de développement puis ouvre l'adresse affichée
+depuis le téléphone :
+
+```bash
+npm run dev -- --host      # affiche une URL en 192.168.x.x à ouvrir sur le téléphone
+```
+
+À distance, GitHub Codespaces permet d'ouvrir le dépôt et de faire tourner `npm run dev`, avec un port
+transféré en visibilité **privée** : l'accès demande alors une authentification GitHub, ce que Pages ne
+sait pas faire ici.
 
 ## Personnaliser les réponses
 
