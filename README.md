@@ -7,18 +7,34 @@ pièges, les relances probables et les chiffres mobilisés.
 ## Lancer le site
 
 ```bash
-cd ~/meta-sales-interview
+git clone git@github.com:NathanDenisse/meta-sales-interview.git
+cd meta-sales-interview
 npm install      # seulement la première fois
-npm run dev      # http://localhost:5191
+npm run dev      # http://localhost:5191, ou le port suivant s'il est occupé
 ```
 
 Autres commandes : `npm run typecheck`, `npm run build`, `npm run preview`.
 
-## À ne pas publier
+## Dépôt privé, et pourquoi
 
-Ce site contient des chiffres internes Indeed, dont du revenu par compte client nommé. Il reste
-**local**. Si une version en ligne devient nécessaire, il faut un hébergement authentifié, pas GitHub
-Pages public.
+Le dépôt [NathanDenisse/meta-sales-interview](https://github.com/NathanDenisse/meta-sales-interview)
+est **privé** et le restera : le contenu cite du revenu par compte client nommé, donc de la donnée
+interne Indeed. Aucun workflow GitHub Pages n'est configuré, précisément pour éviter une mise en ligne
+accidentelle. Si un accès mobile devient nécessaire, il faut un hébergement authentifié.
+
+## Personnaliser les réponses
+
+Les réponses livrées sont une base, pas un script. Depuis n'importe quelle question, le bouton
+**Modifier la réponse** ouvre un éditeur sur les cinq champs STAR, avec ajout, suppression et
+réordonnancement des puces d'action, séparément en français et en anglais.
+
+- Les modifications sont enregistrées dans le stockage local du navigateur, la version livrée reste
+  intacte et un bouton permet d'y revenir à tout moment.
+- La page **Mes réponses** liste tout ce qui a été personnalisé, et permet d'exporter le tout dans un
+  fichier JSON puis de le réimporter, par exemple sur une autre machine. À faire après chaque vraie
+  session de travail, sinon un nettoyage du navigateur efface le travail.
+- Le bouton **Copier au format TypeScript** rend la réponse prête à recoller dans le fichier
+  `src/content/q-*.ts` correspondant, pour la rendre permanente dans le dépôt.
 
 ## Structure
 
