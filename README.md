@@ -15,35 +15,25 @@ npm run dev      # http://localhost:5191, ou le port suivant s'il est occupé
 
 Autres commandes : `npm run typecheck`, `npm run build`, `npm run preview`.
 
-## Dépôt privé, et pourquoi Pages reste désactivé
+## Site en ligne
+
+<https://nathandenisse.github.io/meta-sales-interview/>
 
 Le dépôt [NathanDenisse/meta-sales-interview](https://github.com/NathanDenisse/meta-sales-interview)
-est **privé**, vérifié avec `gh repo view --json visibility` qui renvoie `PRIVATE`.
+est **public** et le site est publié par GitHub Pages à chaque `push` sur `main`, via le workflow
+`.github/workflows/deploy-pages.yml`.
 
-GitHub Pages n'est **pas** activé, et ce n'est pas un oubli. Sur GitHub, un dépôt privé peut avoir
-Pages activé, mais le site publié devient alors **accessible à quiconque connaît son URL**. La
-visibilité privée d'un site Pages n'existe que sur GitHub Enterprise Cloud, et uniquement pour des
-dépôts appartenant à une organisation. Ce dépôt appartient à un compte personnel (`type: User`), donc
-l'option n'existe pas ici, quel que soit le plan.
-
-Comme le contenu cite du revenu par compte client nommé, publier reviendrait à exposer de la donnée
-interne Indeed. Aucun workflow de déploiement n'est présent dans le projet, précisément pour éviter
-qu'un `git push` ne mette le site en ligne par accident.
+La publication est un **choix assumé** : le contenu cite du revenu par compte client nommé et des
+ressources internes Indeed, et il est donc lisible par tout le monde. Repasser en privé se fait avec
+`gh repo edit --visibility private`, ce qui coupe aussi le site.
 
 ### Consulter le site depuis un téléphone
 
-Deux options qui ne passent par aucun hébergeur tiers.
-
-Sur le même réseau Wi-Fi que le Mac, expose le serveur de développement puis ouvre l'adresse affichée
-depuis le téléphone :
+Ouvrir l'URL ci-dessus. En local, sur le même réseau Wi-Fi que le Mac :
 
 ```bash
 npm run dev -- --host      # affiche une URL en 192.168.x.x à ouvrir sur le téléphone
 ```
-
-À distance, GitHub Codespaces permet d'ouvrir le dépôt et de faire tourner `npm run dev`, avec un port
-transféré en visibilité **privée** : l'accès demande alors une authentification GitHub, ce que Pages ne
-sait pas faire ici.
 
 ## Personnaliser les réponses
 
