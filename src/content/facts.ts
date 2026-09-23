@@ -238,7 +238,8 @@ export const facts: Fact[] = [
   {
     id: "meta-q2",
     label: "Meta, deuxième trimestre 2026",
-    value: "59,363 Md$ de revenu publicitaire, +27 % sur un an, impressions +14 %, prix moyen par annonce +12 %",
+    value:
+      "59,363 Md$ de revenu publicitaire, +27 % sur un an, impressions +14 %, prix moyen par annonce +12 %, 3,60 Md de personnes actives par jour en juin 2026",
     period: "Q2 2026",
     provenance: "Communiqué de résultats Meta du 29 juillet 2026",
     tags: ["meta", "marche"],

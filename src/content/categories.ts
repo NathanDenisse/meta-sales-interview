@@ -34,7 +34,7 @@ export const categories: Category[] = [
     title: "Motivation et adéquation",
     subtitle: "Pourquoi Meta, pourquoi partir, pourquoi toi",
     intro:
-      "La famille la plus facile à bâcler. Une réponse qui parle d'ambition, de marque ou de séniorité ne marque aucun point. Une réponse qui nomme le travail précis que tu veux faire, avec la preuve que tu sais déjà ce qu'il implique, en marque beaucoup.",
+      "La seule famille traitée en discours modèle et non en STAR : raconter une situation datée pour justifier « pourquoi Meta » sonne faux, et personne ne le fait en entretien. Les huit réponses sont donc des textes standardisés, écrits pour n'importe quel bon candidat, volontairement non personnalisés, à dire en une minute et demie et à colorer à l'oral. La version STAR reste accessible sur chaque fiche pour qui veut l'angle vécu.",
   },
   {
     id: "ia",

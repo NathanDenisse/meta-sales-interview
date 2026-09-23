@@ -6,7 +6,7 @@ import { byCategory, priorityQuestions, questions } from "../content/questions";
 import { stories } from "../content/stories";
 import { facts } from "../content/facts";
 import { useLocalStorage } from "../lib/hooks";
-import { BasisBadge, Callout, Card, DifficultyBadge, PriorityBadge } from "../components/ui";
+import { BasisBadge, Callout, Card, DifficultyBadge, FormatBadge, PriorityBadge } from "../components/ui";
 
 export function Home() {
   const [mastered] = useLocalStorage<string[]>("msi.mastered", []);
@@ -14,6 +14,7 @@ export function Home() {
     vecu: questions.filter((q) => q.basis === "vecu").length,
     romance: questions.filter((q) => q.basis === "vecu-romance").length,
     canevas: questions.filter((q) => q.basis === "canevas").length,
+    script: questions.filter((q) => q.format === "script").length,
   };
 
   return (
@@ -24,12 +25,13 @@ export function Home() {
           Entretien Strategic Account Manager, Meta
         </p>
         <h1 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl dark:text-white">
-          Tes réponses commerciales, en STAR, prêtes à dire
+          Tes réponses commerciales, prêtes à dire
         </h1>
         <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-slate-600 dark:text-slate-300">
-          {questions.length} questions, des plus classiques aux plus piégeuses, chacune avec une réponse structurée en
-          Situation, Tâche, Action, Résultat, en français et en anglais. Les chiffres viennent de ton portefeuille réel,
-          et chaque réponse dit clairement si elle repose sur ton vécu ou s'il s'agit d'un canevas à personnaliser.
+          {questions.length} questions, des plus classiques aux plus piégeuses, en français et en anglais. Les questions
+          comportementales sont traitées en Situation, Tâche, Action, Résultat, avec les chiffres de ton portefeuille
+          réel. Les {counts.script} questions de motivation sont traitées en discours modèle, parce que répondre en STAR
+          à « pourquoi Meta » sonne faux. Une pastille dit le format avant que tu ouvres la fiche.
         </p>
 
         <div className="mt-5 flex flex-wrap gap-3">
@@ -72,7 +74,7 @@ export function Home() {
           icon={Sparkles}
           value={`${counts.vecu}`}
           label="réponses sur du vécu"
-          sub={`${counts.romance} à vérifier, ${counts.canevas} canevas`}
+          sub={`${counts.romance} à vérifier, ${counts.canevas} canevas dont ${counts.script} en discours`}
         />
       </section>
 
@@ -80,10 +82,10 @@ export function Home() {
         <Callout tone="honesty" title="La règle qui compte">
           <p>
             Une histoire dite en entretien doit être vraie. Les réponses marquées{" "}
-            <span className="font-semibold">canevas</span> sont des réponses idéales écrites de toutes pièces parce que
-            tu n'avais pas de matière sur le sujet : garde la structure, remplace le scénario par un vrai souvenir.
-            Celles marquées <span className="font-semibold">vécu, détails à vérifier</span> reposent sur tes chiffres
-            mais contiennent du détail narratif reconstitué.
+            <span className="font-semibold">canevas</span> ne racontent aucun souvenir daté : soit c'est un discours
+            modèle, volontairement non personnalisé, que tu colores à l'oral, soit c'est une structure à remplir avec un
+            vrai souvenir. Celles marquées <span className="font-semibold">vécu, détails à vérifier</span> reposent sur
+            tes chiffres mais contiennent du détail narratif reconstitué.
           </p>
         </Callout>
       </section>
@@ -100,11 +102,12 @@ export function Home() {
             {priorityQuestions.map((q) => (
               <Link key={q.id} to={`/question/${q.id}`} className="group">
                 <Card className="flex flex-wrap items-center gap-2 p-3 transition-colors group-hover:border-brand-300 dark:group-hover:border-brand-800">
-                  <span className="min-w-0 flex-1 truncate text-[15px] font-medium text-slate-800 dark:text-slate-100">
+                  <span className="w-full min-w-0 text-[15px] font-medium text-slate-800 sm:w-auto sm:flex-1 sm:truncate dark:text-slate-100">
                     {q.prompt.fr}
                   </span>
                   <DifficultyBadge difficulty={q.difficulty} />
-                  <BasisBadge basis={q.basis} />
+                  <FormatBadge format={q.format} />
+                  <BasisBadge basis={q.basis} format={q.format} />
                   {mastered.includes(q.id) ? (
                     <CheckCircle2 className="h-4 w-4 text-emerald-500" aria-hidden />
                   ) : (

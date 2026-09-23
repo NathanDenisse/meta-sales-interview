@@ -5,4 +5,5 @@ dist
 .vite
 .playwright-mcp
 docs/screenshots
-docs/screenshots
+docs/captures
+tsconfig.tsbuildinfo

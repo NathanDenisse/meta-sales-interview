@@ -4,10 +4,11 @@ import { Dices, Eye, EyeOff } from "lucide-react";
 import { categories } from "../content/categories";
 import { questions } from "../content/questions";
 import { useLocalStorage } from "../lib/hooks";
-import { useEdits } from "../lib/edits";
-import { BasisBadge, Callout, Card, DifficultyBadge } from "../components/ui";
+import { useEdits, useScriptEdits } from "../lib/edits";
+import { BasisBadge, Callout, Card, DifficultyBadge, FormatBadge } from "../components/ui";
 import { LanguageToggle, StarView } from "../components/StarView";
-import type { CategoryId } from "../types";
+import { AnswerFormatToggle, ScriptView } from "../components/ScriptView";
+import type { AnswerFormat, CategoryId } from "../types";
 
 /** Tirage aléatoire d'une question : tu réponds à voix haute, puis tu révèles. */
 export function DrillPage() {
@@ -15,7 +16,9 @@ export function DrillPage() {
   const [scope, setScope] = useState<CategoryId | "all" | "priority">("priority");
   const [index, setIndex] = useState(0);
   const [revealed, setRevealed] = useState(false);
+  const [preferred, setPreferred] = useState<AnswerFormat>("script");
   const { resolve } = useEdits();
+  const { resolveScript } = useScriptEdits();
 
   const pool = useMemo(() => {
     if (scope === "all") return questions;
@@ -24,6 +27,9 @@ export function DrillPage() {
   }, [scope]);
 
   const question = pool[index % Math.max(pool.length, 1)];
+  const script = question ? resolveScript(question, lang) : undefined;
+  const hasScript = question?.format === "script" && Boolean(script);
+  const showingScript = hasScript && preferred === "script" && script;
 
   const draw = () => {
     setRevealed(false);
@@ -74,7 +80,8 @@ export function DrillPage() {
           <Card className="p-5">
             <div className="mb-2 flex flex-wrap items-center gap-2">
               <DifficultyBadge difficulty={question.difficulty} />
-              <BasisBadge basis={question.basis} />
+              <FormatBadge format={question.format} />
+              <BasisBadge basis={question.basis} format={question.format} />
               <span className="text-xs text-slate-400">
                 {categories.find((c) => c.id === question.category)?.title}
               </span>
@@ -95,17 +102,30 @@ export function DrillPage() {
               >
                 Fiche complète
               </Link>
+              {revealed && hasScript ? (
+                <AnswerFormatToggle value={preferred} lang={lang} onChange={setPreferred} />
+              ) : null}
             </div>
           </Card>
 
           {revealed ? (
-            <StarView star={resolve(question, lang)} lang={lang} targetSeconds={question.targetSeconds} />
+            showingScript ? (
+              <ScriptView script={script} lang={lang} targetSeconds={question.targetSeconds} />
+            ) : (
+              <StarView star={resolve(question, lang)} lang={lang} targetSeconds={question.targetSeconds} />
+            )
           ) : (
             <Callout tone="tip" title="Avant de révéler">
               <p>
                 Dis la réponse en entier, à voix haute, sans notes. Chronomètre-toi : au-delà de deux minutes, un
                 recruteur décroche. Si tu bloques sur la situation, c'est que l'histoire n'est pas encore choisie.
               </p>
+              {hasScript ? (
+                <p className="mt-2">
+                  Celle-ci est une question de motivation, traitée en discours modèle plutôt qu'en STAR. Ne cherche pas
+                  de situation datée, cherche le fil.
+                </p>
+              ) : null}
             </Callout>
           )}
         </>

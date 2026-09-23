@@ -176,7 +176,7 @@ export function StarEditor({
   );
 }
 
-function Field({
+export function Field({
   label,
   value,
   onChange,
@@ -202,7 +202,7 @@ function Field({
   );
 }
 
-function IconButton({
+export function IconButton({
   label,
   onClick,
   icon: Icon,

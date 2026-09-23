@@ -34,6 +34,15 @@ export interface Category {
   intro: string;
 }
 
+/**
+ * Format de la réponse livrée.
+ *
+ * `star` structure un souvenir professionnel. `script` est un discours modèle,
+ * volontairement non personnalisé, pour les questions où raconter une situation
+ * datée sonne faux, typiquement « pourquoi Meta ».
+ */
+export type AnswerFormat = "star" | "script";
+
 /** Réponse structurée en STAR, dans une langue donnée. */
 export interface Star {
   situation: string;
@@ -43,6 +52,24 @@ export interface Star {
   result: string;
   /** Ce que tu ajoutes si on te demande d'aller plus loin. */
   learning?: string;
+}
+
+/**
+ * Réponse écrite comme un discours, dans une langue donnée.
+ *
+ * Le texte se dit tel quel, d'un bout à l'autre, et se colore à l'oral. Il n'est
+ * pas découpé en puces télégraphiques : chaque bloc de `body` est un paragraphe
+ * qui s'enchaîne avec le suivant.
+ */
+export interface Script {
+  /** La première phrase, celle qui pose le cadre. */
+  hook: string;
+  /** Trois à cinq blocs de deux à quatre phrases, dans l'ordre où ils se disent. */
+  body: string[];
+  /** La phrase de fin, celle qui rend la main à l'intervieweur. */
+  closing: string;
+  /** Trois à cinq repères très courts, pour retenir la structure sans le texte. */
+  keyBeats: string[];
 }
 
 export interface Bilingual<T> {
@@ -67,7 +94,15 @@ export interface Question {
   basis: Basis;
   /** Note de personnalisation quand la réponse est un canevas. */
   basisNote?: string;
+  /** Format affiché par défaut. Absent vaut `star`. */
+  format?: AnswerFormat;
+  /**
+   * Toujours présent, y compris en format `script` : le STAR reste le repli
+   * pour qui veut l'angle vécu, et le reste du site s'en sert.
+   */
   answer: Bilingual<Star>;
+  /** Obligatoire quand `format` vaut `script`. */
+  script?: Bilingual<Script>;
   /** Chiffres mobilisés, pour vérifier qu'ils sont cohérents avec la banque de faits. */
   metrics?: string[];
   /** Durée cible à l'oral, en secondes. */

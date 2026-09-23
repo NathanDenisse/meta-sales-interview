@@ -1,5 +1,5 @@
 import { AlertTriangle, Lightbulb, MessageSquareQuote, ShieldCheck, Sparkles } from "lucide-react";
-import type { Basis, Difficulty } from "../types";
+import type { AnswerFormat, Basis, Difficulty } from "../types";
 import { RichText } from "../lib/markdown";
 
 export function Card({ children, className = "" }: { children: React.ReactNode; className?: string }) {
@@ -90,8 +90,22 @@ const BASIS_CONFIG: Record<Basis, { label: string; classes: string; help: string
   },
 };
 
-export function BasisBadge({ basis }: { basis: Basis }) {
-  const config = BASIS_CONFIG[basis];
+/**
+ * Un discours n'a pas de scénario à remplacer : le libellé « canevas à
+ * personnaliser » y serait faux, puisque le texte est écrit pour être dit tel quel.
+ */
+const SCRIPT_BASIS = {
+  label: "Texte à dire tel quel",
+  classes: "bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300",
+  help: "Aucun souvenir daté dans cette réponse : le texte se dit tel quel, rien n'y est à vérifier contre ton parcours.",
+};
+
+function basisConfig(basis: Basis, format: AnswerFormat = "star") {
+  return basis === "canevas" && format === "script" ? SCRIPT_BASIS : BASIS_CONFIG[basis];
+}
+
+export function BasisBadge({ basis, format }: { basis: Basis; format?: AnswerFormat }) {
+  const config = basisConfig(basis, format);
   return (
     <span
       title={config.help}
@@ -102,8 +116,33 @@ export function BasisBadge({ basis }: { basis: Basis }) {
   );
 }
 
-export function basisHelp(basis: Basis): string {
-  return BASIS_CONFIG[basis].help;
+export function basisHelp(basis: Basis, format: AnswerFormat = "star"): string {
+  return basisConfig(basis, format).help;
+}
+
+const FORMAT_CONFIG: Record<AnswerFormat, { label: string; classes: string; help: string }> = {
+  star: {
+    label: "STAR",
+    classes: "bg-slate-100 text-slate-500 dark:bg-slate-800 dark:text-slate-400",
+    help: "Réponse structurée en Situation, Tâche, Action, Résultat, à partir d'un souvenir professionnel.",
+  },
+  script: {
+    label: "Discours",
+    classes: "bg-indigo-50 text-indigo-700 dark:bg-indigo-950 dark:text-indigo-300",
+    help: "Réponse modèle écrite comme un discours, à dire d'un bout à l'autre. La version STAR reste accessible sur la fiche.",
+  },
+};
+
+export function FormatBadge({ format }: { format?: AnswerFormat }) {
+  const config = FORMAT_CONFIG[format ?? "star"];
+  return (
+    <span
+      title={config.help}
+      className={`inline-flex cursor-help items-center rounded-full px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide ${config.classes}`}
+    >
+      {config.label}
+    </span>
+  );
 }
 
 const DIFFICULTY_CONFIG: Record<Difficulty, { label: string; classes: string }> = {

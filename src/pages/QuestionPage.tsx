@@ -4,10 +4,22 @@ import { ArrowLeft, ArrowRight, CheckCircle2, Circle, MessageCircleQuestion, Pen
 import { getQuestion, neighbours } from "../content/questions";
 import { categories } from "../content/categories";
 import { useLocalStorage } from "../lib/hooks";
-import { useEdits } from "../lib/edits";
-import { BasisBadge, BulletList, Callout, Card, DifficultyBadge, PriorityBadge, basisHelp } from "../components/ui";
+import { useEdits, useScriptEdits } from "../lib/edits";
+import {
+  BasisBadge,
+  BulletList,
+  Callout,
+  Card,
+  DifficultyBadge,
+  FormatBadge,
+  PriorityBadge,
+  basisHelp,
+} from "../components/ui";
 import { LanguageToggle, StarView } from "../components/StarView";
+import { AnswerFormatToggle, ScriptView } from "../components/ScriptView";
 import { StarEditor } from "../components/StarEditor";
+import { ScriptEditor } from "../components/ScriptEditor";
+import type { AnswerFormat } from "../types";
 
 export function QuestionPage() {
   const { id } = useParams();
@@ -15,7 +27,9 @@ export function QuestionPage() {
   const [lang, setLang] = useLocalStorage<"fr" | "en">("msi.lang", "fr");
   const [mastered, setMastered] = useLocalStorage<string[]>("msi.mastered", []);
   const { resolve, isEdited, save, reset } = useEdits();
+  const { resolveScript, isScriptEdited, saveScript, resetScript } = useScriptEdits();
   const [editing, setEditing] = useState(false);
+  const [preferred, setPreferred] = useState<AnswerFormat>("script");
 
   if (!question) {
     return (
@@ -32,6 +46,12 @@ export function QuestionPage() {
   const { previous, next } = neighbours(question.id);
   const isMastered = mastered.includes(question.id);
 
+  const script = resolveScript(question, lang);
+  const hasScript = question.format === "script" && Boolean(script);
+  const view: AnswerFormat = hasScript ? preferred : "star";
+  const showingScript = view === "script" && script;
+  const edited = showingScript ? isScriptEdited(question.id, lang) : isEdited(question.id, lang);
+
   return (
     <article className="space-y-6">
       <header>
@@ -45,7 +65,8 @@ export function QuestionPage() {
             </Link>
           ) : null}
           <DifficultyBadge difficulty={question.difficulty} />
-          <BasisBadge basis={question.basis} />
+          <FormatBadge format={question.format} />
+          <BasisBadge basis={question.basis} format={view} />
           {question.priority ? <PriorityBadge /> : null}
         </div>
 
@@ -59,6 +80,16 @@ export function QuestionPage() {
 
         <div className="mt-4 flex flex-wrap items-center gap-3">
           <LanguageToggle lang={lang} onChange={setLang} />
+          {hasScript ? (
+            <AnswerFormatToggle
+              value={view}
+              lang={lang}
+              onChange={(format) => {
+                setPreferred(format);
+                setEditing(false);
+              }}
+            />
+          ) : null}
           <button
             type="button"
             onClick={() => setEditing((e) => !e)}
@@ -87,26 +118,51 @@ export function QuestionPage() {
       </header>
 
       {question.basis !== "vecu" ? (
-        <Callout tone="honesty">
-          <p className="mb-1">{basisHelp(question.basis)}</p>
+        <Callout tone="honesty" title={view === "script" ? "À dire tel quel" : undefined}>
+          <p className="mb-1">{basisHelp(question.basis, view)}</p>
           {question.basisNote ? <p className="font-medium text-slate-800 dark:text-slate-100">{question.basisNote}</p> : null}
         </Callout>
       ) : null}
 
       <section>
         <h2 className="mb-2 flex flex-wrap items-center gap-2 text-sm font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
-          {lang === "fr" ? "La réponse, en STAR" : "The answer, in STAR"}
-          {isEdited(question.id, lang) ? (
+          {showingScript
+            ? lang === "fr"
+              ? "La réponse, en discours"
+              : "The answer, as a script"
+            : lang === "fr"
+              ? "La réponse, en STAR"
+              : "The answer, in STAR"}
+          {edited ? (
             <span className="rounded-full bg-slate-900 px-2 py-0.5 text-[10px] font-semibold uppercase text-white dark:bg-white dark:text-slate-900">
               Ta version
             </span>
           ) : null}
         </h2>
-        {editing ? (
+        {showingScript ? (
+          editing ? (
+            <ScriptEditor
+              script={script}
+              lang={lang}
+              edited={edited}
+              onSave={(next) => {
+                saveScript(question.id, lang, next);
+                setEditing(false);
+              }}
+              onCancel={() => setEditing(false)}
+              onReset={() => {
+                resetScript(question.id, lang);
+                setEditing(false);
+              }}
+            />
+          ) : (
+            <ScriptView script={script} lang={lang} targetSeconds={question.targetSeconds} />
+          )
+        ) : editing ? (
           <StarEditor
             star={resolve(question, lang)}
             lang={lang}
-            edited={isEdited(question.id, lang)}
+            edited={edited}
             onSave={(star) => {
               save(question.id, lang, star);
               setEditing(false);
@@ -120,6 +176,13 @@ export function QuestionPage() {
         ) : (
           <StarView star={resolve(question, lang)} lang={lang} targetSeconds={question.targetSeconds} />
         )}
+        {hasScript && !showingScript ? (
+          <p className="mt-2 text-xs text-slate-500 dark:text-slate-400">
+            {lang === "fr"
+              ? "Version STAR de repli, pour qui veut l'angle vécu. Le discours modèle reste la réponse livrée pour cette question."
+              : "STAR fallback, for the lived angle. The model script is the delivered answer for this question."}
+          </p>
+        ) : null}
       </section>
 
       <section className="grid gap-3 md:grid-cols-2">
@@ -154,6 +217,12 @@ export function QuestionPage() {
           </h2>
           <Card className="p-4">
             <BulletList items={question.metrics} />
+            {question.format === "script" ? (
+              <p className="mt-2 text-xs text-slate-500 dark:text-slate-400">
+                Le discours n'en cite que le strict nécessaire. Les autres servent la version STAR de repli et les
+                relances.
+              </p>
+            ) : null}
             <p className="mt-2 text-xs text-slate-500 dark:text-slate-400">
               Tous ces chiffres sont dans la{" "}
               <Link to="/faits" className="text-brand-600 underline underline-offset-2 dark:text-brand-300">

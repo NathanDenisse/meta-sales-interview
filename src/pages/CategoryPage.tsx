@@ -3,7 +3,7 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { categories } from "../content/categories";
 import { byCategory } from "../content/questions";
 import { useLocalStorage } from "../lib/hooks";
-import { BasisBadge, Callout, Card, DifficultyBadge, PriorityBadge } from "../components/ui";
+import { BasisBadge, Callout, Card, DifficultyBadge, FormatBadge, PriorityBadge } from "../components/ui";
 
 export function CategoryPage() {
   const { id } = useParams();
@@ -41,17 +41,18 @@ export function CategoryPage() {
           <Link key={q.id} to={`/question/${q.id}`} className="group">
             <Card className="p-4 transition-colors group-hover:border-brand-300 dark:group-hover:border-brand-800">
               <div className="flex flex-wrap items-center gap-2">
-                <span className="min-w-0 flex-1 text-[15px] font-medium text-slate-800 dark:text-slate-100">
+                <span className="w-full min-w-0 text-[15px] font-medium text-slate-800 sm:w-auto sm:flex-1 dark:text-slate-100">
                   {q.prompt.fr}
                 </span>
                 {mastered.includes(q.id) ? <CheckCircle2 className="h-4 w-4 text-emerald-500" aria-hidden /> : null}
                 <DifficultyBadge difficulty={q.difficulty} />
-                <BasisBadge basis={q.basis} />
+                <FormatBadge format={q.format} />
+                <BasisBadge basis={q.basis} format={q.format} />
                 {q.priority ? <PriorityBadge /> : null}
               </div>
               <p className="mt-1 text-[13px] italic text-slate-500 dark:text-slate-400">{q.prompt.en}</p>
               <p className="mt-2 line-clamp-2 text-[13px] text-slate-500 dark:text-slate-400">
-                {q.answer.fr.situation}
+                {q.format === "script" && q.script ? q.script.fr.hook : q.answer.fr.situation}
               </p>
               <span className="mt-2 inline-flex items-center gap-1 text-xs font-medium text-brand-600 dark:text-brand-300">
                 Voir la réponse

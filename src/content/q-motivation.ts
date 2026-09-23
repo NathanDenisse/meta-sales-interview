@@ -20,7 +20,7 @@ export const qMotivation: Question[] = [
       "Parler de prestige, de séniorité ou de rémunération : tu deviens immédiatement interchangeable.",
       "Citer la prévision EMARKETER comme un résultat acquis : en face de toi, quelqu'un connaît la différence.",
       "Critiquer Indeed pour justifier ton intérêt : la question porte sur Meta, pas sur ton employeur.",
-      "Empiler six chiffres sans jamais dire lequel a changé ta décision de candidater.",
+      "Empiler les chiffres sans dire ce que chacun change : quatre raisons nommées valent mieux que huit statistiques.",
     ],
     followUps: [
       {
@@ -36,9 +36,10 @@ export const qMotivation: Question[] = [
         how: "Confirme tout de suite sans te défendre : modélisation d'avril 2026, pas un résultat. Enchaîne sur le chiffre publié, 59,363 Md$ au deuxième trimestre 2026, +27 % sur un an.",
       },
     ],
-    basis: "vecu-romance",
+    basis: "canevas",
     basisNote:
-      "Les chiffres marché et ta motivation déclarée sont réels. Le déclencheur raconté, avoir séparé résultats publiés et prévisions avant de candidater, est reconstitué : remplace-le par le vrai moment où Meta est devenu une option pour toi, et revérifie le dernier trimestre publié le jour de l'entretien.",
+      "Réponse modèle volontairement non personnalisée : elle fonctionnerait pour n'importe quel bon candidat. Ajoute une touche personnelle à l'oral si tu le souhaites, ce n'est pas obligatoire. Revérifie le dernier trimestre publié la veille de l'entretien.",
+    format: "script",
     answer: {
       fr: {
         situation:
@@ -73,6 +74,42 @@ export const qMotivation: Question[] = [
           "What I am looking for is a more demanding environment and fewer, larger accounts. I would rather say it that way than talk about the brand.",
       },
     },
+    script: {
+      fr: {
+        hook: "Je candidate chez Meta parce que c'est l'endroit où le métier de commercial publicitaire change le plus vite, et je préfère apprendre un métier là où il se réinvente.",
+        body: [
+          "La première raison tient à la position de la plateforme. Meta a publié 59,363 milliards de dollars de revenu publicitaire au deuxième trimestre 2026, en hausse de 27 % sur un an, et cette croissance vient autant du prix moyen par annonce, plus 12 %, que du volume d'impressions, plus 14 %.",
+          "La deuxième raison est l'automatisation. Advantage+ dépasse 75 milliards de dollars de rythme annuel, et Meta mesure 8,3 % de clics et 15,7 % de conversions en plus depuis Andromeda et GEM, sans audit externe. La machine optimise seule, et le commercial se déplace vers le conseil.",
+          "La troisième raison est la demande. L'IAB rapporte que 86 % des acheteurs changent leur façon de mesurer, et EMARKETER place Meta à 26,8 % de part mondiale contre 26,4 % pour Google, en prévision et pas en résultat. Ce marché se décide désormais sur la mesure.",
+          "La dernière raison vient de mon métier actuel. Je gère des réseaux décentralisés, où l'accord se négocie au centre et l'adoption se gagne établissement par établissement. C'est la structure d'un grand annonceur multi-marques, et je veux la retrouver à une autre échelle.",
+        ],
+        closing: "Voilà pourquoi Meta plutôt qu'une autre plateforme, et je peux creuser l'un de ces points si vous voulez.",
+        keyBeats: [
+          "La position, chiffres publiés",
+          "L'automatisation",
+          "La demande et la mesure",
+          "Ce que j'apporte",
+          "Rendre la main",
+        ],
+      },
+      en: {
+        hook: "I am applying to Meta because this is where the advertising sales job is changing fastest, and I would rather learn a job where it is being reinvented.",
+        body: [
+          "The first reason is the position of the platform. Meta reported 59.363 billion dollars of advertising revenue in the second quarter of 2026, up 27 percent year over year, and that growth comes as much from average price per ad, up 12 percent, as from impression volume, up 14 percent.",
+          "The second reason is automation. Advantage+ is past a 75 billion dollar annual run rate, and Meta measures 8.3 percent more clicks and 15.7 percent more conversions from Andromeda and GEM, with no external audit. The machine optimises on its own, and the salesperson moves towards advice.",
+          "The third reason is demand. The IAB reports that 86 percent of buyers are changing how they measure, and EMARKETER puts Meta at 26.8 percent of worldwide share against 26.4 percent for Google, as a forecast and not a result. This market is now decided on measurement.",
+          "The last reason comes from the job I do today. I manage decentralised networks, where the agreement is negotiated centrally and adoption is won site by site. That is the structure of a large multi-brand advertiser, and I want to do it at a different scale.",
+        ],
+        closing: "That is why Meta rather than another platform, and I am happy to go deeper on any of those points.",
+        keyBeats: [
+          "Position, published numbers",
+          "Automation",
+          "Demand and measurement",
+          "What I bring",
+          "Hand back",
+        ],
+      },
+    },
     metrics: [
       "Revenu publicitaire Meta T2 2026 : 59,363 Md$, +27 % sur un an (résultats publiés)",
       "Impressions +14 %, prix moyen par annonce +12 %, 3,60 Md de personnes actives par jour en juin 2026 (résultats publiés)",
@@ -81,7 +118,7 @@ export const qMotivation: Question[] = [
       "EMARKETER avril 2026 : 243,46 Md$ contre 239,54 Md$, 26,8 % contre 26,4 % de part (prévision de modélisation privée)",
       "IAB septembre 2026 : dépense US +12,3 % en 2026, social +16,5 %, 86 % des acheteurs changent leur mesure (prévision sectorielle)",
     ],
-    targetSeconds: 120,
+    targetSeconds: 90,
   },
 
   {
@@ -102,7 +139,7 @@ export const qMotivation: Question[] = [
     traps: [
       "Un seul mot négatif sur Indeed, ton management ou ton territoire : c'est éliminatoire dans un entretien commercial.",
       "Parler de rémunération, de titre ou de séniorité.",
-      "Rester vague : sans chiffre de performance, ton départ ressemble à une sortie subie.",
+      "Rester vague sur ce que tu vas chercher : si tu ne nommes pas la compétence, ton départ ressemble à une sortie subie. Garde un chiffre de performance en réserve pour la relance.",
       "Dire que tu t'ennuies. Dis plutôt ce que tu as fini de construire, ce n'est pas la même chose.",
     ],
     followUps: [
@@ -119,7 +156,10 @@ export const qMotivation: Question[] = [
         how: "Rappelle ce que tu as déjà pris en interne, neuf mois de couverture National Accounts et six mois de couverture d'un book Inside Sales, puis dis que la marche suivante que tu veux n'existe pas sur ton périmètre.",
       },
     ],
-    basis: "vecu",
+    basis: "canevas",
+    basisNote:
+      "Réponse modèle volontairement non personnalisée : elle fonctionnerait pour n'importe quel bon candidat. Ajoute une touche personnelle à l'oral si tu le souhaites, ce n'est pas obligatoire.",
+    format: "script",
     answer: {
       fr: {
         situation:
@@ -154,6 +194,38 @@ export const qMotivation: Question[] = [
           "The right moment to move is when you can hand over cleanly, not when you have had enough. I waited for the first case.",
       },
     },
+    script: {
+      fr: {
+        hook: "Je ne pars pas contre quelque chose, je pars vers un métier plus profond.",
+        body: [
+          "Mon poste actuel m'a beaucoup appris, et je le dis sans précaution de langage. J'y ai appris à tenir un portefeuille très large, à prioriser sans qu'on me dise où aller, et à défendre un chiffre devant un client qui le conteste. Je fais ce travail sérieusement jusqu'au dernier jour.",
+          "Ce qui a changé, c'est la nature de ce qu'il me reste à apprendre. Sur un portefeuille large, la compétence qui progresse est l'organisation. Celle que je veux développer maintenant est la profondeur stratégique sur un petit nombre de comptes, et elle ne s'acquiert pas en gérant plus de volume.",
+          "Je voulais aussi partir d'une position tenue plutôt que d'une difficulté. Quand on part après une bonne période, le choix est lisible : on va chercher autre chose. Quand on part après une mauvaise, on passe l'entretien à expliquer autre chose que son projet.",
+        ],
+        closing: "Donc le moment est bon parce que j'ai fini de construire quelque chose, pas parce que j'aurais quelque chose à fuir.",
+        keyBeats: [
+          "Ce que j'y ai appris",
+          "Ce que je n'y apprends plus",
+          "Partir d'une position tenue",
+          "Aller vers, pas fuir",
+        ],
+      },
+      en: {
+        hook: "I am not moving away from something, I am moving towards a deeper job.",
+        body: [
+          "My current role has taught me a great deal, and I will say that without hedging. I learned to hold a very wide portfolio, to prioritise without being told where to go, and to defend a number in front of a client who disputes it. I will do that job properly until the last day.",
+          "What changed is the nature of what I still have to learn. On a wide portfolio, the skill that keeps improving is organisation. The one I want to build now is strategic depth on a small number of accounts, and you do not get it by handling more volume.",
+          "I also wanted to leave from a position I was holding rather than from a difficulty. When you move after a good stretch, the decision reads clearly: you are going after something. When you move after a bad one, you spend the interview explaining something other than your plan.",
+        ],
+        closing: "So the timing is right because I have finished building something, not because there is something I want to escape.",
+        keyBeats: [
+          "What it taught me",
+          "What it no longer teaches me",
+          "Leaving from strength",
+          "Towards, not away",
+        ],
+      },
+    },
     metrics: [
       "108 % au T1 2026, 133 % au T2 2026, environ 108 % au T3 2026 en cours",
       "President's Club 2023, cible annuelle 1,5 M€ et plus",
@@ -161,7 +233,7 @@ export const qMotivation: Question[] = [
       "Croissance du book +38 % à périmètre constant, 2026 contre 2025",
       "Couverture NAM de 9 mois en 2023-24, couverture d'un book Inside Sales de 6 mois",
     ],
-    targetSeconds: 105,
+    targetSeconds: 80,
   },
 
   {
@@ -182,7 +254,7 @@ export const qMotivation: Question[] = [
     traps: [
       "Dire que tu aimes le contact humain ou le challenge : tout le monde le dit, personne ne le prouve.",
       "Parler de la compétition et du classement : ça marche jusqu'au premier trimestre où tu es derrière.",
-      "Raconter une motivation sans la rattacher à un résultat mesuré.",
+      "Rester dans l'abstrait : dis comment tu vérifies que ta motivation est réelle, pas seulement ce que tu ressens.",
       "Oublier que la question mesure ta durabilité, pas ton enthousiasme du jour.",
     ],
     followUps: [
@@ -199,7 +271,10 @@ export const qMotivation: Question[] = [
         how: "Dis que c'est le même moteur sur un cycle plus long et un terrain plus grand, et appuie-toi sur ADMR passé d'environ 24 K€ en rythme 2022 à environ 253 K€ en rythme 2026.",
       },
     ],
-    basis: "vecu",
+    basis: "canevas",
+    basisNote:
+      "Réponse modèle volontairement non personnalisée : elle fonctionnerait pour n'importe quel bon candidat. Ajoute une touche personnelle à l'oral si tu le souhaites, ce n'est pas obligatoire.",
+    format: "script",
     answer: {
       fr: {
         situation:
@@ -234,12 +309,34 @@ export const qMotivation: Question[] = [
           "I am wary of motivations you cannot put a number on, they run out in the first hard quarter. Mine gives me something to look at even in weeks with no signature.",
       },
     },
+    script: {
+      fr: {
+        hook: "Ce qui me tient dans ce métier, c'est le moment où une décision abstraite, un prix ou un budget, devient un résultat vérifiable pour quelqu'un.",
+        body: [
+          "La vente m'intéresse d'abord parce qu'elle se mesure. On peut se raconter beaucoup de choses sur la qualité d'une relation client, mais à la fin il y a un chiffre, et ce chiffre dit si on a été utile ou seulement présent. Peu de métiers donnent ce retour aussi vite.",
+          "Le deuxième moteur est la compréhension. Avant de vendre quoi que ce soit, il faut comprendre comment l'entreprise en face gagne de l'argent et où elle perd du temps. Ce travail ne s'épuise pas, parce que chaque secteur a sa propre mécanique et que je repars de zéro à chaque nouveau client.",
+          "Le troisième est la durée. Les résultats qui comptent arrivent rarement dans le trimestre où on les déclenche. Piloter une activité mesurable plutôt qu'une signature, c'est ce qui me permet de tenir les semaines où rien ne se signe.",
+        ],
+        closing: "C'est une motivation qui se vérifie au lieu de se déclarer, et c'est pour ça qu'elle tient dans un mauvais trimestre.",
+        keyBeats: ["Ça se mesure", "Comprendre le client", "Tenir dans la durée", "Vérifiable, pas déclaratif"],
+      },
+      en: {
+        hook: "What keeps me in this job is the moment an abstract decision, a price or a budget, turns into a verifiable outcome for someone.",
+        body: [
+          "I am drawn to sales first because it is measured. You can tell yourself a lot of stories about the quality of a client relationship, but in the end there is a number, and that number says whether you were useful or merely present. Few jobs give you that feedback so quickly.",
+          "The second driver is understanding. Before selling anything, you have to understand how the company in front of you makes money and where it loses time. That work never runs out, because every sector has its own mechanics and I start from scratch with each new client.",
+          "The third is the long game. The results that matter rarely land in the quarter you triggered them. Steering on measurable activity rather than on signatures is what gets me through the weeks when nothing closes.",
+        ],
+        closing: "It is a motivation you can check rather than one you declare, and that is why it survives a bad quarter.",
+        keyBeats: ["It is measured", "Understanding the client", "The long game", "Checked, not declared"],
+      },
+    },
     metrics: [
       "Cosmic Junior : 0 à 100 K$ d'ARR en moins de 8 mois, 25 professeurs, plus de 3 000 cours délivrés",
       "ADMR : environ 24 K€ en rythme 2022 à environ 253 K€ en rythme 2026",
       "60 à 80 démonstrations et revues de performance par mois à ses débuts chez Indeed",
     ],
-    targetSeconds: 105,
+    targetSeconds: 75,
   },
 
   {
@@ -260,7 +357,7 @@ export const qMotivation: Question[] = [
     traps: [
       "Lister des qualités : rigoureux, persévérant, orienté résultats. Aucune n'est vérifiable.",
       "Te comparer aux autres candidats que tu ne connais pas.",
-      "Citer un seul gros chiffre sans expliquer ce que tu as fait pour l'obtenir.",
+      "Promettre une preuve que tu ne peux pas fournir : si tu proposes de démontrer, sois prêt à le faire dans l'entretien.",
       "Oublier la deuxième compétence rare, l'IA, qui est ce qui te distingue vraiment aujourd'hui.",
     ],
     followUps: [
@@ -269,15 +366,18 @@ export const qMotivation: Question[] = [
         how: "Nomme une vraie limite : tu n'as pas vendu de média de marque à une agence média. Dis comment tu la combles, et par quoi tu compenses.",
       },
       {
-        question: "Ce deal à 438 204 €, quelle était ta part réelle ?",
-        how: "Sois précis sur ton rôle : entrée par les agences, travail du centre en parallèle, closing le 18 mai 2026. Nomme les autres contributeurs, ça te crédibilise.",
+        question: "Donne-moi un exemple concret de cette vente multi-niveaux.",
+        how: "C'est la relance attendue, et c'est là que tes chiffres reprennent leur place : le centre et les agences travaillés en parallèle, le plus gros deal du book closé le 18 mai 2026 à 438 204 €, et le réseau passé de 101 986 € en 2023 à 547 277 € en 2026. Nomme les autres contributeurs, ça te crédibilise.",
       },
       {
         question: "Tout le monde dit utiliser l'IA aujourd'hui.",
         how: "Distingue l'usage de la construction : toi tu as écrit une vingtaine de procédures réutilisables et des garde-fous qui bloquent l'écriture automatique. Propose de le montrer.",
       },
     ],
-    basis: "vecu",
+    basis: "canevas",
+    basisNote:
+      "Réponse modèle volontairement non personnalisée : elle fonctionnerait pour n'importe quel bon candidat. Ajoute une touche personnelle à l'oral si tu le souhaites, ce n'est pas obligatoire.",
+    format: "script",
     answer: {
       fr: {
         situation:
@@ -312,13 +412,47 @@ export const qMotivation: Question[] = [
           "An agreement signed at the centre is worth nothing until the sites adopt it. That is exactly where I am useful.",
       },
     },
+    script: {
+      fr: {
+        hook: "Je ne connais pas les autres candidats, donc je vais vous dire ce que j'apporte et vous jugerez de l'écart.",
+        body: [
+          "Le premier point est la vente multi-niveaux. Je gère un portefeuille de réseaux décentralisés, où l'accord se signe au centre et se gagne ensuite établissement par établissement. J'ai appris qu'une signature centrale ne vaut rien tant que le terrain ne l'a pas adoptée, et je sais construire cette adoption. C'est un travail d'animation, pas de relance.",
+          "Le deuxième point est l'outillage. J'ai industrialisé une partie de mon propre travail avec des agents et des procédures que mes collègues réutilisent, avec des garde-fous qui interdisent toute écriture automatique sur de la donnée client. Utiliser l'IA et la rendre sûre pour une équipe, ce ne sont pas les mêmes compétences.",
+          "Le troisième point est la façon de citer un chiffre. J'annonce toujours son statut, résultat publié ou prévision. Dans un métier où l'annonceur vérifie, c'est ce qui décide s'il vous croit la deuxième fois.",
+        ],
+        closing: "Ce sont trois choses que je peux démontrer plutôt qu'affirmer, et je suis prêt à les mettre à l'épreuve dès maintenant.",
+        keyBeats: [
+          "Pas de comparaison",
+          "Vente multi-niveaux",
+          "Outillage et garde-fous",
+          "Chiffres avec leur statut",
+          "Démontrable",
+        ],
+      },
+      en: {
+        hook: "I do not know the other candidates, so I will tell you what I bring and you can judge the gap.",
+        body: [
+          "The first thing is multi-level selling. I manage a portfolio of decentralised networks, where the agreement is signed centrally and then won site by site. I learned that a central signature is worth nothing until the field adopts it, and I know how to build that adoption. It is enablement work, not chasing.",
+          "The second is tooling. I have industrialised part of my own work with agents and reusable procedures my colleagues now run, with guardrails that forbid any automated write on client data. Using AI and making it safe for a team are not the same skill.",
+          "The third is how I quote a number. I always give its status, published result or forecast. In a job where the advertiser checks, that is what decides whether they believe you the second time.",
+        ],
+        closing: "Those are three things I can demonstrate rather than claim, and I am happy to be tested on them right now.",
+        keyBeats: [
+          "No comparison",
+          "Multi-level selling",
+          "Tooling and guardrails",
+          "Numbers with their status",
+          "Demonstrable",
+        ],
+      },
+    },
     metrics: [
       "Plus gros deal gagné : 438 204 €, closé le 18 mai 2026, réseau Système U via agences",
       "Système U : 101 986 € de bookings en 2023, 547 277 € en 2026",
       "Plus de 20 webinars, plus de 600 franchisés touchés",
       "Une vingtaine de procédures IA réutilisables partagées avec des collègues",
     ],
-    targetSeconds: 100,
+    targetSeconds: 80,
   },
 
   {
@@ -356,7 +490,10 @@ export const qMotivation: Question[] = [
         how: "Parce que le book d'un collègue absent devient un problème pour les clients. Reste factuel : neuf mois côté National Accounts, six mois côté Inside Sales.",
       },
     ],
-    basis: "vecu",
+    basis: "canevas",
+    basisNote:
+      "Réponse modèle volontairement non personnalisée : elle fonctionnerait pour n'importe quel bon candidat. Ajoute une touche personnelle à l'oral si tu le souhaites, ce n'est pas obligatoire.",
+    format: "script",
     answer: {
       fr: {
         situation:
@@ -391,13 +528,35 @@ export const qMotivation: Question[] = [
           "Compensation rewards the result, it does not produce it. What produces it, for me, is making the work reusable by someone else.",
       },
     },
+    script: {
+      fr: {
+        hook: "La rémunération compte, je ne vais pas prétendre le contraire, mais elle sanctionne le résultat, elle ne le produit pas.",
+        body: [
+          "Ce qui produit le résultat, chez moi, c'est de construire une fois ce que plusieurs personnes réutilisent ensuite. Une procédure partagée, un modèle de revue de performance, un document qui évite à un collègue de repartir de zéro. Rien de tout cela n'est commissionné, et c'est pourtant le travail dont je suis le plus fier.",
+          "Le deuxième moteur est la qualité de la décision que prend le client. Vendre quelque chose qui ne marchera pas rapporte une fois. Vendre ce qui tient produit un client qui revient, et un métier qu'on peut faire longtemps sans se mentir.",
+          "Le troisième est l'équipe. Reprendre le portefeuille d'un collègue absent ou animer une session collective ne remonte dans le quota de personne. C'est simplement ce qui fait qu'une équipe tient quand quelqu'un manque.",
+        ],
+        closing: "Si la rémunération était mon seul moteur, je ne passerais pas de temps sur ces trois choses.",
+        keyBeats: ["Assumer la rémunération", "Construire une fois", "La décision du client", "L'équipe"],
+      },
+      en: {
+        hook: "Compensation matters, I am not going to pretend otherwise, but it rewards the result, it does not produce it.",
+        body: [
+          "What produces the result, for me, is building something once that several people then reuse. A shared procedure, a performance review template, a document that saves a colleague from starting over. None of that is commissioned, and it is still the work I am proudest of.",
+          "The second driver is the quality of the decision the client makes. Selling something that will not work pays once. Selling something that holds gives you a client who comes back, and a job you can do for years without lying to yourself.",
+          "The third is the team. Covering an absent colleague's book or running a group session counts towards nobody's quota. It is simply what keeps a team standing when someone is missing.",
+        ],
+        closing: "If compensation were my only driver, I would not spend time on any of those three.",
+        keyBeats: ["Own the money question", "Build once, reuse", "The client's decision", "The team"],
+      },
+    },
     metrics: [
       "Plus de 20 webinars, plus de 600 franchisés touchés",
       "Couverture NAM de 9 mois, couverture d'un book Inside Sales de 6 mois",
       "Une vingtaine de procédures IA réutilisables partagées",
       "Audit du poste de travail : 549 outils connectés pour 165 utilisés, règles de 4 163 à 2 340 tokens",
     ],
-    targetSeconds: 95,
+    targetSeconds: 75,
   },
 
   {
@@ -436,7 +595,8 @@ export const qMotivation: Question[] = [
     ],
     basis: "canevas",
     basisNote:
-      "Nathan n'a pas formulé de plan à cinq ans dans sa banque de faits : la projection ci-dessous est inventée, seule la trajectoire passée est réelle (AE en juin 2022, Senior AE en septembre 2023, couverture NAM de neuf mois, 25 professeurs managés chez Cosmic Junior). Remplace les quatre jalons par ceux que tu veux vraiment défendre, et garde la logique : parler de ce que tu veux savoir faire, pas du titre que tu veux porter.",
+      "Réponse modèle volontairement non personnalisée : elle fonctionnerait pour n'importe quel bon candidat. Ajoute une touche personnelle à l'oral si tu le souhaites, ce n'est pas obligatoire. Les trois jalons restent des jalons de compétence, pas de titre : remplace-les si tu veux en défendre d'autres.",
+    format: "script",
     answer: {
       fr: {
         situation:
@@ -471,13 +631,45 @@ export const qMotivation: Question[] = [
           "I answer in skills rather than job titles, because an org chart five years out cannot be verified whereas a skill can.",
       },
     },
+    script: {
+      fr: {
+        hook: "Je réponds par compétences plutôt que par titres, parce qu'un organigramme à cinq ans est invérifiable alors qu'une compétence se vérifie.",
+        body: [
+          "Sur les douze à dix-huit premiers mois, l'objectif est simple. Je veux tenir un portefeuille de comptes stratégiques au niveau de la mesure et de l'allocation, et pas seulement de la relation. Concrètement, savoir défendre une recommandation de budget devant quelqu'un qui la conteste, avec ses chiffres à lui.",
+          "À trois ans, je veux porter les comptes les plus complexes du périmètre, ceux qui combinent plusieurs marques, plusieurs agences et plusieurs marchés. Et je veux être la personne vers qui l'équipe se tourne sur un sujet précis, probablement la mesure.",
+          "À cinq ans, je veux avoir le choix entre approfondir comme contributeur individuel senior et encadrer une petite équipe. Je ne tranche pas aujourd'hui : j'ai déjà managé et cela m'a plu, mais je préfère maîtriser le métier avant de décider. Annoncer un titre dans une organisation que je ne connais pas encore n'aurait aucune valeur.",
+        ],
+        closing: "Le fil est le même sur les trois étapes : rester là où j'apprends encore, et prendre une responsabilité de plus quand la précédente est vraiment acquise.",
+        keyBeats: [
+          "12 à 18 mois : mesure et allocation",
+          "3 ans : les comptes complexes",
+          "5 ans : le choix",
+          "Compétences, pas titres",
+        ],
+      },
+      en: {
+        hook: "I answer in skills rather than titles, because an org chart five years out cannot be verified whereas a skill can.",
+        body: [
+          "For the first twelve to eighteen months the goal is simple. I want to hold a portfolio of strategic accounts at the level of measurement and allocation, not just relationship. In practice, that means defending a budget recommendation in front of someone who disputes it, using their own numbers.",
+          "At three years, I want to carry the most complex accounts on the patch, the ones combining several brands, several agencies and several markets. And I want to be the person the team turns to on one specific topic, most likely measurement.",
+          "At five years, I want the choice between going deeper as a senior individual contributor and leading a small team. I am not deciding that today. I have managed before and I enjoyed it, but I would rather master the job first, and naming a title in an organisation I do not know yet would be worth nothing.",
+        ],
+        closing: "The thread is the same across the three steps: stay where I am still learning, and take one more level of responsibility once the previous one is genuinely earned.",
+        keyBeats: [
+          "12 to 18 months: measurement",
+          "3 years: the complex accounts",
+          "5 years: the choice",
+          "Skills, not titles",
+        ],
+      },
+    },
     metrics: [
       "AE DCA en juin 2022, Senior AE en septembre 2023, soit 15 mois",
       "Couverture NAM de 9 mois en 2023-24 en remplacement de la manager sortante",
       "25 professeurs recrutés et managés chez Cosmic Junior",
       "IAB septembre 2026 : 86 % des acheteurs changent leur façon de mesurer (prévision sectorielle)",
     ],
-    targetSeconds: 95,
+    targetSeconds: 80,
   },
 
   {
@@ -496,7 +688,7 @@ export const qMotivation: Question[] = [
     ],
     traps: [
       "Dire que le rejet ne t'atteint pas : c'est soit faux, soit inquiétant.",
-      "Raconter une difficulté déjà résolue en une semaine, ça ne prouve rien.",
+      "Répondre par un principe sans dire ce que tu fais concrètement le lendemain matin.",
       "Blâmer le marché, le produit ou le prix.",
       "Oublier le mécanisme : sans indicateur d'activité, ta réponse reste une déclaration d'intention.",
     ],
@@ -514,9 +706,10 @@ export const qMotivation: Question[] = [
         how: "Cite l'équipe et le manager sans te dévaloriser. Montre que tu demandes de l'aide tôt, c'est un signal de maturité commerciale.",
       },
     ],
-    basis: "vecu-romance",
+    basis: "canevas",
     basisNote:
-      "Les chiffres Système U, ADMR et le volume de démonstrations sont réels. La description d'une longue période creuse sur Système U et le détail du changement d'entrée par les agences sont reconstitués : reprends tes vraies dates de relance et remplace par le creux que tu as réellement traversé.",
+      "Réponse modèle volontairement non personnalisée : elle fonctionnerait pour n'importe quel bon candidat. Ajoute une touche personnelle à l'oral si tu le souhaites, ce n'est pas obligatoire. La relance sur ta pire semaine est l'endroit où raconter un vrai creux.",
+    format: "script",
     answer: {
       fr: {
         situation:
@@ -551,13 +744,45 @@ export const qMotivation: Question[] = [
           "Rejection stops reaching me once my daily indicator is activity rather than signature. The signature is a consequence, and it always arrives late.",
       },
     },
+    script: {
+      fr: {
+        hook: "Le rejet m'atteint comme tout le monde, ce qui a changé c'est que je ne pilote plus mon moral sur la signature.",
+        body: [
+          "Mon premier réflexe est de séparer ce que je contrôle de ce que je subis. Je ne contrôle ni le calendrier d'un client, ni son budget, ni la réorganisation qui gèle une décision. Je contrôle le nombre de conversations que j'ouvre, la qualité de ma préparation et la vitesse à laquelle je reviens vers lui.",
+          "Le deuxième est de traiter un refus comme une information et pas comme un verdict. Un non me dit le plus souvent que je parle à la mauvaise personne, ou au bon interlocuteur au mauvais moment. Quand le même non revient trois fois, c'est mon angle d'entrée qu'il faut changer, pas mon insistance.",
+          "Le troisième est de garder des victoires intermédiaires visibles. Sur un cycle long, attendre la signature pour se sentir utile est le meilleur moyen de décrocher. Je découpe donc en étapes vérifiables, et je demande de l'aide tôt plutôt que tard, ce qui n'est pas un réflexe naturel en vente.",
+        ],
+        closing: "La signature reste une conséquence et elle arrive toujours en retard, donc mon travail est de tenir l'activité jusque-là.",
+        keyBeats: [
+          "Contrôlable ou subi",
+          "Un refus est une information",
+          "Des étapes intermédiaires",
+          "Demander de l'aide tôt",
+        ],
+      },
+      en: {
+        hook: "Rejection gets to me like anyone else, what changed is that I no longer run my morale on signatures.",
+        body: [
+          "My first reflex is to separate what I control from what I absorb. I do not control a client's calendar, their budget, or the reorganisation that freezes a decision. I control how many conversations I open, how well I prepare, and how fast I come back to them.",
+          "The second is to treat a refusal as information rather than a verdict. A no usually tells me I am talking to the wrong person, or to the right person at the wrong time. When the same no comes back three times, it is my route in that has to change, not my persistence.",
+          "The third is keeping intermediate wins visible. On a long cycle, waiting for the signature to feel useful is the fastest way to give up. So I break the work into checkable steps, and I ask for help early rather than late, which is not a natural reflex in sales.",
+        ],
+        closing: "The signature is a consequence and it always arrives late, so my job is to hold the activity until then.",
+        keyBeats: [
+          "Controlled or absorbed",
+          "A no is information",
+          "Intermediate steps",
+          "Ask for help early",
+        ],
+      },
+    },
     metrics: [
       "Système U : 101 986 € en 2023, 547 277 € en 2026, deal de 438 204 € le 18 mai 2026",
       "ADMR : environ 24 K€ en rythme 2022 à environ 253 K€ en rythme 2026",
       "60 à 80 démonstrations et revues de performance par mois à ses débuts",
       "Croissance du book +38 % à périmètre constant, 2026 contre 2025",
     ],
-    targetSeconds: 105,
+    targetSeconds: 80,
   },
 
   {
@@ -594,9 +819,10 @@ export const qMotivation: Question[] = [
         how: "Une réponse mesurée : le changement des méthodes de mesure, que l'IAB chiffre à 86 % des acheteurs. Tu cadres ça comme un enjeu de vente, pas comme une critique.",
       },
     ],
-    basis: "vecu-romance",
+    basis: "canevas",
     basisNote:
-      "Tous les chiffres cités sont dans ta banque de faits vérifiée, avec leur statut. En revanche la mise en scène, avoir trié publié contre prévu avant de candidater, est reconstituée : raconte-le à ta manière, et revérifie le dernier trimestre publié la veille de l'entretien.",
+      "Réponse modèle volontairement non personnalisée : elle fonctionnerait pour n'importe quel bon candidat. Ajoute une touche personnelle à l'oral si tu le souhaites, ce n'est pas obligatoire. Tous les chiffres viennent de la banque de faits avec leur statut, revérifie le dernier trimestre publié la veille de l'entretien.",
+    format: "script",
     answer: {
       fr: {
         situation:
@@ -631,6 +857,42 @@ export const qMotivation: Question[] = [
           "I always quote a number with its status. Presenting a forecast as a result is the fastest way to lose an advertiser's trust, and I do not want to start that way.",
       },
     },
+    script: {
+      fr: {
+        hook: "Je vais séparer ce qui est publié de ce qui est prévu, parce que les deux ne s'utilisent pas de la même façon devant un annonceur.",
+        body: [
+          "Sur les résultats publiés du deuxième trimestre 2026, je retiens 59,363 milliards de dollars de revenu publicitaire, en hausse de 27 % sur un an, avec 14 % d'impressions en plus et 12 % de prix moyen par annonce en plus, pour 3,60 milliards de personnes actives par jour en juin. La croissance vient donc autant de la valeur que du volume.",
+          "Côté produit, Meta déclare qu'Advantage+ de bout en bout dépasse 75 milliards de dollars de rythme annuel. Sur la mécanique, Andromeda récupère les annonces éligibles et GEM les classe, avec 8,3 % de clics et 15,7 % de conversions en plus sur Facebook. Ce sont des mesures faites par Meta et non auditées.",
+          "Sur le marché, on passe aux prévisions. EMARKETER place Meta devant Google en part mondiale, 26,8 % contre 26,4 %, et l'IAB prévoit le social en hausse de 16,5 % avec 86 % des acheteurs qui changent leur façon de mesurer. Ce sont des modélisations et des enquêtes, pas des résultats.",
+          "La conséquence commerciale est simple : la conversation avec l'annonceur se déplace de l'achat d'inventaire vers l'arbitrage d'allocation et la preuve de mesure.",
+        ],
+        closing: "C'est là que le commercial reste utile face à une machine qui optimise seule, et je revérifie le dernier trimestre publié avant chaque rendez-vous.",
+        keyBeats: [
+          "Publié : le T2 2026",
+          "Produit : Advantage+ et GEM",
+          "Prévu : EMARKETER et IAB",
+          "La conséquence commerciale",
+          "Le statut de chaque chiffre",
+        ],
+      },
+      en: {
+        hook: "I will separate what is published from what is forecast, because the two cannot be used the same way in front of an advertiser.",
+        body: [
+          "From the published second quarter 2026 results, I take 59.363 billion dollars of advertising revenue, up 27 percent year over year, with impressions up 14 percent and average price per ad up 12 percent. So growth comes as much from the value of the inventory as from its volume, across 3.60 billion daily active people in June.",
+          "On product, Meta states that end to end Advantage+ is past a 75 billion dollar annual run rate. On the mechanics, Andromeda retrieves the eligible ads and GEM ranks them, with 8.3 percent more clicks and 15.7 percent more conversions on Facebook. Those are Meta's own measurements, not audited.",
+          "On the market, we move to forecasts. EMARKETER puts Meta ahead of Google on worldwide share, 26.8 percent against 26.4 percent, and the IAB forecasts social up 16.5 percent with 86 percent of buyers changing how they measure. Those are models and surveys, not results.",
+          "The commercial consequence is simple: the conversation moves from buying inventory towards arbitrating allocation and proving measurement.",
+        ],
+        closing: "That is where a salesperson is still useful next to a machine that optimises on its own, and I recheck the latest published quarter before every meeting.",
+        keyBeats: [
+          "Published: Q2 2026",
+          "Product: Advantage+ and GEM",
+          "Forecast: EMARKETER and IAB",
+          "The commercial consequence",
+          "Status on every number",
+        ],
+      },
+    },
     metrics: [
       "T2 2026 publié : 59,363 Md$, +27 % sur un an, impressions +14 %, prix moyen par annonce +12 %",
       "3,60 milliards de personnes actives par jour en juin 2026 (résultats publiés)",
@@ -639,6 +901,6 @@ export const qMotivation: Question[] = [
       "EMARKETER avril 2026 : 243,46 contre 239,54 Md$, 26,8 % contre 26,4 %, Amazon 9,0 %, trio à 62,3 % (prévision)",
       "IAB septembre 2026 : US +12,3 %, social +16,5 %, CTV +15,6 %, commerce media +13,6 %, search +8,1 %, TV linéaire -1,5 %",
     ],
-    targetSeconds: 120,
+    targetSeconds: 90,
   },
 ];
