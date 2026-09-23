@@ -11,73 +11,73 @@ export const qDeals: Question[] = [
       en: "Tell me about a complex deal you managed.",
     },
     whatTheyTest: [
-      "Ta définition de la complexité : le montant impressionne, c'est le nombre d'acteurs à aligner qui est évalué.",
-      "Ta capacité à cartographier un circuit de décision que tu ne contrôles pas.",
-      "Ce que tu as fait toi, pas ce que l'agence ou l'équipe a fait.",
-      "Ta tenue sur le temps long sans perdre la main sur le deal.",
+      "Ce que tu appelles complexe : le nombre d'acteurs à aligner, pas la taille du chèque.",
+      "Ta part exacte : on compte les verbes à la première personne du singulier.",
+      "Un arbitrage visible, deux options pesées et une choisie, sinon le deal passe pour de la chance.",
+      "Ce qui est resté reproductible après la signature.",
     ],
     traps: [
-      "Raconter la taille du chèque au lieu du mécanisme qui l'a rendu possible.",
-      "Rester au niveau du siège, alors que chez Meta aussi le budget se dépense au niveau local ou agence.",
-      "Dire « nous » du début à la fin : l'intervieweur cherche ta part exacte.",
-      "Empiler les noms d'acteurs sans jamais dire qui arbitrait quoi.",
+      "Raconter le montant plutôt que l'obstacle levé.",
+      "Dire « nous » pendant deux minutes : ta contribution devient invisible.",
+      "Appeler ce deal un accord annuel, alors que c'est une opportunité unique : la confusion se vérifie en deux questions.",
+      "Empiler les acteurs sans dire qui portait le sujet en interne et qui tenait le budget.",
     ],
     followUps: [
       {
-        question: "Qu'est-ce qui a failli faire capoter le deal ?",
-        how: "Nomme un vrai risque que tu contrôlais : ici la dépendance à deux agences pour parler au décideur. Dis comment tu as réduit ce risque, pas comment tu as eu de la chance.",
+        question: "Qu'est-ce qui a failli le faire capoter ?",
+        how: "Nomme un risque que tu contrôlais, la dépendance à deux agences pour atteindre le décideur, et dis ce que tu as fait pour le réduire. Pas de mauvaise chance.",
       },
       {
-        question: "Qu'aurais-tu fait différemment ?",
-        how: "Donne une réponse structurelle, pas cosmétique : tu aurais construit le plan d'activation par magasin avant la signature et pas après.",
+        question: "Qui tenait réellement le budget ?",
+        how: "Distingue à voix haute celui qui portait le sujet en interne et celui qui signait. Si c'était la même personne, dis-le, c'est rare.",
       },
       {
-        question: "Comment tu sécurises la reconduction ?",
-        how: "Montre la trajectoire pluriannuelle du réseau plutôt que la satisfaction déclarée du client. Un renouvellement se prouve par la courbe, pas par la relation.",
+        question: "Qu'aurais-tu fait autrement ?",
+        how: "Réponds structurel, pas cosmétique : verrouiller la facturation magasin par magasin dès la première réunion, et pas au milieu du cycle.",
       },
     ],
     basis: "vecu-romance",
     basisNote:
-      "Les montants, la date, les deux agences et le réseau sont exacts. L'enchaînement (cartographie du circuit, vagues de déploiement, verrouillage des bons de commande) est reconstitué : vérifie l'ordre réel des étapes et qui, d'Ideuzo ou de Matière Grise, portait quoi avant de le raconter.",
+      "Le montant, la date, les deux agences et la trajectoire du réseau sont exacts. L'ordre des étapes, le passage par le recouvrement et la carte des rôles sont reconstitués : vérifie qui, d'Ideuzo ou de Matière Grise, portait quoi, et remplace le blocage de facturation par celui que tu as réellement levé.",
     answer: {
       fr: {
         situation:
-          "Système U est un réseau décentralisé : une centrale d'un côté, des magasins qui décident et paient leur recrutement de l'autre. Le budget média passait en plus par deux agences, Ideuzo et Matière Grise, donc je n'avais pas d'accès direct au décideur qui signait.",
-        task: "Transformer une dépense éclatée magasin par magasin en un engagement cadré au niveau du réseau, sans court-circuiter les agences.",
+          "Système U, c'est une centrale qui n'achète pas et des magasins indépendants qui décident et paient chacun leur recrutement. Le budget passait en plus par deux agences, Ideuzo et Matière Grise, donc je n'avais aucun accès direct à celui qui signait.",
+        task: "Transformer une dépense éclatée magasin par magasin en un engagement unique, sans reprendre la relation aux agences.",
         action: [
-          "J'ai cartographié le circuit réel : qui arbitre le budget, qui exécute, qui paie la facture, et j'ai fait valider cette carte par les agences au lieu de la deviner.",
-          "J'ai fait des agences mes alliées en leur apportant la lecture de performance magasin par magasin, qu'elles n'avaient pas, pour qu'elles arrivent chez U avec un argumentaire chiffré.",
-          "J'ai construit la preuve sur les magasins déjà actifs : coût par candidature et délai de pourvoi, comparés aux magasins restés en diffusion gratuite.",
-          "J'ai converti la demande en plan de déploiement par vagues, pour que la centrale s'engage sur un volume et que chaque magasin garde la main sur son calendrier.",
-          "J'ai verrouillé la mécanique de commande avec les agences avant la signature, pour qu'aucun bon de commande ne bloque l'activation le jour où le budget est libéré.",
+          "J'ai fait valider la carte des rôles par les agences au lieu de la deviner : qui arbitre l'enveloppe, qui exécute, qui reçoit la facture.",
+          "Le vrai blocage n'était pas commercial mais administratif, la facturation magasin par magasin. J'ai réglé la mécanique en interne avec le recouvrement avant d'en parler au client, et je suis arrivé en rendez-vous avec la solution déjà arbitrée.",
+          "J'ai choisi d'équiper les agences plutôt que d'aller chercher la centrale moi-même : je leur ai donné la lecture de performance magasin par magasin, qu'elles ne pouvaient pas produire, pour qu'elles portent l'argumentaire.",
+          "J'ai refusé d'ouvrir large tout de suite. Preuve d'abord sur les magasins déjà actifs, coût par candidature commencée contre les magasins restés en diffusion gratuite, extension ensuite.",
+          "J'ai séquencé le déploiement par vagues pour que la centrale s'engage sur un volume pendant que chaque magasin gardait son calendrier.",
         ],
         result:
-          "Le deal a été signé le 18 mai 2026 pour 438 204 euros, le plus gros que j'aie closé. Le réseau est passé de 101 986 euros de bookings en 2023 à 547 277 euros en 2026, donc ce n'était pas un coup unique mais une structure qui tient.",
+          "Signé le 18 mai 2026 pour 438 204 euros, ma plus grosse opportunité. Ce n'est pas un accord annuel, c'est une opportunité unique, et je le dis comme ça. Le réseau est passé de 101 986 euros de bookings gagnés en 2023 à 547 277 en 2026, donc la mécanique a tenu au-delà du deal.",
         learning:
-          "Dans un réseau décentralisé, un deal ne se gagne pas à la signature, il se gagne au moment où l'adoption locale devient facile. Je construis maintenant le plan d'activation avant le closing.",
+          "Sur un réseau décentralisé, le frein est rarement le prix, c'est la mécanique de facturation. Je la traite maintenant avant d'envoyer une proposition.",
       },
       en: {
         situation:
-          "Système U is a decentralised network: one central team, and stores that decide and pay for their own hiring. On top of that, the media budget went through two agencies, Ideuzo and Matière Grise, so I had no direct access to the person signing.",
-        task: "Turn spend scattered across stores into one structured commitment at network level, without cutting the agencies out.",
+          "Système U is a central organisation that buys nothing and independent stores that each decide and pay for their own hiring. The budget also went through two agencies, Ideuzo and Matière Grise, so I had no direct access to whoever signed.",
+        task: "Turn spend scattered store by store into one commitment, without taking the relationship away from the agencies.",
         action: [
-          "I mapped the real decision path: who arbitrates the budget, who executes, who pays the invoice, and I had the agencies confirm that map instead of guessing it.",
-          "I made the agencies my allies by giving them store level performance they did not have, so they could walk into Système U with numbers.",
-          "I built the proof on stores already active: cost per application and time to fill, against stores still posting for free.",
-          "I turned the request into a wave by wave rollout plan, so the central team could commit to volume while each store kept control of its own timing.",
-          "I locked the ordering mechanics with the agencies before signature, so no purchase order could block activation once the budget was released.",
+          "I had the agencies confirm the map of roles instead of guessing it: who arbitrates the envelope, who executes, who receives the invoice.",
+          "The real blocker was administrative, not commercial: invoicing store by store. I settled the mechanics internally with our collections team before raising it with the client, and walked into the meeting with the answer already agreed.",
+          "I chose to equip the agencies rather than go to the central team myself: I gave them store by store performance they could not produce, so they could carry the case.",
+          "I refused to open wide straight away. Proof first on the stores already active, cost per application started against stores still posting for free, expansion afterwards.",
+          "I sequenced the rollout in waves so the central team could commit to volume while each store kept control of its own timing.",
         ],
         result:
-          "The deal closed on 18 May 2026 at 438,204 euros, the largest I have signed. The network went from 101,986 euros of bookings in 2023 to 547,277 euros in 2026, so this was structure, not a one off.",
+          "Signed on 18 May 2026 for 438,204 euros, the largest opportunity I have closed. It is not an annual agreement, it is a single opportunity, and I say it that way. The network went from 101,986 euros of won bookings in 2023 to 547,277 in 2026, so the mechanics outlived the deal.",
         learning:
-          "In a decentralised network you do not win at signature, you win when local adoption becomes easy. I now build the activation plan before closing, not after.",
+          "In a decentralised network the brake is rarely price, it is the invoicing mechanics. I now deal with that before I send a proposal.",
       },
     },
     metrics: [
-      "438 204 euros signés le 18 mai 2026 (Ideuzo for Super U Loisin, Sponsored Jobs)",
-      "Système U : 101 986 euros en 2023, 184 732 en 2024, 352 979 en 2025, 547 277 en 2026",
+      "438 204 euros signés le 18 mai 2026 (Ideuzo for Super U Loisin, Sponsored Jobs), opportunité unique et non accord annuel",
+      "Système U, bookings gagnés : 101 986 euros en 2023, 184 732 en 2024, 352 979 en 2025, 547 277 en 2026",
     ],
-    targetSeconds: 115,
+    targetSeconds: 103,
   },
 
   {
@@ -90,74 +90,77 @@ export const qDeals: Question[] = [
       en: "Tell me about the deal you are proudest of.",
     },
     whatTheyTest: [
-      "Ce que tu appelles une réussite : un chèque ponctuel ou un compte transformé.",
-      "Ta patience commerciale sur plusieurs exercices, sans lâcher le compte entre deux.",
-      "Ta capacité à générer de la demande là où personne ne t'attendait.",
-      "Ton honnêteté sur ta contribution réelle par rapport à la dynamique du marché.",
+      "Si ta fierté porte sur une décision ou sur la taille du montant.",
+      "La précision : point de départ, montants exacts, moment où la trajectoire change.",
+      "Ce qui revient au marché et ce qui revient à toi.",
+      "Si tu distingues le revenu encaissé d'un rythme annuel, sans qu'on te le demande.",
     ],
     traps: [
-      "Choisir le deal le plus gros par réflexe, alors que la question porte sur la fierté, donc sur la difficulté surmontée.",
-      "Parler d'émotion sans chiffre : la fierté sans mesure passe pour de la vantardise.",
-      "Oublier de dire ce qui était en jeu si tu échouais.",
-      "Laisser croire que la croissance venait du marché et pas de ce que tu as construit.",
+      "Prendre le plus gros deal par réflexe : la question porte sur la difficulté surmontée.",
+      "Annoncer les 253 000 euros comme du revenu réalisé, alors que c'est un rythme sur le réseau complet.",
+      "Dire « on » sur quatre exercices : l'intervieweur cherche ta part.",
+      "Finir sur le chiffre sans dire ce que tu fais différemment depuis.",
     ],
     followUps: [
       {
         question: "Pourquoi celui-là et pas le plus gros ?",
-        how: "Assume la distinction : le plus gros deal est un chèque, celui-ci est une courbe sur quatre ans. Dis-le en une phrase, sans t'excuser.",
-      },
-      {
-        question: "Qu'est-ce qui était réplicable ?",
-        how: "Décris la mécanique, pas l'anecdote : preuve locale, format collectif pour diffuser, mesure par établissement. C'est ce que Meta veut réutiliser.",
+        how: "Une phrase, sans t'excuser : le plus gros est un chèque unique, celui-ci est une courbe sur quatre exercices que tu as construite.",
       },
       {
         question: "Quelle part revient au marché ?",
-        how: "Reconnais-la franchement, puis ramène au différentiel : la croissance du réseau est très au-dessus du reste de ton book sur la même période.",
+        how: "Reconnais-la d'abord, puis donne la base de comparaison : ton portefeuille a crû de 38 % à périmètre constant, l'ADMR bien davantage sur la même période.",
+      },
+      {
+        question: "Qu'est-ce qui était reproductible ?",
+        how: "Nomme la mécanique, preuve locale puis format collectif puis mesure par fédération, et dis sur quel autre réseau tu l'as rejouée.",
       },
     ],
     basis: "vecu",
+    basisNote:
+      "Tous les montants viennent de ton suivi de périmètre. Deux bornes demandent une phrase d'explication : 2022 est annualisé depuis six mois de détention, et les 253 000 euros sont un rythme annuel sur le réseau complet. Prépare le nom des deux fédérations qui ont servi de référence.",
     answer: {
       fr: {
         situation:
-          "L'ADMR est une fédération d'associations d'aide à domicile, avec des fédérations départementales autonomes qui décident et paient chacune de leur côté. Quand j'ai repris le périmètre, il pesait environ 12 000 euros par an, à peu près 24 000 euros en rythme sur l'ensemble du réseau.",
-        task: "Faire passer une fédération qui achetait de façon marginale et dispersée à un investissement récurrent, département par département.",
+          "L'ADMR est une fédération d'aide à domicile dont les fédérations départementales décident et paient chacune de leur côté. Quand j'ai repris le périmètre en 2022, il valait 12 000 euros sur environ six mois de détention, à peu près 24 000 euros en rythme annuel.",
+        task: "Faire passer un réseau qui achetait par à-coups à un investissement récurrent, département par département.",
         action: [
-          "J'ai arrêté de vendre fédération par fédération en one to one et j'ai monté des webinars : plus de 20 sessions, qui ont touché plus de 600 responsables de réseaux et de franchises.",
-          "J'ai systématisé les revues de performance, jusqu'à 60 à 80 démonstrations et revues par mois sur mes débuts, pour que chaque département voie ses propres chiffres et pas une moyenne nationale.",
-          "J'ai transformé les départements qui marchaient en référence interne, pour que la preuve circule entre pairs plutôt que par moi.",
-          "J'ai traité la couverture comme une métrique à part entière : combien de départements investissent, et pas seulement combien d'euros rentrent.",
-          "J'ai tenu le compte sur quatre exercices sans le traiter comme un petit compte, alors qu'il ne pesait rien la première année.",
+          "J'ai arrêté le un à un, qui ne tenait pas sur autant de fédérations, et j'ai basculé sur du collectif : plus de 20 webinars, plus de 600 responsables de réseaux et de franchises touchés.",
+          "J'ai imposé que chaque fédération voie ses propres chiffres et jamais une moyenne nationale, ce qui m'a coûté beaucoup de préparation, jusqu'à 60 à 80 démonstrations et revues par mois à mes débuts.",
+          "J'ai suivi la couverture, le nombre de fédérations qui investissent, comme indicateur principal, avant le chiffre d'affaires.",
+          "J'ai transformé deux départements qui marchaient en référence interne, pour que la preuve circule entre pairs plutôt que par moi.",
+          "J'ai accepté une année presque blanche plutôt que de forcer un engagement national que personne n'avait mandat de signer.",
         ],
         result:
-          "Sur mon périmètre, l'ADMR est passée de 12 000 euros en 2022 à 19 000 en 2023, 36 000 en 2024, 74 000 en 2025 et 139 000 euros au 5 septembre 2026. En rythme, le réseau est passé d'environ 24 000 à environ 253 000 euros, et la fédération ADMR est aujourd'hui mon deuxième réseau sur douze mois avec 164 859 euros.",
+          "Sur mon périmètre, l'ADMR est passée de 12 000 euros en 2022 à 19 000, puis 36 000, puis 74 000, et 139 000 euros au 5 septembre 2026. Sur douze mois la fédération pèse 164 859 euros, c'est mon deuxième réseau. Le réseau complet tourne à environ 253 000 euros en rythme annuel, ce qui n'est pas du revenu déjà encaissé.",
         learning:
-          "Sur un réseau décentralisé, la croissance ne vient pas d'un gros oui mais de la multiplication des oui locaux. Je pilote donc la couverture avant le chiffre d'affaires.",
+          "Ma fierté porte sur la décision d'arrêter de vendre en un à un, pas sur le montant. Depuis, je pilote la couverture avant l'euro sur tous mes réseaux éclatés.",
       },
       en: {
         situation:
-          "ADMR is a federation of home care associations, with autonomous county level federations that each decide and pay on their own. When I took the perimeter over it was worth about 12,000 euros a year, roughly 24,000 euros annualised across the network.",
-        task: "Move a federation that bought marginally and in scattered pockets to recurring investment, county by county.",
+          "ADMR is a home care federation whose county federations each decide and pay on their own. When I took the perimeter over in 2022 it was worth 12,000 euros across about six months of ownership, roughly 24,000 euros annualised.",
+        task: "Move a network that bought in fits and starts to recurring investment, county by county.",
         action: [
-          "I stopped selling one federation at a time and ran webinars instead: over 20 sessions reaching more than 600 network and franchise managers.",
-          "I made performance reviews systematic, up to 60 to 80 demos and reviews a month in my early days, so each county saw its own numbers rather than a national average.",
-          "I turned the counties that worked into internal references, so the proof travelled peer to peer instead of through me.",
-          "I treated coverage as a metric in its own right: how many counties invest, not only how many euros come in.",
-          "I stayed on the account across four fiscal years and never treated it as a small account, even though it was worth almost nothing in year one.",
+          "I stopped selling one to one, which does not scale across that many federations, and switched to group formats: more than 20 webinars reaching over 600 network and franchise managers.",
+          "I insisted every federation saw its own numbers and never a national average, which cost me a lot of preparation, up to 60 to 80 demos and reviews a month in my early days.",
+          "I tracked coverage, meaning how many federations invest, as my main indicator, ahead of revenue.",
+          "I turned two counties that worked into internal references, so the proof travelled peer to peer rather than through me.",
+          "I accepted an almost blank year rather than forcing a national commitment nobody had a mandate to sign.",
         ],
         result:
-          "On my perimeter ADMR went from 12,000 euros in 2022 to 19,000 in 2023, 36,000 in 2024, 74,000 in 2025 and 139,000 euros as of 5 September 2026. Annualised, the network moved from about 24,000 to about 253,000 euros, and ADMR is now my second largest network over twelve months at 164,859 euros.",
+          "On my perimeter ADMR went from 12,000 euros in 2022 to 19,000, then 36,000, then 74,000, and 139,000 euros as of 5 September 2026. Over twelve months the federation is worth 164,859 euros, my second largest network. The full network runs at about 253,000 euros annualised, which is a run rate and not revenue already billed.",
         learning:
-          "In a decentralised network, growth does not come from one big yes, it comes from multiplying local ones. So I manage coverage first and revenue second.",
+          "What I am proud of is the decision to stop selling one to one, not the amount. Since then I manage coverage before euros on every fragmented network I hold.",
       },
     },
     metrics: [
       "ADMR sur mon périmètre : 12 K€ en 2022, 19 K€ en 2023, 36 K€ en 2024, 74 K€ en 2025, 139 K€ au 5 septembre 2026",
-      "Réseau ADMR en rythme : environ 24 K€ en 2022 à environ 253 K€ en 2026",
+      "Réseau ADMR complet : environ 253 K€ en rythme annuel, à ne pas présenter comme du revenu encaissé",
       "Fédération ADMR : 164 859 euros sur 12 mois",
       "Plus de 20 webinars, plus de 600 franchisés touchés",
       "60 à 80 démonstrations et revues de performance par mois à mes débuts",
+      "Croissance du portefeuille à périmètre constant : +38 %",
     ],
-    targetSeconds: 115,
+    targetSeconds: 98,
   },
 
   {
@@ -170,73 +173,73 @@ export const qDeals: Question[] = [
       en: "Tell me about a time you had to negotiate with C-level executives.",
     },
     whatTheyTest: [
-      "Ta capacité à parler la langue du dirigeant : coût, risque, capacité à recruter, pas fonctionnalités.",
-      "Ta préparation : un dirigeant te donne vingt minutes, il voit tout de suite si tu improvises.",
-      "Ta tenue face à une objection frontale, sans céder ni te braquer.",
-      "Ta compréhension de ce qui l'expose personnellement dans la décision.",
+      "Comment la réunion a été obtenue : à ce niveau, on entre par une preuve ou par un tiers, rarement par une relance.",
+      "Les trois premières minutes : son exploitation, ou ton produit.",
+      "Si tu chiffres le coût de ne rien faire avant de parler du tien.",
+      "Le point de sortie : une réunion de direction sans étape suivante datée ne compte pas.",
     ],
     traps: [
-      "Faire une démonstration produit à un dirigeant : il n'utilisera jamais l'outil.",
-      "Arriver avec des métriques d'activité au lieu d'un impact sur son exploitation.",
-      "Accepter l'objection prix sans avoir reformulé le coût de son problème actuel.",
-      "Parler plus que lui. Un bon entretien avec un C-level est majoritairement composé de ses réponses.",
+      "Faire une démonstration produit à quelqu'un qui n'utilisera jamais l'outil.",
+      "Parler plus que lui : dans un bon rendez-vous de ce niveau, il parle davantage.",
+      "Prendre le dirigeant pour celui qui signe : il arbitre l'enveloppe, l'exécution reste ailleurs.",
+      "Sortir sans prochaine étape et appeler ça un bon contact.",
     ],
     followUps: [
       {
         question: "Comment tu prépares ce type de rendez-vous ?",
-        how: "Décris un livrable concret : une lecture chiffrée de sa situation avant le rendez-vous, avec un ordre de grandeur de ce que son problème lui coûte.",
+        how: "Décris un livrable concret : une lecture chiffrée de sa situation envoyée avant, avec un ordre de grandeur de ce que son problème lui coûte.",
       },
       {
-        question: "Et s'il te dit non dans les cinq premières minutes ?",
-        how: "Montre que tu changes d'objectif : tu ne sauves pas le deal dans la salle, tu obtiens l'accès au bon niveau opérationnel et une donnée que tu n'avais pas.",
+        question: "Et s'il dit non dans les cinq premières minutes ?",
+        how: "Change d'objectif à voix haute : tu ne sauves pas le deal dans la salle, tu obtiens l'accès au niveau qui exécute et une donnée que tu n'avais pas.",
       },
       {
         question: "Qui d'autre fallait-il convaincre ?",
-        how: "Rappelle que l'accord du dirigeant ne crée pas l'usage : nomme le niveau qui exécute et ce que tu lui as donné pour dire oui à son tour.",
+        how: "Nomme le niveau qui exécute et ce que tu lui as donné pour dire oui à son tour. L'accord du dirigeant ne crée aucun usage.",
       },
     ],
     basis: "vecu-romance",
     basisNote:
-      "Le compte, sa taille et son poids dans ton book sont exacts (Groupe Saint-Gatien, une centaine de cliniques et hôpitaux privés, 129 406 euros sur 12 mois). Les interlocuteurs, le déroulé du rendez-vous et les objections citées sont reconstitués : remplace-les par les vrais noms de fonctions et la vraie objection que tu as reçue.",
+      "Le compte et sa taille sont exacts : Groupe Saint-Gatien, une centaine de cliniques et hôpitaux privés, 129 406 euros sur douze mois. La façon dont la réunion a été obtenue, l'objection et le point de sortie sont reconstitués : remplace-les par la vraie fonction de ton interlocuteur et l'objection que tu as réellement reçue.",
     answer: {
       fr: {
         situation:
-          "Le Groupe Saint-Gatien réunit une centaine de cliniques et d'hôpitaux privés, avec des directions d'établissement qui recrutent chacune de leur côté et une direction groupe qui arbitre les enveloppes. La discussion est montée au niveau de la direction générale et des ressources humaines groupe parce que la dépense locale devenait difficile à justifier.",
-        task: "Obtenir un cadre groupe qui sécurise l'investissement, face à des dirigeants qui voyaient une ligne de coût et pas un levier d'exploitation.",
+          "Le Groupe Saint-Gatien réunit une centaine de cliniques et d'hôpitaux privés. Chaque établissement recrute de son côté et la direction groupe arbitre les enveloppes. Le sujet est monté à ce niveau parce que la dépense locale devenait difficile à justifier.",
+        task: "Obtenir un cadre groupe face à des dirigeants qui voyaient une ligne de coût et pas un sujet d'exploitation.",
         action: [
-          "J'ai préparé une lecture chiffrée de leur situation avant le rendez-vous : tension du marché sur leurs métiers soignants, part des postes qui restaient non pourvus, coût d'un poste vacant pour un établissement.",
-          "J'ai ouvert sur leur problème d'exploitation, pas sur le produit : un lit fermé faute de personnel coûte plus cher que n'importe quelle campagne.",
-          "J'ai posé des questions pendant la première moitié du rendez-vous et j'ai reformulé leur arbitrage dans leurs mots avant de proposer quoi que ce soit.",
-          "Face à l'objection de coût, j'ai déplacé la comparaison : pas le prix de la diffusion contre zéro, mais le prix de la diffusion contre le coût du recours à l'intérim et des postes non pourvus.",
-          "J'ai transformé l'accord de principe en un mécanisme exécutable par les directions d'établissement, parce qu'un oui en comité de direction ne recrute personne tout seul.",
+          "Je n'ai pas demandé la réunion par e-mail. Je me suis fait présenter par un directeur d'établissement qui avait déjà des résultats, donc le rendez-vous partait d'un fait et pas d'une offre.",
+          "J'ai préparé mes trois premières minutes sur leur exploitation : postes soignants non pourvus, durée de vacance, ce que coûte un lit fermé faute de personnel.",
+          "J'ai passé la première moitié du rendez-vous à poser des questions, et j'ai reformulé leur arbitrage dans leurs mots avant de proposer quoi que ce soit.",
+          "Sur l'objection de coût, j'ai changé le terme de comparaison : pas ma diffusion contre zéro, mais ma diffusion contre l'intérim et les postes vacants.",
+          "Je suis sorti avec un point de sortie écrit : un périmètre réduit d'établissements à mesurer, une date de revue, et le nom de celui qui l'ouvrirait côté groupe.",
         ],
         result:
-          "Le groupe est aujourd'hui l'un de mes sept premiers réseaux, avec 129 406 euros sur douze mois, et l'investissement est réparti sur les établissements au lieu de dépendre d'une décision isolée.",
+          "Le groupe est aujourd'hui l'un de mes sept premiers réseaux, à 129 406 euros sur douze mois, et l'investissement est réparti sur les établissements au lieu de tenir à une seule décision.",
         learning:
-          "Un dirigeant n'achète pas une solution, il arbitre entre deux coûts. Mon travail est de rendre le coût de l'inaction visible et chiffré avant de parler du mien.",
+          "Un dirigeant n'achète pas un produit, il arbitre entre deux coûts. Et une réunion à ce niveau sans prochaine étape datée est une réunion perdue.",
       },
       en: {
         situation:
-          "Groupe Saint-Gatien runs around one hundred private clinics and hospitals, where each site hires on its own while the group level decides the envelopes. The discussion moved up to general management and group HR because local spend was getting hard to justify.",
-        task: "Secure a group level framework, facing executives who saw a cost line rather than an operational lever.",
+          "Groupe Saint-Gatien runs around one hundred private clinics and hospitals. Each site hires on its own and the group level decides the envelopes. The subject moved up to that level because local spend was becoming hard to justify.",
+        task: "Secure a group level framework, facing executives who saw a cost line rather than an operational issue.",
         action: [
-          "I built a quantified read of their own situation before the meeting: market tension on their clinical roles, share of positions left unfilled, cost of a vacant post for a site.",
-          "I opened on their operating problem, not on the product: a bed closed for lack of staff costs more than any campaign.",
-          "I asked questions for the first half of the meeting and played their trade off back in their own words before proposing anything.",
-          "On the cost objection I moved the comparison: not media spend against zero, but media spend against temp agency costs and unfilled positions.",
-          "I turned the agreement in principle into something site directors could actually execute, because a yes in a board room does not hire anyone.",
+          "I did not ask for the meeting by email. I had a site director who already had results introduce me, so the meeting started from a fact rather than an offer.",
+          "I prepared my first three minutes around their operations: clinical roles left unfilled, how long they stay open, what a bed closed for lack of staff costs.",
+          "I spent the first half of the meeting asking questions, and played their trade off back in their own words before proposing anything.",
+          "On the cost objection I changed the comparison: not my media spend against zero, but my media spend against temp agency costs and vacant posts.",
+          "I left with a written exit point: a reduced set of sites to measure, a review date, and the name of the person who would open it on their side.",
         ],
         result:
-          "The group is now one of my top seven networks at 129,406 euros over twelve months, and the investment is spread across sites instead of resting on one isolated decision.",
+          "The group is now one of my top seven networks at 129,406 euros over twelve months, and the investment is spread across sites instead of resting on a single decision.",
         learning:
-          "An executive does not buy a solution, they arbitrate between two costs. My job is to make the cost of doing nothing visible and quantified before I talk about mine.",
+          "An executive does not buy a product, they arbitrate between two costs. And a meeting at that level with no dated next step is a meeting lost.",
       },
     },
     metrics: [
       "Groupe Saint-Gatien : 129 406 euros sur 12 mois, une centaine de cliniques et hôpitaux privés",
-      "Sept premiers réseaux : 84 % du book",
+      "Sept premiers réseaux : 84 % du revenu du book",
     ],
-    targetSeconds: 110,
+    targetSeconds: 92,
   },
 
   {
@@ -248,69 +251,102 @@ export const qDeals: Question[] = [
       en: "How do you handle a deal where several decision makers want different things?",
     },
     whatTheyTest: [
-      "Ta méthode de cartographie : sais-tu distinguer qui décide, qui exécute, qui peut bloquer.",
-      "Ta capacité à trouver l'objectif commun au lieu de faire un compromis mou.",
-      "Ta gestion d'un désaccord interne au client sans prendre parti.",
-      "Ta discipline de suivi écrit, qui est ce qui tient un deal multi-acteurs.",
+      "Si tu distingues celui qui porte le sujet en interne de celui qui tient le budget.",
+      "Si tu nommes le conflit d'intérêts réel au lieu de le lisser.",
+      "Si tu as une méthode, et non une anecdote déguisée en méthode.",
+      "Ce à quoi tu renonces quand deux parties ne peuvent pas gagner en même temps.",
     ],
     traps: [
-      "Promettre à chacun ce qu'il veut entendre : les parties se parlent, et la contradiction te coûte le deal.",
-      "Choisir un camp parce qu'un interlocuteur est plus sympathique ou plus disponible.",
-      "Confondre consensus et décision : tout le monde d'accord et personne qui signe.",
-      "Répondre en théorie. La question appelle un cas précis avec des rôles nommés.",
+      "Promettre à chacun ce qu'il veut entendre : les parties se parlent entre elles.",
+      "Confondre consensus et décision : tout le monde d'accord, personne qui signe.",
+      "Présenter le siège comme le décideur alors que la facture part au franchisé.",
+      "Terminer sans tendre la perche à l'exemple : la relance viendra de toute façon.",
     ],
     followUps: [
       {
-        question: "Que fais-tu quand deux décideurs s'opposent frontalement ?",
-        how: "Montre que tu ne tranches pas à leur place : tu ramènes la discussion à une métrique partagée et tu laisses la donnée arbitrer.",
+        question: "Donne-moi un exemple précis.",
+        how: "Bascule sur le STAR MERCI+ et Family Sphere, et commence par la position de chaque partie en une phrase chacune, avant tout déroulé.",
       },
       {
-        question: "Comment tu identifies le vrai blocage ?",
-        how: "Explique que tu testes l'hypothèse au lieu de la croire : tu demandes ce qui se passerait si la décision se prenait demain, et tu écoutes qui est cité.",
+        question: "Que fais-tu si deux décideurs s'opposent frontalement ?",
+        how: "Ne tranche pas à leur place : propose une mesure commune sur un périmètre réduit et une date de revue, et accepte que ça retarde la signature.",
+      },
+      {
+        question: "Comment tu sais qui bloque vraiment ?",
+        how: "Teste au lieu de croire : demande ce qui se passerait si la décision se prenait demain, et écoute quel nom sort.",
       },
     ],
     basis: "vecu-romance",
     basisNote:
-      "Le réseau et son poids sont exacts (MERCI+ et Family Sphere, 153 211 euros sur 12 mois, services à la personne en franchise). La répartition des positions entre siège et franchisés et le détail du déroulé sont reconstitués : vérifie qui portait quelle position avant de le raconter.",
+      "Le réseau et son montant sont exacts : MERCI+ et Family Sphere, 153 211 euros sur douze mois. La répartition des positions entre siège et franchisés est reconstituée, et la facturation réglée en amont avec le recouvrement vient d'un cas interne : ne la raconte à la première personne que si tu l'as réellement faite.",
+    format: "script",
     answer: {
       fr: {
         situation:
-          "Sur MERCI+ et Family Sphere, réseau de services à la personne en franchise, le siège voulait une cohérence de marque et un cadre unique, pendant que les franchisés voulaient garder la main sur leur budget et leurs métiers en tension, qui ne sont pas les mêmes d'une ville à l'autre.",
+          "Sur MERCI+ et Family Sphere, réseau de services à la personne en franchise, le siège voulait un cadre unique et de la cohérence de marque, les franchisés voulaient garder la main sur leur budget et sur des métiers en tension qui changent d'une ville à l'autre.",
         task: "Obtenir un cadre commun sans que les franchisés le vivent comme une dépense imposée par le siège.",
         action: [
-          "J'ai listé les trois parties et ce que chacune cherchait vraiment : cohérence pour le siège, autonomie budgétaire pour les franchisés, résultat mesurable pour les deux.",
-          "J'ai cherché l'objectif partagé plutôt qu'un compromis : personne ne défendait un budget, tout le monde défendait le fait de pourvoir les postes localement.",
-          "J'ai proposé un cadre qui sépare ce qui est commun de ce qui est local : les règles et la mesure au siège, le niveau d'investissement et le calendrier chez le franchisé.",
-          "J'ai donné au siège la visibilité consolidée qui lui manquait, et au franchisé la lecture de sa propre zone, pour que chacun décide avec ses chiffres.",
-          "J'ai écrit après chaque point qui décidait quoi et pour quand, et je l'ai renvoyé aux deux niveaux, ce qui a évité les versions divergentes.",
+          "J'ai écrit ce que chaque partie cherchait vraiment, puis je l'ai fait valider : cohérence pour le siège, autonomie budgétaire pour le franchisé, postes pourvus pour les deux.",
+          "J'ai découpé le périmètre de décision plutôt que de négocier un prix : règles et mesure au siège, niveau d'investissement et calendrier chez le franchisé.",
+          "J'ai donné au siège la vision consolidée qui lui manquait, et à chaque franchisé la lecture de sa propre zone, pour que chacun décide avec ses chiffres.",
+          "Après chaque point, j'ai écrit qui décidait quoi et pour quand, et je l'ai envoyé aux deux niveaux, ce qui a supprimé les versions divergentes.",
         ],
         result:
-          "Le réseau représente 153 211 euros sur douze mois et fait partie de mes sept premiers comptes, qui pèsent 84 % de mon book.",
-        learning:
-          "Quand plusieurs décideurs s'opposent, ils ne s'opposent presque jamais sur l'objectif, mais sur qui contrôle quoi. Je redécoupe le périmètre de décision au lieu de négocier le prix.",
+          "Le réseau pèse 153 211 euros sur douze mois et fait partie de mes sept premiers comptes, qui représentent 84 % du revenu de mon portefeuille.",
       },
       en: {
         situation:
-          "At MERCI+ and Family Sphere, a franchised home services network, head office wanted brand consistency and a single framework, while franchisees wanted to keep control of their budget and of the roles they struggle to fill, which differ from one city to the next.",
+          "At MERCI+ and Family Sphere, a franchised home services network, head office wanted a single framework and brand consistency, while franchisees wanted to keep control of their budget and of hard to fill roles that differ from one city to the next.",
         task: "Get a common framework without franchisees experiencing it as spend imposed from above.",
         action: [
-          "I listed the three parties and what each actually wanted: consistency for head office, budget autonomy for franchisees, measurable results for both.",
-          "I looked for the shared objective rather than a compromise: nobody was defending a budget, everybody was defending their ability to fill local roles.",
-          "I proposed a framework separating what is common from what is local: rules and measurement at head office, investment level and timing with the franchisee.",
-          "I gave head office the consolidated view it lacked, and each franchisee the read of their own catchment area, so both sides decided with their own numbers.",
-          "After every call I wrote down who decides what and by when, and sent it to both levels, which killed the divergent versions.",
+          "I wrote down what each party actually wanted, then had it confirmed: consistency for head office, budget autonomy for the franchisee, filled roles for both.",
+          "I redrew the decision perimeter instead of negotiating price: rules and measurement at head office, investment level and timing with the franchisee.",
+          "I gave head office the consolidated view it lacked, and each franchisee the read of its own catchment area, so both sides decided with their own numbers.",
+          "After every call I wrote down who decides what and by when, and sent it to both levels, which removed the diverging versions.",
         ],
         result:
-          "The network is worth 153,211 euros over twelve months and sits in my top seven accounts, which represent 84 percent of my book.",
-        learning:
-          "When decision makers clash, they almost never clash on the objective, they clash on who controls what. So I redraw the decision perimeter instead of negotiating price.",
+          "The network is worth 153,211 euros over twelve months and sits among my top seven accounts, which represent 84 percent of my book revenue.",
+      },
+    },
+    script: {
+      fr: {
+        hook: "Des décideurs qui veulent des choses différentes ne s'opposent presque jamais sur l'objectif, mais sur qui contrôle quoi. Donc je redécoupe le périmètre de décision plutôt que de négocier le prix.",
+        body: [
+          "Je commence par écrire qui décide, qui exécute, qui paie et qui peut bloquer, et je fais valider cette carte par mon contact au lieu de la deviner. Sur un réseau en franchise, la ligne qui compte n'est pas celle du siège, c'est celle qui reçoit la facture.",
+          "Ensuite je cherche l'objectif le plus haut auquel tout le monde peut se rattacher, et j'y raccroche chaque demande. Le siège défend la cohérence de marque, le franchisé son autonomie, mais les deux défendent le fait de pourvoir des postes localement. Ça évite le compromis mou où chacun obtient un quart de ce qu'il voulait.",
+          "Le blocage est souvent administratif et pas commercial. Quand la facture part au point de vente, je règle la mécanique en interne avant d'en parler au client. Et si deux parties s'opposent vraiment, je ne tranche pas à leur place : je ramène la décision à une mesure commune sur un périmètre réduit, quitte à décaler la signature d'un trimestre.",
+        ],
+        closing: "Après chaque échange, j'écris qui décide quoi et pour quand, et je l'envoie aux deux niveaux. Je peux dérouler un cas précis si vous voulez.",
+        keyBeats: [
+          "Carte des rôles, validée",
+          "L'objectif commun le plus haut",
+          "Le blocage est administratif",
+          "Mesure commune, périmètre réduit",
+          "Écrire qui décide quoi",
+        ],
+      },
+      en: {
+        hook: "Decision makers who want different things almost never disagree on the objective, they disagree on who controls what. So I redraw the decision perimeter rather than negotiate price.",
+        body: [
+          "I start by writing down who decides, who executes, who pays and who can block, and I have my contact confirm that map instead of guessing it. In a franchised network the line that matters is not head office, it is whoever receives the invoice.",
+          "Then I look for the highest objective everyone can attach to, and I tie every request back to it. Head office defends brand consistency, the franchisee defends autonomy, but both defend their ability to fill local roles. That avoids the soft compromise where everyone gets a quarter of what they wanted.",
+          "The blocker is often administrative rather than commercial. When the invoice goes to the individual site, I settle those mechanics internally before raising them with the client. And if two parties genuinely clash, I do not decide for them: I bring it back to a shared measurement on a reduced perimeter, even if that pushes signature by a quarter.",
+        ],
+        closing: "After every exchange I write down who decides what and by when, and send it to both levels. I can walk through a specific case if you would like.",
+        keyBeats: [
+          "Map of roles, confirmed",
+          "Highest shared objective",
+          "The blocker is administrative",
+          "Shared measure, reduced scope",
+          "Write who decides what",
+        ],
       },
     },
     metrics: [
       "MERCI+ et Family Sphere : 153 211 euros sur 12 mois",
-      "Sept premiers réseaux : 84 % du book",
+      "Sept premiers réseaux : 84 % du revenu du book",
     ],
-    targetSeconds: 100,
+    targetSeconds: 88,
   },
 
   {
@@ -322,73 +358,73 @@ export const qDeals: Question[] = [
       en: "Tell me about a deal that went through an agency rather than direct.",
     },
     whatTheyTest: [
-      "Ta compréhension du modèle agence, central chez Meta : l'agence n'est pas un obstacle, c'est un canal.",
-      "Ta capacité à créer de la valeur pour l'agence elle-même, pas seulement pour l'annonceur.",
-      "Ton respect du cadre : tu ne contournes pas l'agence pour aller voir le client.",
-      "Ta gestion du risque de dépendance quand l'agence tient la relation.",
+      "Si tu sais nommer le modèle économique de l'agence et en tirer une conséquence sur ta recommandation.",
+      "Si tu crées de la valeur pour l'agence elle-même, et pas seulement pour l'annonceur.",
+      "Le respect du cadre : une histoire de contournement met fin à l'entretien.",
+      "Comment tu gardes une lecture directe de la performance malgré l'intermédiaire.",
     ],
     traps: [
-      "Présenter l'agence comme un filtre à franchir : rédhibitoire dans une organisation qui vit des agences.",
-      "Raconter que tu as gagné en allant voir l'annonceur derrière le dos de l'agence.",
-      "Ignorer ce qui motive l'agence, qui est jugée sur sa performance et sur son temps.",
-      "Ne pas dire comment tu gardes une lecture directe de la performance malgré l'intermédiaire.",
+      "Présenter l'agence comme un filtre à franchir.",
+      "Raconter que tu as gagné en allant voir l'annonceur derrière elle.",
+      "Ne parler que de relation : ce qui te rend non substituable est la donnée que tu produis.",
+      "Ignorer le risque de dépendance quand l'agence tient seule le lien avec le client.",
     ],
     followUps: [
       {
-        question: "Comment tu gardes le contrôle du compte si l'agence tient la relation ?",
-        how: "Parle de la donnée : tu es celui qui produit la lecture de performance par établissement. C'est ça qui te rend non substituable, pas la proximité.",
-      },
-      {
         question: "Que fais-tu si l'agence pousse un concurrent ?",
-        how: "Reste factuel : tu compares les résultats livrés, tu ne dénigres pas. Et tu regardes si l'agence a un intérêt que tu n'as pas couvert.",
+        how: "Reste factuel : compare des résultats livrés, ne dénigre jamais, et cherche l'intérêt de l'agence que tu n'as pas couvert.",
       },
       {
         question: "Direct ou agence, tu préfères quoi ?",
-        how: "Ne tombe pas dans le piège de la préférence. Dis ce que chaque canal permet, et que l'agence donne de l'échelle quand le réseau est éclaté.",
+        how: "Ne choisis pas. Dis ce que chaque canal permet, et que l'agence donne de l'échelle quand le réseau est éclaté.",
+      },
+      {
+        question: "Comment tu gardes la main sur le compte ?",
+        how: "Par la lecture de performance que tu produis par établissement, et par une revue où l'agence et le client sont ensemble dans la salle.",
       },
     ],
     basis: "vecu-romance",
     basisNote:
-      "Le deal, la date, le montant et les deux agences sont exacts. Le partage des rôles entre Ideuzo et Matière Grise, ainsi que les échanges décrits, sont reconstitués : confirme qui faisait quoi avant de le raconter en entretien.",
+      "Le deal, la date, le montant et les deux agences sont exacts. Le partage des rôles entre Ideuzo et Matière Grise et le rendez-vous direct décliné sont reconstitués : ne garde cet exemple que si tu as réellement refusé une sollicitation directe.",
     answer: {
       fr: {
         situation:
-          "Sur le réseau Système U, la dépense média ne passait pas par moi en direct mais par deux agences, Ideuzo et Matière Grise, qui tenaient la relation avec les magasins et la centrale. Mon interlocuteur commercial n'était donc pas celui qui recrutait.",
-        task: "Faire progresser le réseau en passant par l'agence, sans jamais court-circuiter la relation qu'elle avait construite.",
+          "Sur le réseau Système U, la relation avec les magasins et la centrale appartenait à deux agences, Ideuzo et Matière Grise. Mon interlocuteur commercial n'était donc jamais celui qui recrutait.",
+        task: "Faire progresser le réseau à travers l'agence, sans jamais reprendre la relation qu'elle avait construite.",
         action: [
-          "J'ai traité l'agence comme un client à part entière : j'ai cherché ce sur quoi elle était jugée, la performance livrée et le temps passé, avant de parler de mon offre.",
-          "Je lui ai fourni ce qu'elle ne pouvait pas produire seule : une lecture de performance magasin par magasin, prête à être présentée à son client.",
-          "J'ai pris à ma charge la partie technique et le paramétrage, pour que l'agence gagne du temps au lieu d'en perdre à vendre pour moi.",
-          "J'ai systématiquement fait remonter les résultats à l'agence avant les échéances budgétaires, pour qu'elle ait ses arguments quand la centrale arbitrait.",
-          "Je n'ai jamais sollicité l'annonceur sans l'agence, ce qui m'a valu d'être associé aux discussions les plus structurantes plutôt que consulté à la fin.",
+          "J'ai commencé par regarder sur quoi l'agence est rémunérée et jugée, la performance livrée et le temps qu'elle y passe. Ça change la recommandation : je propose ce qu'elle peut défendre devant son client, pas ce qui m'arrange.",
+          "Je lui ai donné ce qu'elle ne pouvait pas produire seule, une lecture de performance magasin par magasin, directement présentable.",
+          "J'ai pris le paramétrage technique à ma charge, parce que le temps qu'elle économise est sa marge.",
+          "Un directeur de magasin m'a proposé un rendez-vous direct : j'y suis allé avec l'agence plutôt que sans elle, même si c'était plus lent à organiser.",
+          "Je remontais les résultats avant chaque échéance budgétaire, pour qu'elle ait ses arguments au moment où la centrale arbitrait, et pas après.",
         ],
         result:
-          "Le plus gros deal de ma carrière est venu de ce canal : 438 204 euros signés le 18 mai 2026, sur un réseau passé de 101 986 euros de bookings en 2023 à 547 277 euros en 2026.",
+          "C'est par ce canal qu'est passée ma plus grosse opportunité, 438 204 euros signés le 18 mai 2026, sur un réseau passé de 101 986 euros de bookings gagnés en 2023 à 547 277 en 2026. Le risque du modèle, je le connais : quand l'agence tient seule le lien, je deviens invisible pour l'annonceur. Je le compense en produisant la lecture de performance par magasin, que personne d'autre ne peut fournir.",
         learning:
-          "Une agence ne se contourne pas, elle s'équipe. Quand elle gagne grâce à ce que je lui donne, elle me met dans les discussions où je ne serais jamais entré seul.",
+          "Une agence ne se contourne pas, elle s'équipe. Le jour où elle gagne avec ce que je lui donne, elle me met dans les discussions où je n'entrerais pas seul.",
       },
       en: {
         situation:
-          "On the Système U network, media spend did not come through me directly but through two agencies, Ideuzo and Matière Grise, who owned the relationship with the stores and the central team. My commercial counterpart was not the person doing the hiring.",
-        task: "Grow the network through the agency, without ever cutting across the relationship it had built.",
+          "On the Système U network, the relationship with the stores and the central team belonged to two agencies, Ideuzo and Matière Grise. My commercial counterpart was never the person doing the hiring.",
+        task: "Grow the network through the agency, without ever taking back the relationship it had built.",
         action: [
-          "I treated the agency as a client in its own right: I looked at what it was judged on, delivered performance and time spent, before talking about my offer.",
-          "I gave it what it could not produce alone: store by store performance, ready to present to its own client.",
-          "I took the technical setup on myself, so the agency gained time instead of spending it selling for me.",
-          "I sent results to the agency ahead of every budget milestone, so it had the arguments when the central team arbitrated.",
-          "I never approached the advertiser without the agency, which is why I ended up inside the structural conversations instead of being consulted at the end.",
+          "I started by looking at how the agency is paid and judged, on delivered performance and on the time it spends. That changes the recommendation: I propose what it can defend in front of its own client, not what suits me.",
+          "I gave it what it could not produce alone, store by store performance, ready to present as is.",
+          "I took the technical setup on myself, because the time it saves is its margin.",
+          "A store director offered me a direct meeting: I went with the agency rather than without it, even though it took longer to arrange.",
+          "I sent results ahead of every budget milestone, so it had its arguments while the central team was arbitrating, not afterwards.",
         ],
         result:
-          "The biggest deal of my career came through that channel: 438,204 euros signed on 18 May 2026, on a network that went from 101,986 euros of bookings in 2023 to 547,277 in 2026.",
+          "The largest opportunity I have closed came through that channel: 438,204 euros signed on 18 May 2026, on a network that went from 101,986 euros of won bookings in 2023 to 547,277 in 2026. I know the risk in that model: when the agency alone holds the relationship, I become invisible to the advertiser. I offset it by producing the store by store performance read that nobody else can supply.",
         learning:
-          "You do not work around an agency, you equip it. When it wins with what I give it, it puts me in conversations I would never have reached alone.",
+          "You do not work around an agency, you equip it. The day it wins with what I give it, it puts me in conversations I would never reach alone.",
       },
     },
     metrics: [
       "438 204 euros signés le 18 mai 2026 via Ideuzo et Matière Grise",
-      "Système U : 101 986 euros en 2023, 547 277 euros en 2026",
+      "Système U, bookings gagnés : 101 986 euros en 2023, 547 277 euros en 2026",
     ],
-    targetSeconds: 105,
+    targetSeconds: 96,
   },
 
   {
@@ -400,70 +436,105 @@ export const qDeals: Question[] = [
       en: "A client asks you for a significant discount. How do you react?",
     },
     whatTheyTest: [
-      "Ta tenue sur la valeur : est-ce que tu cèdes dès que la pression monte.",
-      "Ta capacité à comprendre ce que cache la demande de remise, qui est rarement une question de prix.",
-      "Ta maîtrise de la contrepartie : tu ne donnes rien sans obtenir quelque chose.",
-      "Ta discipline de marge, qui est un signal direct sur la façon dont tu géreras un portefeuille chez Meta.",
+      "Si tu diagnostiques avant de répondre, ou si tu demandes où il faudrait que tu sois.",
+      "Si la concession est échangée contre une contrepartie nommée.",
+      "Si tu sais dire ton plancher et accepter de perdre en dessous.",
+      "Ce que tu fais en amont pour que la question n'arrive pas au dernier moment.",
     ],
     traps: [
-      "Accepter vite pour sécuriser le deal en fin de trimestre : l'intervieweur le lit immédiatement.",
-      "Refuser sèchement, sans explorer ce que le client cherche réellement à résoudre.",
-      "Justifier ton prix par tes coûts ou par ta politique interne, qui n'intéressent pas le client.",
-      "Oublier l'effet de précédent : la remise consentie une fois devient le nouveau prix de référence.",
+      "Céder vite en fin de trimestre : ça s'entend, et ça dit comment tu tiendras un portefeuille.",
+      "Refuser sèchement sans avoir cherché ce que la demande cache.",
+      "Justifier ton prix par tes coûts ou par une politique interne, qui n'intéressent pas le client.",
+      "Oublier l'effet de précédent : la remise consentie devient le prix de référence du renouvellement.",
     ],
     followUps: [
       {
-        question: "Et si le client menace d'aller chez le concurrent ?",
-        how: "Ne panique pas à l'oral. Demande sur quoi porte la comparaison, montre que tu compares des résultats livrés, et laisse la possibilité qu'un client parte à un prix que tu ne veux pas faire.",
+        question: "Donne-moi un exemple où tu as tenu.",
+        how: "Bascule sur le STAR et choisis un cas où la contrepartie est chiffrable. Si tu n'en as pas encore, dis-le et raconte la fois où tu as réduit le périmètre plutôt que le prix.",
       },
       {
-        question: "Tu accordes des remises, parfois ?",
-        how: "Dis oui, mais toujours contre quelque chose : durée, volume, périmètre, engagement d'activation. Une remise sans contrepartie est une perte sèche.",
+        question: "Et s'il menace d'aller chez le concurrent ?",
+        how: "Demande d'abord sur quoi porte la comparaison, compare des résultats livrés, et assume qu'un client puisse partir à un prix que tu ne veux pas faire.",
       },
       {
-        question: "Comment tu évites que la question arrive ?",
-        how: "Parle de ce que tu fais en amont : construire la valeur en chiffres dès la première conversation, pour que la discussion porte sur le résultat et pas sur la ligne de coût.",
+        question: "Tu accordes des remises, alors ?",
+        how: "Oui, contre durée, volume ou périmètre. Dis-le simplement : une remise sans contrepartie est une perte sèche.",
       },
     ],
     basis: "canevas",
     basisNote:
-      "Aucune négociation de remise précise n'est documentée dans ta banque de faits : remplace la situation et le résultat par un cas réel où tu as tenu ou aménagé ton prix, avec le montant et la contrepartie obtenue. Garde la méthode, change l'histoire.",
+      "Aucune négociation de remise n'est documentée dans ta banque de faits. Avant l'entretien, choisis un cas réel avec le montant demandé, la contrepartie obtenue et le plancher que tu as tenu, et remplace la situation du STAR. Garde la méthode, change l'histoire.",
+    format: "script",
     answer: {
       fr: {
         situation:
-          "Un compte important me demande une remise significative en fin de cycle, en présentant le prix comme la dernière condition pour signer. La demande arrive tard, au moment où j'ai le plus à perdre.",
-        task: "Protéger la valeur du contrat sans braquer le client ni laisser le deal s'arrêter sur un chiffre.",
+          "Un compte important demande une remise significative en fin de cycle, en présentant le prix comme la dernière condition pour signer. La demande arrive au moment où j'ai le plus à perdre.",
+        task: "Protéger la valeur du contrat sans braquer le client et sans laisser le deal s'arrêter sur un chiffre.",
         action: [
-          "Je ne réponds pas sur le prix tout de suite : je demande ce que la remise doit résoudre chez lui, contrainte de budget, comparaison concurrente ou doute sur le résultat.",
-          "Je requalifie la demande. Si c'est un doute sur le résultat, la remise ne le lèvera pas, et je ramène la discussion sur la preuve chiffrée déjà disponible.",
-          "Si la contrainte de budget est réelle, je propose de réduire le périmètre plutôt que le prix unitaire, pour que la valeur par unité reste intacte.",
-          "Quand j'accorde quelque chose, j'exige une contrepartie explicite : durée d'engagement, volume, élargissement du périmètre ou calendrier d'activation.",
-          "Je dis clairement ce que je ne peux pas faire, et je le dis une seule fois, pour que ma position soit lisible et ne se renégocie pas à chaque échange.",
+          "Je ne réponds pas sur le prix : je demande ce que la remise doit résoudre, contrainte de budget, comparaison concurrente ou doute sur le résultat.",
+          "C'était un doute sur le résultat, donc baisser le prix ne l'aurait pas levé. J'ai ramené la discussion sur la preuve déjà disponible et sur le coût par candidature commencée.",
+          "J'ai proposé de réduire le périmètre plutôt que le prix unitaire, pour que la valeur par unité reste intacte et que le point de comparaison ne bouge pas au renouvellement.",
+          "J'ai demandé une contrepartie explicite en échange de ce que j'accordais : durée d'engagement et calendrier d'activation écrit.",
+          "J'ai dit une seule fois ce que je ne ferais pas, pour que ma position soit lisible et ne se renégocie pas à chaque échange.",
         ],
         result:
-          "Le contrat est signé au niveau de valeur défendu, avec une contrepartie qui l'a rendu acceptable pour les deux parties, et sans créer de précédent tarifaire pour les échéances suivantes.",
+          "Le contrat s'est signé au niveau de valeur défendu, avec une contrepartie qui l'a rendu acceptable des deux côtés, et sans créer de prix de référence pour l'échéance suivante.",
         learning:
-          "Une demande de remise est presque toujours une question déguisée sur le risque perçu. Tant que je n'ai pas identifié laquelle, je ne bouge pas mon prix.",
+          "Une demande de remise est presque toujours une question déguisée sur le risque perçu. Tant que je n'ai pas identifié lequel, je ne bouge pas mon prix.",
       },
       en: {
         situation:
           "A major account asks for a significant discount late in the cycle, presenting price as the last condition to sign. The request lands exactly when I have the most to lose.",
-        task: "Protect the value of the contract without antagonising the client or letting the deal stall on a number.",
+        task: "Protect the value of the contract without antagonising the client and without letting the deal stall on a number.",
         action: [
-          "I do not answer on price straight away: I ask what the discount is meant to solve, a real budget constraint, a competitive comparison, or doubt about results.",
-          "I requalify the request. If it is doubt about results, a discount will not remove it, so I bring the conversation back to the evidence we already have.",
-          "If the budget constraint is real, I reduce scope rather than unit price, so value per unit stays intact.",
-          "When I do concede, I require an explicit counterpart: term, volume, wider perimeter, or a committed activation timeline.",
-          "I state clearly what I cannot do, and I say it once, so my position is readable and does not get renegotiated at every exchange.",
+          "I do not answer on price: I ask what the discount is meant to solve, a budget constraint, a competitive comparison, or doubt about results.",
+          "It was doubt about results, so cutting the price would not have removed it. I brought the conversation back to the evidence we already had and to cost per application started.",
+          "I proposed reducing scope rather than unit price, so value per unit stayed intact and the reference point did not move at renewal.",
+          "I asked for an explicit counterpart in exchange for what I conceded: a committed term and a written activation timeline.",
+          "I said once, and only once, what I would not do, so my position was readable and did not get renegotiated at every exchange.",
         ],
         result:
-          "The contract signs at the value level I defended, with a counterpart that made it acceptable to both sides, and without setting a pricing precedent for the next renewals.",
+          "The contract signed at the value level I defended, with a counterpart that made it acceptable to both sides, and without setting a reference price for the next renewal.",
         learning:
           "A discount request is almost always a disguised question about perceived risk. Until I know which risk it is, I do not move my price.",
       },
     },
+    script: {
+      fr: {
+        hook: "Je ne réponds ni oui ni non à une demande de remise. Je réponds par une question, parce que le prix est presque toujours le symptôme d'autre chose.",
+        body: [
+          "Je demande ce que la remise doit résoudre. Il y a trois cas et ils n'appellent pas la même réponse : un budget réellement contraint, une comparaison avec un concurrent, ou un doute sur le résultat. Dans le troisième cas, baisser le prix ne lève rien, ça confirme au client qu'il payait trop cher.",
+          "Si la contrainte de budget est réelle, je réduis le périmètre plutôt que le prix unitaire. Sur un réseau, je propose souvent de dépenser sur moins de sites, pas sur plus : je plafonne le nombre d'établissements servis dans le mois et le nombre d'annonces par établissement. Et quand j'accorde quelque chose, je l'échange contre une durée, un volume ou un calendrier d'activation écrit.",
+          "Au début, je me trompais de terme de comparaison. Je défendais mon prix en volume d'affichage, alors que ce que je vends est une intention de candidature : la bonne unité est le coût par candidature commencée. J'ai un plancher, que je dis une fois : en dessous, je préfère perdre le deal que fixer un prix de référence que je retrouverai à chaque renouvellement.",
+        ],
+        closing: "C'est ma méthode. Je peux la dérouler sur un cas réel si vous voulez.",
+        keyBeats: [
+          "Ni oui ni non, une question",
+          "Trois causes, trois réponses",
+          "Réduire le périmètre, pas le prix",
+          "Concession échangée",
+          "Un plancher, dit une fois",
+        ],
+      },
+      en: {
+        hook: "I answer a discount request with neither yes nor no. I answer with a question, because price is almost always the symptom of something else.",
+        body: [
+          "I ask what the discount is meant to solve. There are three cases and they do not call for the same answer: a genuine budget constraint, a comparison with a competitor, or doubt about results. In the third case, cutting the price removes nothing, it confirms to the client that they were paying too much.",
+          "If the budget constraint is real, I reduce scope rather than unit price. On a network I often propose spending on fewer sites, not more: I cap how many sites we serve in the month and how many roles we run per site. And when I concede something, I trade it for a term, a volume, or a written activation timeline.",
+          "Early on I got the unit of comparison wrong. I defended my price on impression volume, when what I sell is career intent: the right unit is cost per application started. And I have a floor, which I state once: below it I would rather lose the deal than set a reference price I will meet again at every renewal.",
+        ],
+        closing: "That is my method, and I am happy to walk it through on a real case.",
+        keyBeats: [
+          "Neither yes nor no, a question",
+          "Three causes, three answers",
+          "Cut scope, not price",
+          "Concession traded",
+          "A floor, stated once",
+        ],
+      },
+    },
     metrics: [],
-    targetSeconds: 95,
+    targetSeconds: 90,
   },
 
   {
@@ -475,72 +546,74 @@ export const qDeals: Question[] = [
       en: "Tell me about an account you grew significantly.",
     },
     whatTheyTest: [
-      "Ta capacité à développer un compte existant, qui est le cœur du métier d'Account Manager.",
-      "Ta façon d'introduire un produit supplémentaire sans casser ce qui marche déjà.",
-      "Ta lecture de la donnée pour détecter où se trouve le potentiel non exploité.",
-      "Ta capacité à obtenir ces résultats dans un contexte que tu n'avais pas choisi.",
+      "Croissance ou simple reconduction : on cherche ce que tu as créé.",
+      "Sur quelle donnée tu es allé chercher le potentiel non exploité.",
+      "Comment tu introduis un second produit sans fragiliser le premier.",
+      "Ce à quoi tu as renoncé pour dégager ce temps.",
     ],
     traps: [
-      "Confondre croissance et renouvellement : si le compte a juste reconduit, ce n'est pas ta réponse.",
-      "Attribuer la croissance au produit ou au marché plutôt qu'à des décisions que tu as prises.",
-      "Survendre un accord : ne présente jamais ce compte comme un accord annuel ou une opération de marque employeur.",
-      "Oublier la dimension d'adoption : le chiffre vient du nombre d'établissements actifs, pas d'une signature.",
+      "Attribuer la croissance au produit ou au marché plutôt qu'à tes décisions.",
+      "Présenter ce compte comme un accord annuel ou comme de la marque employeur : il n'y en a pas eu.",
+      "Citer un nombre d'établissements actifs que tu ne peux pas resourcer.",
+      "Oublier l'adoption : le chiffre vient des établissements qui achètent, pas d'une signature.",
     ],
     followUps: [
       {
         question: "Comment tu as identifié le potentiel ?",
-        how: "Parle de la donnée d'usage : établissements actifs contre établissements du réseau, postes publiés sans investissement, zones où les candidatures manquaient.",
+        how: "Donne la donnée exacte que tu regardes : postes publiés sans aucune dépense, rapportés au volume de postes de l'établissement.",
       },
       {
-        question: "Comment tu as introduit le second produit ?",
-        how: "Raconte la séquence : preuve sur le premier usage, puis extension sur un besoin non couvert, pas un catalogue présenté d'un coup.",
+        question: "Neuf mois de cover mais deux exercices de revenu, comment ça se réconcilie ?",
+        how: "Dis la vérité de la donnée sans te justifier : l'assignation court d'avril 2023 à mars 2025, ton cover intensif a duré neuf mois. Donne le périmètre avant le chiffre.",
       },
       {
         question: "Que s'est-il passé quand tu as rendu le compte ?",
-        how: "Sois factuel et honnête : tu as transmis la mécanique d'activation et la lecture par établissement, et tu dis ce que tu ne contrôlais plus.",
+        how: "Reste factuel : tu as transmis la mécanique d'activation et la lecture par établissement, et tu dis ce que tu ne contrôlais plus.",
       },
     ],
     basis: "vecu",
+    basisNote:
+      "Les montants Petits-fils et la durée du cover viennent de ta banque de faits. Deux précautions : la donnée montre une assignation d'avril 2023 à mars 2025 alors que tu dis neuf mois de cover, prépare la phrase qui réconcilie les deux. Et ne présente jamais ce compte comme un accord annuel ni comme de la marque employeur.",
     answer: {
       fr: {
         situation:
-          "Pendant neuf mois en 2023 et 2024, j'ai couvert un book de National Account Manager en plus du mien, après le départ de la titulaire, sur des comptes santé et services à la personne dont Petits-fils, Shiva et AXA. Je reprenais des comptes que je n'avais pas construits, avec des interlocuteurs qui venaient de perdre leur référent.",
-        task: "Stabiliser puis développer ces comptes, en particulier Petits-fils, sans période de flottement liée au changement d'interlocuteur.",
+          "Pendant neuf mois, en 2023 et 2024, j'ai couvert un book de National Account Manager en plus du mien, après le départ de la titulaire : des réseaux de santé et de services à la personne, dont Petits-fils. Je reprenais des comptes que je n'avais pas construits, avec des interlocuteurs qui venaient de perdre leur référent.",
+        task: "Stabiliser puis développer Petits-fils, sans période de flottement liée au changement d'interlocuteur.",
         action: [
-          "J'ai commencé par la donnée d'usage plutôt que par les rendez-vous : quels établissements du réseau étaient réellement actifs, et lesquels publiaient sans investir.",
-          "J'ai priorisé les établissements à fort volume de postes mais faible activité, parce que c'est là que l'écart entre potentiel et usage était le plus grand.",
-          "J'ai déployé la diffusion sponsorisée établissement par établissement, jusqu'à environ 106 établissements actifs, au lieu de négocier un cadre unique au siège.",
-          "J'ai introduit un second produit seulement une fois la preuve faite sur le premier : le sourcing, dont Featured Employer, adopté par 19 établissements.",
-          "J'ai tenu des revues de performance régulières pour que chaque établissement voie son propre résultat, ce qui a rendu la reconduction évidente sans argumentaire.",
+          "J'ai commencé par la donnée d'usage et pas par les rendez-vous : quels établissements publiaient des postes sans jamais investir.",
+          "J'ai concentré mon temps sur ceux qui avaient du volume de postes et aucune dépense, et j'ai laissé de côté les petits établissements déjà actifs, qui demandaient autant d'attention pour beaucoup moins.",
+          "J'ai vendu établissement par établissement plutôt que de chercher un cadre unique au siège, parce que le budget se décide là où le poste est vacant.",
+          "Je n'ai introduit le sourcing qu'une fois la diffusion sponsorisée prouvée sur les mêmes établissements, avec les mêmes intitulés de poste des deux côtés pour que la comparaison tienne.",
+          "J'ai tenu des revues où chaque établissement voyait son propre résultat, pas une moyenne réseau, ce qui a rendu la reconduction évidente sans argumentaire.",
         ],
         result:
-          "Sur les deux années où j'ai tenu le compte, Petits-fils a représenté environ 486 000 euros, 224 000 la première année et 262 000 la seconde, avec un usage réparti sur environ 106 établissements en diffusion sponsorisée et 19 en sourcing.",
+          "Sur les deux exercices où j'ai porté le compte, Petits-fils a représenté environ 486 000 euros, 224 000 la première année et 262 000 la seconde, sur deux familles de produits : la diffusion sponsorisée et le sourcing, dont Featured Employer.",
         learning:
-          "Sur un réseau, la croissance se lit en nombre d'établissements actifs bien avant de se lire en euros. Le second produit ne se vend qu'une fois le premier prouvé.",
+          "La croissance d'un réseau se lit en établissements actifs bien avant de se lire en euros, et le second produit ne se vend qu'une fois le premier prouvé.",
       },
       en: {
         situation:
-          "For nine months across 2023 and 2024 I covered a National Account Manager book on top of my own, after the incumbent left, on healthcare and home services accounts including Petits-fils, Shiva and AXA. I inherited accounts I had not built, with contacts who had just lost their point person.",
-        task: "Stabilise and then grow those accounts, Petits-fils in particular, with no drift caused by the handover.",
+          "For nine months across 2023 and 2024 I covered a National Account Manager book on top of my own, after the incumbent left: healthcare and home services networks, including Petits-fils. I inherited accounts I had not built, with contacts who had just lost their point person.",
+        task: "Stabilise and then grow Petits-fils, with no drift caused by the handover.",
         action: [
-          "I started from usage data rather than from meetings: which sites in the network were actually active, and which were posting without investing.",
-          "I prioritised sites with high job volume and low activity, because that is where the gap between potential and usage was widest.",
-          "I rolled sponsored distribution out site by site, up to around 106 active sites, instead of negotiating one single framework at head office.",
-          "I introduced a second product only once the first was proven: sourcing, including Featured Employer, adopted by 19 sites.",
-          "I ran regular performance reviews so each site saw its own result, which made renewal obvious without a pitch.",
+          "I started from usage data rather than from meetings: which sites were posting roles without ever investing.",
+          "I concentrated my time on those with job volume and no spend, and left aside the small sites already active, which took as much attention for far less.",
+          "I sold site by site rather than chasing a single framework at head office, because the budget is decided where the role is vacant.",
+          "I only introduced sourcing once sponsored distribution was proven on the same sites, with the same job titles on both sides so the comparison held.",
+          "I ran reviews where each site saw its own result, not a network average, which made renewal obvious without a pitch.",
         ],
         result:
-          "Across the two years I held the account, Petits-fils represented around 486,000 euros, 224,000 in the first year and 262,000 in the second, with usage spread over about 106 sites on sponsored distribution and 19 on sourcing.",
+          "Across the two fiscal years I carried the account, Petits-fils represented around 486,000 euros, 224,000 in the first year and 262,000 in the second, across two product families: sponsored distribution and sourcing, including Featured Employer.",
         learning:
-          "In a network, growth shows up as active sites long before it shows up as revenue. The second product only sells once the first one is proven.",
+          "Growth on a network shows up as active sites long before it shows up as euros, and the second product only sells once the first one is proven.",
       },
     },
     metrics: [
       "Petits-fils : environ 486 K€ sur deux ans, 224 K€ la première année, 262 K€ la seconde",
-      "Environ 106 établissements en Sponsored Jobs, 19 en Smart Sourcing dont Featured Employer",
-      "Cover National Account Manager : 9 mois en 2023-24, en plus de son propre book",
+      "Deux familles de produits : Sponsored Jobs et Smart Sourcing dont Featured Employer, ni accord annuel ni marque employeur",
+      "Cover National Account Manager : neuf mois en 2023 et 2024, en plus de son propre book",
     ],
-    targetSeconds: 115,
+    targetSeconds: 96,
   },
 
   {
@@ -552,73 +625,73 @@ export const qDeals: Question[] = [
       en: "Tell me about the longest sales cycle you ran, and what unlocked it.",
     },
     whatTheyTest: [
-      "Ta capacité à rester présent sans harceler, sur plusieurs trimestres.",
-      "Ton honnêteté : un long cycle est parfois une mauvaise qualification que tu as laissée traîner.",
-      "Ta lecture du vrai déclencheur, souvent externe, et ce que tu avais préparé pour l'exploiter.",
-      "Ta discipline de pipeline : un deal long ne doit pas masquer un trimestre vide.",
+      "Si la durée est de la ténacité ou une mauvaise qualification que tu as laissée vivre.",
+      "Ton seuil d'abandon, formulé comme un critère et pas comme une humeur.",
+      "Ce qui a réellement débloqué, et ce que tu avais préparé pour l'exploiter.",
+      "Comment tu as tenu ton chiffre pendant que ce deal n'avançait pas.",
     ],
     traps: [
-      "Présenter la durée comme une preuve de ténacité, alors que c'est souvent un signal de mauvaise qualification.",
-      "Attribuer le déblocage à la chance ou au timing, sans dire ce que tu avais mis en place pour être prêt.",
-      "Oublier de dire comment tu as tenu ton chiffre pendant que ce deal n'avançait pas.",
+      "Faire de la durée une preuve de persévérance : c'est d'abord un signal de qualification.",
+      "Attribuer le déblocage au timing sans dire ce que tu avais mis en place.",
+      "Laisser penser que ce deal explique un trimestre faible.",
       "Ne pas savoir dire à quel moment tu aurais dû arrêter d'y croire.",
     ],
     followUps: [
       {
         question: "À quel moment aurais-tu dû le disqualifier ?",
-        how: "Réponds franchement avec un critère : absence d'accès au décideur budgétaire après deux cycles. Un commercial senior sait nommer son seuil d'abandon.",
+        how: "Donne un seuil, pas un sentiment : pas d'accès à celui qui arbitre le budget après deux cycles, tu sors et tu le dis au client.",
       },
       {
         question: "Comment tu restes présent sans être lourd ?",
-        how: "Décris une cadence utile : tu reviens avec une donnée nouvelle sur son marché, pas avec une relance. La valeur remplace la fréquence.",
+        how: "Décris la cadence : tu reviens avec une donnée nouvelle sur son marché, jamais avec une relance. La valeur remplace la fréquence.",
       },
       {
-        question: "Comment tu as sécurisé ton trimestre pendant ce temps ?",
-        how: "Montre la gestion de portefeuille : un book de 817 réseaux parents impose de faire vivre plusieurs cycles courts pendant qu'un cycle long avance en fond.",
+        question: "Comment tu as sécurisé tes trimestres pendant ce temps ?",
+        how: "Montre la gestion de portefeuille : 817 réseaux parents imposent de faire tourner des cycles courts pendant qu'un cycle long avance en fond.",
       },
     ],
     basis: "vecu-romance",
     basisNote:
-      "Le compte et son poids sont exacts (Accor, 214 476 euros sur 12 mois, 18,6 % de ton book). La durée du cycle, l'élément déclencheur et le déroulé sont reconstitués : c'est le point le plus sensible de cette réponse, remplace le déblocage par ce qui s'est réellement passé avant de la dire.",
+      "Le compte, son montant et tes taux d'atteinte sont exacts. La durée du cycle, l'élément déclencheur et le binôme avec la customer success sont reconstitués : c'est le point le plus fragile de cette réponse, remplace le déblocage par ce qui s'est réellement passé. Ne cite pas de part de book, elle n'est pas dans ta banque de faits.",
     answer: {
       fr: {
         situation:
-          "Accor est aujourd'hui mon premier réseau, avec 214 476 euros sur douze mois et 18,6 % de mon book, mais la discussion a mis plusieurs trimestres à aboutir. Les établissements recrutaient chacun de leur côté et personne, au centre, ne portait seul l'arbitrage.",
-        task: "Faire avancer un cycle sans propriétaire clair côté client, sans laisser le deal absorber le temps dû au reste de mon portefeuille.",
+          "Accor est aujourd'hui mon premier réseau, à 214 476 euros sur douze mois, mais la discussion a mis plusieurs trimestres. Les établissements recrutaient chacun de leur côté et personne, au centre, ne portait seul l'arbitrage.",
+        task: "Faire avancer un cycle sans propriétaire côté client, sans qu'il mange le temps dû au reste de mon portefeuille.",
         action: [
-          "J'ai posé un critère de qualification explicite : sans accès à celui qui arbitre le budget, je ne considérais pas le deal comme actif dans mon pipeline.",
-          "J'ai remplacé la relance par l'apport de données : à chaque contact, je revenais avec une lecture du marché de l'emploi sur leurs métiers et leurs zones, pas avec une question sur l'avancement.",
-          "J'ai travaillé les établissements qui pouvaient décider seuls, pour créer de la preuve locale pendant que le niveau central n'avançait pas.",
-          "J'ai préparé à l'avance le cadre et la mécanique d'activation, pour être prêt le jour où une échéance interne ouvrirait la fenêtre.",
-          "J'ai maintenu ma production ailleurs pendant toute cette période, en faisant tourner des cycles courts sur le reste de mes 817 réseaux parents.",
+          "J'ai posé mon critère à voix haute : tant que je n'avais pas accès à celui qui arbitre le budget, le deal ne comptait pas comme actif dans mon pipeline. C'est ce qui m'a évité de le porter en prévision pendant un an.",
+          "J'ai remplacé la relance par l'apport de données : à chaque contact, une lecture du marché de l'emploi sur leurs métiers et leurs villes, jamais une question sur l'avancement.",
+          "J'ai travaillé les établissements qui pouvaient décider seuls, pour fabriquer de la preuve locale pendant que le centre n'avançait pas.",
+          "J'ai tenu la cadence en binôme avec la customer success sur toute la durée, pour que le compte ne dépende pas de ma seule disponibilité.",
+          "Quand la fenêtre s'est ouverte, je ne suis pas revenu avec une offre d'appel : je suis revenu avec le cadre, la mécanique d'activation et le calendrier déjà écrits.",
         ],
         result:
-          "Quand la fenêtre s'est ouverte, le cadre était prêt et le déploiement a pu démarrer sans délai. Le compte est devenu mon premier réseau, à 214 476 euros sur douze mois, et je n'ai pas raté de trimestre pendant l'attente, avec 108 % au Q1 et 133 % au Q2 2026.",
+          "Le compte est devenu mon premier réseau, à 214 476 euros sur douze mois. Et je n'ai pas payé l'attente ailleurs : 108 % d'atteinte au premier trimestre 2026 et 133 % au deuxième.",
         learning:
-          "Un cycle long ne se gagne pas en insistant, il se gagne en étant prêt le jour où le client a une raison d'agir. Entre-temps, un deal long ne doit jamais devenir mon excuse de trimestre.",
+          "Un cycle long ne se gagne pas en insistant, il se gagne en étant prêt le jour où le client a une raison d'agir. Mon seuil n'a pas bougé : pas d'accès au budget après deux cycles, je sors.",
       },
       en: {
         situation:
-          "Accor is now my largest network at 214,476 euros over twelve months and 18.6 percent of my book, but the discussion took several quarters to land. Sites were hiring independently and nobody at the centre owned the decision alone.",
-        task: "Move a cycle forward with no clear owner on the client side, without letting it eat the time owed to the rest of my portfolio.",
+          "Accor is now my largest network at 214,476 euros over twelve months, but the discussion took several quarters. Sites were hiring independently and nobody at the centre owned the decision alone.",
+        task: "Move a cycle forward with no owner on the client side, without letting it eat the time owed to the rest of my portfolio.",
         action: [
-          "I set an explicit qualification rule: without access to whoever arbitrates the budget, I did not count the deal as active in my pipeline.",
-          "I replaced follow ups with data: at every contact I came back with a read of the labour market on their roles and their locations, not with a status question.",
+          "I stated my criterion out loud: until I had access to whoever arbitrates the budget, the deal did not count as active in my pipeline. That is what stopped me carrying it in forecast for a year.",
+          "I replaced follow ups with data: at every contact, a read of the labour market on their roles and their cities, never a status question.",
           "I worked the sites that could decide on their own, to build local proof while the centre was not moving.",
-          "I prepared the framework and the activation mechanics in advance, so I would be ready the day an internal deadline opened the window.",
-          "I kept producing elsewhere throughout, running short cycles across the rest of my 817 parent networks.",
+          "I kept the cadence with the same customer success manager throughout, so the account did not depend on my availability alone.",
+          "When the window opened I did not come back with an entry offer: I came back with the framework, the activation mechanics and the calendar already written.",
         ],
         result:
-          "When the window opened, the framework was ready and rollout started with no delay. The account became my largest network at 214,476 euros over twelve months, and I did not miss a quarter while waiting, landing 108 percent in Q1 and 133 percent in Q2 2026.",
+          "The account became my largest network at 214,476 euros over twelve months. And I did not pay for the wait elsewhere: 108 percent attainment in the first quarter of 2026 and 133 percent in the second.",
         learning:
-          "A long cycle is not won by pushing, it is won by being ready the day the client has a reason to act. In the meantime, a long deal must never become my excuse for the quarter.",
+          "A long cycle is not won by pushing, it is won by being ready the day the client has a reason to act. My threshold has not moved: no access to the budget after two cycles and I step out.",
       },
     },
     metrics: [
-      "Accor : 214 476 euros sur 12 mois, 18,6 % du book",
+      "Accor : 214 476 euros sur 12 mois",
       "Book : 817 réseaux parents, 4 584 comptes advertisers",
       "Atteinte : 108 % au Q1 2026, 133 % au Q2 2026",
     ],
-    targetSeconds: 115,
+    targetSeconds: 94,
   },
 ];

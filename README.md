@@ -1,8 +1,14 @@
 # Meta Sales Interview
 
 Site local de préparation à l'entretien commercial Meta (Strategic Account Manager). Chaque question
-reçoit une réponse structurée en STAR, en français et en anglais, avec ce que l'intervieweur teste, les
+reçoit une réponse prête à dire, en français et en anglais, avec ce que l'intervieweur teste, les
 pièges, les relances probables et les chiffres mobilisés.
+
+Deux formats, choisis sur la forme de la question : **STAR** quand elle demande un souvenir daté
+(« raconte-moi une fois où… »), **discours** quand elle demande un mécanisme, une opinion ou une
+motivation (« comment fais-tu… », « pourquoi Meta »). Sur les 58 questions, 38 sont en discours et 20
+en STAR ; une réponse en discours garde toujours son STAR de repli, pour la relance « donne-moi un
+exemple précis ».
 
 ## Lancer le site
 
@@ -75,6 +81,10 @@ annoncées comme des prévisions.
 
 ## Conventions de rédaction
 
-STAR strict : situation en deux phrases, tâche en une, quatre à six actions à la première personne,
-résultat chiffré, puis la leçon. Durée cible à l'oral de 90 à 120 secondes, contrôlable avec le
-chronomètre intégré. Pas de tiret cadratin, pas d'emoji.
+La norme complète est dans [`docs/standard-de-reponse.md`](docs/standard-de-reponse.md) : elle dit
+quel format pour quel type de question, la longueur cible, les critères d'évaluation réellement
+utilisés par les recruteurs, les erreurs éliminatoires, et les squelettes par famille. Chaque règle y
+porte sa source avec son URL. Toute réécriture se fait contre ce document.
+
+En résumé : STAR de 90 à 120 secondes, discours de 70 à 92, `targetSeconds` calé sur le texte réel à
+150 mots par minute et contrôlable avec le chronomètre intégré. Pas de tiret cadratin, pas d'emoji.

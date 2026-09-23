@@ -34,7 +34,7 @@ export const categories: Category[] = [
     title: "Motivation et adéquation",
     subtitle: "Pourquoi Meta, pourquoi partir, pourquoi toi",
     intro:
-      "La seule famille traitée en discours modèle et non en STAR : raconter une situation datée pour justifier « pourquoi Meta » sonne faux, et personne ne le fait en entretien. Les huit réponses sont donc des textes standardisés, écrits pour n'importe quel bon candidat, volontairement non personnalisés, à dire en une minute et demie et à colorer à l'oral. La version STAR reste accessible sur chaque fiche pour qui veut l'angle vécu.",
+      "La famille que les candidats prennent pour un échauffement, et sur laquelle des profils seniors se font sortir. Les huit réponses sont des discours, parce que raconter une situation datée pour justifier « pourquoi Meta » sonne faux. Deux règles y valent le reste : zéro négativité sur l'employeur actuel, et trois raisons nommées plutôt que huit statistiques empilées.",
   },
   {
     id: "ia",

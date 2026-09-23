@@ -10,75 +10,73 @@ export const qLeadership: Question[] = [
       en: "Tell me about a time you moved a team without formal authority.",
     },
     whatTheyTest: [
-      "Si tu obtiens l'adhésion par la preuve ou par l'insistance.",
-      "Si tu as identifié le vrai frein avant de pousser ta solution.",
-      "Si le changement a survécu à ton départ du sujet.",
-      "Si tu assumes la part de ceux qui ne t'ont pas suivi.",
+      "Si tu produis un résultat avec les moyens du bord, ou si tu attends un mandat pour agir.",
+      "Si tu as traité le frein réel avant de pousser ta solution.",
+      "Si l'adoption a tenu sans toi, ou si elle tenait à ta présence.",
+      "Si tu dis ce que ça t'a coûté de partager un avantage.",
     ],
     traps: [
-      "Raconter une réunion où tu as convaincu tout le monde : personne ne le croit.",
-      "Confondre influence et insistance, en décrivant surtout ta persévérance.",
-      "Oublier de nommer le frein réel, ici la peur légitime de l'IA sur de la donnée client.",
-      "Présenter l'adoption comme totale : dis combien de personnes ont réellement suivi.",
+      "Raconter une réunion où tout le monde s'est rangé à ton avis : personne ne le croit.",
+      "Confondre influence et insistance, en décrivant ta persévérance au lieu d'une décision.",
+      "Faire de l'équipe une masse réticente : la prudence sur de la donnée client est une position défendable.",
+      "Annoncer une adoption totale sans dire combien de personnes ont réellement suivi.",
     ],
     followUps: [
       {
         question: "Qui ne t'a pas suivi, et pourquoi ?",
-        how: "Donne une vraie objection et respecte-la : sur de la donnée client, la prudence est une position défendable. Dis ce que tu as changé dans ta proposition à cause d'elle.",
+        how: "Donne une objection sérieuse et respecte-la, puis dis ce que tu as changé dans ta proposition à cause d'elle.",
       },
       {
-        question: "Ton manager t'avait demandé de faire ça ?",
-        how: "Non, et c'est le cœur de la réponse. Dis que tu l'as fait parce que la tâche te coûtait à toi d'abord, puis que le partage est venu ensuite.",
+        question: "Ton manager te l'avait demandé ?",
+        how: "Non, et c'est le cœur de la réponse. Tu l'as fait parce que la tâche te coûtait à toi d'abord, le partage est venu après.",
       },
       {
-        question: "Comment tu sais que c'est encore utilisé ?",
-        how: "Parle des procédures partagées qui tournent chez des collègues, et du fait que le garde-fou est dans l'outil, donc la méthode reste sûre sans toi.",
+        question: "Comment sais-tu que c'est encore utilisé ?",
+        how: "Cite les procédures qui tournent chez des collègues, et le fait que le garde-fou vit dans l'outil, donc la méthode tient sans toi.",
       },
     ],
     basis: "vecu-romance",
     basisNote:
-      "La construction d'une vingtaine de procédures, les garde-fous et le partage avec des collègues sont réels. Le déroulé raconté, la réticence initiale et le choix de commencer par une tâche pénible plutôt que spectaculaire, est reconstitué : remplace par la vraie chronologie et nomme les premières procédures que tu as effectivement partagées.",
+      "La vingtaine de procédures partagées, le garde-fou qui bloque toute écriture et le contrôle de sortie qui a intercepté 9 leads faux sont réels. L'ordre du déroulé et le fait d'avoir équipé des collègues relais sont reconstitués : remplace par la vraie chronologie et nomme les premières procédures effectivement reprises par quelqu'un d'autre.",
     answer: {
       fr: {
         situation:
-          "J'ai commencé à outiller mon propre travail avec des agents connectés directement à nos données, et les résultats étaient visibles sur mon book. Mes collègues n'avaient aucune raison de m'écouter : je ne suis le manager de personne, et faire toucher de la donnée client par une IA faisait peur, à juste titre.",
-        task: "Je voulais que l'équipe adopte ces méthodes alors que je ne pouvais les imposer à personne.",
+          "Depuis 2025, j'outille mon propre travail avec des agents connectés à nos données internes, et l'écart de vitesse se voyait sur mon portefeuille. Personne ne me devait rien : je ne manage personne, et laisser une IA approcher de la donnée client inquiétait, à juste titre.",
+        task: "Je voulais que la méthode serve à d'autres commerciaux que moi, sans pouvoir l'imposer à personne.",
         action: [
-          "J'ai commencé par le risque et pas par la promesse : j'ai écrit un garde-fou qui intercepte chaque action de l'agent et bloque toute écriture, une sauvegarde Salesforce, un lancement de campagne, un changement de budget.",
-          "J'ai choisi comme premier cas une tâche pénible pour tout le monde plutôt que la plus impressionnante, pour que le premier essai ne demande aucun acte de foi.",
-          "J'ai packagé le travail en procédures réutilisables au lieu de distribuer des conseils, donc un collègue obtient le même résultat que moi sans refaire ma réflexion.",
-          "J'ai laissé la preuve parler : la campagne à 165 e-mails personnalisés produite en quelques jours, et les neuf e-mails faux interceptés avant envoi grâce au contrôle de sortie.",
-          "J'ai continué à partager même les procédures qui me servaient directement, parce que garder un avantage aurait tué l'adoption dès le départ.",
+          "J'ai commencé par le risque plutôt que par la promesse : j'ai écrit un blocage qui intercepte chaque action de l'agent et interdit toute écriture, sauvegarde Salesforce, lancement de campagne ou changement de budget.",
+          "J'ai pris comme premier cas la tâche la plus pénible de l'équipe plutôt que la plus spectaculaire, parce qu'un premier essai qui demande un acte de foi ne se fait jamais.",
+          "J'ai montré mes erreurs avant mes résultats : sur 114 paires vérifiées, mon contrôle de sortie a intercepté 9 leads faux, dont une marketplace donnée comme employeur le plus populaire avec 1 154 clics et zéro candidature.",
+          "J'ai arrêté de convaincre l'équipe entière : j'ai équipé les collègues déjà curieux du sujet pour qu'ils portent la méthode à ma place, et je leur ai livré des procédures réutilisables plutôt que des conseils.",
         ],
         result:
-          "Une vingtaine de procédures sont aujourd'hui réutilisées par des collègues, sans aucun lien hiérarchique entre eux et moi. L'effet durable est que le contrôle humain est inscrit dans l'outil, donc la méthode reste sûre même quand je ne suis pas là pour l'expliquer.",
+          "Une vingtaine de procédures tournent aujourd'hui chez des collègues, sans aucun lien hiérarchique entre eux et moi. Le garde-fou vit dans l'outil, donc la méthode reste sûre quand je ne suis pas là pour l'expliquer.",
         learning:
-          "Sans autorité, on n'obtient rien en convainquant, on obtient beaucoup en réduisant le coût du premier essai. Le garde-fou n'était pas une contrainte, c'était l'argument.",
+          "Sans autorité, je n'obtiens rien en convainquant. J'obtiens beaucoup en baissant le coût du premier essai.",
       },
       en: {
         situation:
-          "I started tooling my own work with agents connected directly to our data, and the results were visible on my book. My colleagues had no reason to listen to me: I manage nobody, and letting an AI touch client data was frightening, rightly so.",
-        task: "I wanted the team to adopt these methods when I could not impose them on anyone.",
+          "Since 2025 I have been tooling my own work with agents connected to our internal data, and the difference in speed showed on my book. Nobody owed me anything: I manage no one, and letting an AI near client data worried people, rightly so.",
+        task: "I wanted the method to serve salespeople other than me, without being able to impose it on anyone.",
         action: [
-          "I led with the risk rather than the promise: I wrote a guardrail that intercepts every agent action and blocks any write, a Salesforce save, a campaign launch, a budget change.",
-          "I picked as a first case a task that was painful for everyone rather than the most impressive one, so the first attempt required no act of faith.",
-          "I packaged the work into reusable procedures instead of handing out advice, so a colleague gets the same result as me without redoing my thinking.",
-          "I let the evidence speak: the 165 personalised email campaign produced in a few days, and the nine incorrect emails intercepted before sending thanks to the output check.",
-          "I kept sharing even the procedures that served me directly, because holding on to an advantage would have killed adoption from the start.",
+          "I led with the risk rather than the promise: I wrote a block that intercepts every agent action and forbids any write, a Salesforce save, a campaign launch or a budget change.",
+          "I took as a first case the most tedious task on the team rather than the most impressive one, because a first attempt that requires an act of faith never happens.",
+          "I showed my mistakes before my results: across 114 checked pairs, my output control caught 9 wrong leads, including a marketplace shown as the most popular employer with 1,154 clicks and zero applications.",
+          "I stopped trying to convince the whole team: I equipped the colleagues already curious about it so they could carry the method instead of me, and I gave them reusable procedures rather than advice.",
         ],
         result:
-          "Around twenty procedures are now reused by colleagues, with no reporting line between them and me. The lasting effect is that the human checkpoint lives in the tooling, so the method stays safe even when I am not there to explain it.",
+          "Around twenty procedures now run with colleagues, with no reporting line between them and me. The guardrail lives in the tooling, so the method stays safe when I am not there to explain it.",
         learning:
-          "Without authority you get nothing by convincing people, you get a lot by lowering the cost of the first attempt. The guardrail was not a constraint, it was the argument.",
+          "Without authority I get nothing by convincing people. I get a lot by lowering the cost of the first attempt.",
       },
     },
     metrics: [
       "Une vingtaine de procédures réutilisables partagées avec des collègues",
-      "Hook de garde-fou bloquant toute écriture : Salesforce, campagne, budget",
-      "165 e-mails personnalisés produits en quelques jours, zéro crédit d'enrichissement",
-      "Neuf e-mails faux interceptés avant envoi grâce au contrôle de sortie",
+      "Garde-fou bloquant toute écriture : Salesforce, campagne, budget",
+      "114 paires vérifiées, 9 leads faux interceptés avant envoi",
+      "1 154 clics et zéro candidature pour une marketplace donnée comme employeur le plus populaire",
     ],
-    targetSeconds: 105,
+    targetSeconds: 94,
   },
 
   {
@@ -91,71 +89,71 @@ export const qLeadership: Question[] = [
     },
     whatTheyTest: [
       "Si le désaccord portait sur une décision ou sur une personne.",
-      "Si tu cherches le fait qui tranche ou si tu cherches à avoir raison.",
-      "Si tu sais céder, et ce que l'autre a obtenu dans l'histoire.",
-      "Si tu as protégé le client pendant que le désaccord durait.",
+      "Si tu proposes un fait qui tranche, ou si tu cherches à avoir raison.",
+      "Si tu sais perdre, appliquer le résultat, et ne pas le rejouer ensuite.",
+      "Si tu règles sans escalader, et si le client reste protégé pendant ce temps.",
     ],
     traps: [
       "Choisir un désaccord où tu avais évidemment raison : ça ne prouve rien.",
-      "Raconter un conflit de personnes maquillé en désaccord professionnel.",
-      "Dire que ça s'est réglé par la discussion sans dire ce qui a tranché.",
-      "Critiquer un manager, même à demi-mot : la question teste aussi ta loyauté.",
+      "Transformer l'autre en obstacle : l'intervieweur en déduit le collègue que tu seras.",
+      "Faire trancher par un manager : c'est la résolution qui est notée, pas l'arbitrage.",
+      "Dire que ça s'est réglé en discutant, sans nommer ce qui a tranché.",
     ],
     followUps: [
       {
-        question: "Et si l'autre avait refusé le test ?",
-        how: "Dis que tu aurais appliqué sa décision et documenté ton hypothèse pour la revoir plus tard. Un désaccord ne justifie pas de bloquer une équipe.",
+        question: "Et si elle avait refusé le test ?",
+        how: "Dis que tu aurais appliqué sa décision et gardé ton hypothèse par écrit pour la rouvrir avec une donnée. Un désaccord ne justifie pas de bloquer un compte.",
       },
       {
-        question: "Tu t'es déjà trompé dans un désaccord ?",
-        how: "Donne un cas où tu as eu tort et ce que tu as fait ensuite. Un candidat qui gagne tous ses désaccords est suspect.",
+        question: "Tu as changé d'avis, ou tu as cédé ?",
+        how: "Montre la différence par un acte : tu as étendu sa règle toi-même, y compris là où ton intuition disait le contraire.",
       },
       {
-        question: "Comment ta relation avec cette personne a évolué ?",
-        how: "Reste factuel et positif, montre que le désaccord portait sur une hypothèse et n'a jamais touché la relation de travail.",
+        question: "Comment la relation a-t-elle évolué ensuite ?",
+        how: "Reste factuel : le désaccord portait sur une hypothèse, pas sur elle, et vous travaillez toujours ensemble sur le compte.",
       },
     ],
     basis: "canevas",
     basisNote:
-      "Aucun désaccord précis n'existe dans la banque de faits de Nathan : le contenu du désaccord, son objet et son dénouement sont entièrement inventés. Seul le cadre est réel, la couverture de neuf mois d'un book National Accounts en 2023-24. Remplace par un désaccord que tu as réellement eu, et garde la structure : le désaccord porte sur une décision et jamais sur une personne, tu isoles l'hypothèse qui sépare les deux positions, tu dis ce que l'autre a obtenu.",
+      "Le désaccord décrit est inventé : son objet, le test et son issue ne sont documentés nulle part. Seul le compte est réel, Groupe Saint-Gatien, 100 cliniques et hôpitaux privés, 129 406 € sur douze mois. Une histoire de leadership doit être vraie pour survivre aux relances : remplace par un désaccord que tu as réellement eu et garde la forme, deux positions défendables, un mécanisme de départage, toi qui perds et qui appliques.",
     answer: {
       fr: {
         situation:
-          "Pendant les neuf mois où j'ai couvert un book National Accounts, en 2023-24, je n'étais pas d'accord avec un collègue sur la priorité à donner à deux comptes du périmètre. Il voulait concentrer l'effort sur un renouvellement immédiat, je voulais réinvestir sur un compte dormant à plus fort potentiel.",
-        task: "Je devais faire avancer une décision que je ne pouvais pas prendre seul, puisque ce périmètre n'était à moi qu'en couverture.",
+          "Sur Groupe Saint-Gatien, 100 cliniques et hôpitaux privés, 129 406 € sur douze mois, je n'étais pas d'accord avec la personne qui suit le compte côté service client. Je voulais concentrer le budget sur les établissements en tension, elle voulait garder la couverture large parce que les directeurs de site arbitrent localement.",
+        task: "Je devais trancher une question de répartition sur un compte dont je n'ai pas la main seule, sans en faire un bras de fer.",
         action: [
-          "J'ai reformulé sa position jusqu'à ce qu'il valide ma reformulation, pour être certain qu'on ne discutait pas d'un désaccord imaginaire.",
-          "J'ai sorti les chiffres plutôt que de défendre mon intuition : historique de facturation, saisonnalité, potentiel estimé de chaque option.",
-          "J'ai nommé explicitement le point de désaccord réel, une hypothèse de délai, et pas la conclusion générale, ce qui a réduit la discussion à quelque chose de vérifiable.",
-          "J'ai proposé un test borné dans le temps sur le compte dormant, avec un critère d'arrêt convenu à l'avance, au lieu de demander qu'on me croie.",
-          "J'ai porté sa recommandation sur le renouvellement en parallèle, pour qu'il ne soit pas perdant du compromis.",
+          "J'ai reformulé sa position jusqu'à ce qu'elle valide ma reformulation, parce que beaucoup de désaccords portent sur une position que l'autre n'a jamais tenue.",
+          "J'ai isolé le seul point qui nous séparait, une hypothèse sur qui arbitre réellement le budget dans une clinique, plutôt que de défendre ma conclusion d'ensemble.",
+          "J'ai proposé un départage plutôt qu'un arbitrage par notre manager : un trimestre, un groupe d'établissements concentrés contre un groupe laissé en couverture large, et le critère écrit d'avance, les candidatures commencées par annonce.",
+          "J'ai accepté qu'elle compose elle-même les deux groupes, alors que je pouvais les choisir, pour que le résultat ne soit contestable par personne, moi compris.",
+          "La mesure lui a donné raison, et c'est moi qui ai étendu sa règle aux cliniques où j'aurais coupé.",
         ],
         result:
-          "Nous avons tenu les deux chantiers, et le désaccord ne s'est jamais transformé en conflit de personnes parce qu'il portait sur une hypothèse vérifiable. Le réflexe m'est resté : quand on n'est pas d'accord, j'isole l'hypothèse et je définis d'avance le fait qui tranchera.",
+          "La répartition suit toujours sa logique et sert de base à mes propositions sur le compte. Le sujet n'est jamais remonté à un manager, et le client n'a jamais eu deux lectures de ses chiffres.",
         learning:
-          "Un désaccord non résolu finit toujours par coûter au client. Je préfère le nommer tôt, le réduire à une hypothèse, et accepter d'avoir tort rapidement.",
+          "J'ai perdu une intuition et gagné une règle de décision vérifiable. Depuis, je propose le mécanisme de départage avant de défendre ma position.",
       },
       en: {
         situation:
-          "During the nine months I covered a National Accounts book, in 2023-24, I disagreed with a colleague about how to prioritise two accounts on the patch. He wanted to concentrate effort on an immediate renewal, I wanted to reinvest in a dormant account with higher potential.",
-        task: "I had to move forward a decision I could not make alone, since I only held that patch on coverage.",
+          "On Groupe Saint-Gatien, 100 private clinics and hospitals, 129,406 euros over twelve months, I disagreed with the person who looks after the account on the service side. I wanted to concentrate the budget on the sites under pressure, she wanted to keep broad coverage because site directors make the call locally.",
+        task: "I had to settle an allocation question on an account I do not run alone, without turning it into a standoff.",
         action: [
-          "I restated his position until he confirmed my restatement, to be sure we were not arguing about an imaginary disagreement.",
-          "I put the numbers on the table rather than defending my intuition: billing history, seasonality, estimated potential of each option.",
-          "I named the actual point of disagreement, an assumption about timing, rather than the overall conclusion, which reduced the debate to something verifiable.",
-          "I proposed a time-boxed test on the dormant account, with a stop criterion agreed in advance, instead of asking to be believed.",
-          "I carried his recommendation on the renewal in parallel, so he did not lose out in the compromise.",
+          "I restated her position until she confirmed my restatement, because a good half of disagreements are about a position the other person never held.",
+          "I isolated the single point that separated us, an assumption about who really decides the budget inside a clinic, rather than defending my overall conclusion.",
+          "I proposed a tie breaker rather than an escalation to our manager: one quarter, a group of concentrated sites against a group left on broad coverage, with the criterion written down beforehand, applications started per job.",
+          "I let her build both groups herself, when I could have chosen them, so the result would be contestable by nobody, myself included.",
+          "The measurement proved her right, and I was the one who extended her rule to the clinics where I would have cut.",
         ],
         result:
-          "We ran both, and the disagreement never turned into a personal conflict because it was about a verifiable assumption. The reflex stayed with me: when we disagree, I isolate the assumption and define in advance the fact that will settle it.",
+          "The allocation still follows her logic, and it is the basis of my proposals on the account. The subject never reached a manager, and the client never had two different readings of their own numbers.",
         learning:
-          "An unresolved disagreement always ends up costing the client. I would rather name it early, reduce it to an assumption, and be wrong quickly.",
+          "I lost an intuition and gained a decision rule I can verify. Since then I propose the tie breaker before defending my position.",
       },
     },
     metrics: [
-      "Couverture d'un book National Accounts pendant 9 mois en 2023-24, santé et services à la personne",
+      "Groupe Saint-Gatien : 100 cliniques et hôpitaux privés, 129 406 € sur 12 mois",
     ],
-    targetSeconds: 95,
+    targetSeconds: 96,
   },
 
   {
@@ -167,73 +165,74 @@ export const qLeadership: Question[] = [
       en: "What is the hardest feedback you have received, and what did you do with it?",
     },
     whatTheyTest: [
-      "Si le feedback était réellement dur ou si tu as choisi une fausse faiblesse.",
+      "Si le feedback touchait ce que tu prenais pour une réussite, ou si tu sers une fausse faiblesse.",
       "Si tu as vérifié avant de te défendre ou de te flageller.",
-      "Si le changement est observable, pas seulement une bonne intention.",
-      "Si tu es retourné vers la personne pour fermer la boucle.",
+      "Si le changement est structurel, un format ou une règle, et pas un effort supplémentaire.",
+      "Si tu assumes la part que tu contrôlais dans ce qu'on te disait.",
     ],
     traps: [
-      "Sortir la fausse faiblesse déguisée, du type on me reproche d'en faire trop.",
-      "Raconter le feedback sans dire ce que tu as changé concrètement.",
-      "Annoncer cinq changements : personne n'en tient cinq, et ça sonne faux.",
-      "Oublier la preuve que le changement a tenu dans la durée.",
+      "La fausse faiblesse du type on me reproche d'en faire trop : c'est noté proche de zéro.",
+      "Répondre par plus d'effort : travailler davantage n'est pas un changement.",
+      "Annoncer cinq changements, personne n'en tient cinq.",
+      "Citer plus tard le chiffre brut de croissance après avoir raconté cette histoire : la contradiction s'entend.",
     ],
     followUps: [
       {
-        question: "Tu as été d'accord tout de suite ?",
-        how: "Non, et dis-le. Ce qui compte est que tu aies cherché la preuve au lieu d'argumenter sur le moment.",
+        question: "Tu étais d'accord sur le moment ?",
+        how: "Non, et dis-le. Ce qui compte est que tu sois allé recalculer au lieu d'argumenter le jour même.",
       },
       {
-        question: "Comment tu donnes un feedback dur, toi ?",
-        how: "Une chose à la fois, un critère observable, et un retour dans deux semaines. Rattache-le à ta façon de faire monter les 25 professeurs de Cosmic Junior.",
+        question: "Donne-moi le chiffre brut, alors.",
+        how: "Donne-le sans gêne, +46,6 %, et explique en une phrase ce qu'il contient de réassignations. Un chiffre annoncé avec sa base ne se retourne pas contre toi.",
       },
       {
-        question: "Qu'est-ce qu'on te reprocherait encore aujourd'hui ?",
-        how: "Donne une vraie limite actuelle et ce que tu fais pour la traiter. Ne recycle pas la même faiblesse déjà corrigée.",
+        question: "Qu'est-ce qu'on te dirait encore aujourd'hui ?",
+        how: "Donne une limite actuelle et ce que tu en fais. Ne recycle pas la faiblesse déjà corrigée.",
       },
     ],
     basis: "canevas",
     basisNote:
-      "Le feedback décrit est inventé : rien dans la banque de faits de Nathan ne documente un retour reçu. Les faits qui l'entourent sont réels, le rythme de 60 à 80 démonstrations et revues de performance par mois et le passage Senior AE en septembre 2023, quinze mois après l'arrivée en juin 2022. Remplace par le vrai feedback dur que tu as reçu et garde la structure : ce qui t'a été dit, la vérification, l'unique changement mesurable, la preuve qu'il a tenu.",
+      "La scène du feedback est inventée : rien ne documente un retour reçu sur ce sujet. Les chiffres, eux, sont réels, le +46,6 % brut, les deux mesures indépendantes à 38,0 % et 39,1 %, et le format de revue à deux colonnes qui vient d'une revue trimestrielle interne. Remplace par le feedback dur que tu as réellement reçu, et ne revendique le format à deux colonnes que si tu le tiens vraiment.",
     answer: {
       fr: {
         situation:
-          "À mes débuts chez Indeed, je tenais 60 à 80 démonstrations et revues de performance par mois. Un manager m'a dit que je parlais trop pendant mes rendez-vous et que je vendais avant d'avoir compris le problème du client.",
-        task: "Je devais vérifier si c'était vrai plutôt que me défendre, puis changer une chose mesurable.",
+          "En revue de portefeuille cette année, j'annonçais 46,6 % de croissance sur mes comptes, et j'en étais fier. Un manager m'a répondu, calcul à l'appui, que ce chiffre n'était pas le mien : il mélangeait ma croissance réelle et des comptes qu'on m'avait réassignés.",
+        task: "Je devais vérifier si c'était vrai avant de me défendre, puis corriger la façon dont je présente mes résultats.",
         action: [
-          "J'ai encaissé sans argumenter sur le moment, parce que discuter un feedback dur le jour même empêche simplement de l'entendre.",
-          "J'ai cherché la preuve au lieu de croire sur parole : j'ai repris mes rendez-vous et compté à quel moment j'introduisais l'offre.",
-          "J'ai changé une seule chose, et une chose vérifiable : ne rien proposer avant d'avoir obtenu les chiffres de recrutement du client, postes ouverts et délai de recrutement.",
-          "J'ai utilisé mon volume de rendez-vous comme terrain d'entraînement, ce qui m'a donné des dizaines de répétitions par mois au lieu d'une par semaine.",
-          "Je suis retourné voir ce manager deux mois plus tard avec ce que j'avais changé, pour qu'il me dise si ça se voyait de l'extérieur.",
+          "J'ai encaissé sans argumenter sur le moment, parce que discuter un feedback le jour même empêche simplement de l'entendre.",
+          "Je suis allé chercher la preuve au lieu de croire ou de nier : j'ai recalculé la croissance sur les seuls comptes présents aux deux périodes.",
+          "J'ai refait le calcul par deux méthodes indépendantes avant d'annoncer quoi que ce soit, 38,0 % et 39,1 %, et j'ai retenu 38 % parce que c'est le chiffre qui résiste à la question suivante.",
+          "J'ai décidé d'ouvrir désormais sur le chiffre à périmètre constant et de garder le brut en second, alors que l'ordre inverse m'arrangeait.",
+          "J'ai transformé la correction en format plutôt qu'en bonne intention : chaque trimestre, deux colonnes, ce que je reproduis et ce que j'aurais fait autrement, avec mes comptes classés jusqu'à la case poids mort.",
         ],
         result:
-          "Je suis passé Senior Account Executive en septembre 2023, quinze mois après mon arrivée, et ce réflexe me sert encore aujourd'hui : sur un réseau décentralisé, la première question n'est jamais l'offre, c'est la structure de décision. Le changement a tenu parce qu'il était formulé comme une règle et pas comme une intention.",
+          "Depuis, aucun de mes chiffres ne sort sans sa base, et c'est devenu un avantage : quand j'annonce 108 % d'atteinte au premier trimestre 2026 et 133 % au deuxième, personne ne passe la réunion à tester ma méthode de calcul.",
         learning:
-          "Le feedback vraiment dur est celui qui touche une chose que tu croyais être une force. C'est précisément pour ça qu'il faut le vérifier avant de le juger injuste.",
+          "Le feedback qui coûte est celui qui porte sur ce qu'on prenait pour sa réussite. C'est exactement pour ça qu'il faut le recalculer avant de le juger injuste.",
       },
       en: {
         situation:
-          "In my early months at Indeed I was running 60 to 80 demos and performance reviews a month. A manager told me I talked too much in meetings and that I was selling before I had understood the client's problem.",
-        task: "I had to check whether it was true rather than defend myself, then change one measurable thing.",
+          "In a book review this year I was reporting 46.6 percent growth on my accounts, and I was proud of it. A manager told me, with the calculation in hand, that the number was not mine: it mixed my real growth with accounts that had been reassigned to me.",
+        task: "I had to check whether it was true before defending myself, then fix the way I present my results.",
         action: [
-          "I took it without arguing in the moment, because debating hard feedback the same day simply stops you hearing it.",
-          "I looked for evidence instead of taking it on trust: I went back through my meetings and counted at what point I introduced the offer.",
-          "I changed one thing, and a verifiable one: propose nothing before I have the client's hiring numbers, open roles and time to hire.",
-          "I used my meeting volume as a training ground, which gave me dozens of repetitions a month rather than one a week.",
-          "I went back to that manager two months later with what I had changed, so he could tell me whether it showed from the outside.",
+          "I took it without arguing in the moment, because debating feedback the same day simply stops you hearing it.",
+          "I went looking for the evidence instead of believing it or denying it: I recalculated growth on the accounts present in both periods only.",
+          "I ran the calculation twice with independent methods before announcing anything, 38.0 percent and 39.1 percent, and I kept 38 percent because that is the number that survives the next question.",
+          "I decided to open on the like for like number from then on and keep the raw one second, when the opposite order suited me better.",
+          "I turned the correction into a format rather than good intentions: every quarter, two columns, what I repeat and what I would have done differently, with my accounts sorted down to the dead weight box.",
         ],
         result:
-          "I was promoted to Senior Account Executive in September 2023, fifteen months after joining, and the reflex still serves me: on a decentralised network the first question is never the offer, it is the decision structure. The change held because it was framed as a rule and not as an intention.",
+          "Since then none of my numbers leaves without its base, and it has become an advantage: when I report 108 percent of target in the first quarter of 2026 and 133 percent in the second, nobody spends the meeting testing how I count.",
         learning:
-          "Genuinely hard feedback is the kind that hits something you believed was a strength. That is exactly why you should verify it before deciding it is unfair.",
+          "The feedback that costs you is the one aimed at what you took for your own success. That is exactly why you should recalculate it before deciding it is unfair.",
       },
     },
     metrics: [
-      "60 à 80 démonstrations et revues de performance par mois à ses débuts chez Indeed",
-      "AE DCA en juin 2022, Senior AE en septembre 2023, soit 15 mois",
+      "Croissance brute du portefeuille +46,6 %, incluant des réassignations de comptes",
+      "Croissance à périmètre constant +38 %, mesurée par deux méthodes, 38,0 % et 39,1 %",
+      "Atteinte 108 % au Q1 2026 et 133 % au Q2 2026",
     ],
-    targetSeconds: 95,
+    targetSeconds: 96,
   },
 
   {
@@ -245,74 +244,106 @@ export const qLeadership: Question[] = [
       en: "How do you work with cross-functional teams to deliver for a client?",
     },
     whatTheyTest: [
-      "Si tu sais cartographier une décision avant de mobiliser des gens.",
-      "Si tu fais des demandes précises ou si tu envoies du contexte en espérant de l'aide.",
-      "Si tu protèges la cohérence des chiffres entre les équipes.",
-      "Si le résultat a dépassé le deal lui-même.",
+      "Si tu cartographies une décision avant de mobiliser des gens.",
+      "Si tu fais une demande précise, ou si tu envoies du contexte en espérant de l'aide.",
+      "Si tu adaptes ta demande à ce que l'autre fonction a à y gagner.",
+      "Si tu protèges une seule version des chiffres entre les équipes.",
     ],
     traps: [
-      "Décrire un processus au lieu d'un cas précis, avec un montant et une date.",
-      "T'attribuer le travail des autres fonctions : nomme ce qu'elles ont apporté.",
+      "Rester en méthode quand on te demande l'exemple : garde le cas et son montant prêts.",
+      "T'attribuer le travail des autres fonctions au lieu de nommer ce qu'elles ont apporté.",
+      "Décrire un contournement de l'agence : c'est un signal de sortie immédiat.",
       "Oublier l'échelon local : sur un réseau, l'accord central ne suffit jamais.",
-      "Ne pas dire ce qui a failli faire échouer le dossier.",
     ],
     followUps: [
       {
-        question: "Qu'est-ce qui a failli faire capoter le deal ?",
-        how: "Donne un vrai point de friction et comment tu l'as traité. Le plus crédible est la divergence entre deux versions des chiffres.",
+        question: "Donne-moi un exemple précis.",
+        how: "Bascule sur Système U, 438 204 € closés le 18 mai 2026, et tiens le STAR sans reprendre la méthode depuis le début.",
       },
       {
-        question: "Comment tu obtiens de l'aide d'une équipe qui ne te doit rien ?",
-        how: "Demande précise, datée, avec l'usage expliqué. Dis que tu donnes toujours le retour sur ce que leur contribution a produit.",
+        question: "Comment obtiens-tu de l'aide d'une équipe qui ne te doit rien ?",
+        how: "Demande datée, usage expliqué, et retour chiffré sur ce que leur contribution a produit. C'est ce retour qui te donne la deuxième fois.",
       },
       {
-        question: "Que serait-il arrivé sans les agences ?",
-        how: "Sois honnête : l'entrée par les agences est ce qui a débloqué le dossier après près de trois ans. Rattache-le à la progression de 101 986 € en 2023 à 547 277 € en 2026.",
+        question: "Qu'est-ce qui a failli faire capoter le dossier ?",
+        how: "La facturation adhérent par adhérent, pas le prix. Dis que tu l'as réglée en interne avant de l'amener devant le client.",
       },
     ],
     basis: "vecu-romance",
     basisNote:
-      "Le deal Système U, son montant de 438 204 €, sa date du 18 mai 2026, l'entrée par les agences et la progression du réseau sont réels. La composition de l'équipe transverse et la répartition des rôles sont reconstituées : remplace par les fonctions et les interlocuteurs qui ont réellement contribué.",
+      "Le deal Système U, ses 438 204 € du 18 mai 2026, le passage par les agences Ideuzo et Matière Grise et la trajectoire du réseau sont réels. Ce n'est pas un accord annuel, ne l'appelle jamais ainsi. Le détour par le recouvrement avant le client est un mécanisme lu dans un partage de bonnes pratiques interne, pas ton vécu : ne le raconte à la première personne que si tu l'as fait.",
+    format: "script",
     answer: {
       fr: {
         situation:
-          "Le deal Système U de 438 204 €, closé le 18 mai 2026, ne s'est pas joué entre le client et moi. Il a fallu faire travailler ensemble les agences du réseau, le centre, et plusieurs fonctions internes qui ne me reportent pas.",
+          "Le deal Système U de 438 204 €, closé le 18 mai 2026, ne s'est pas joué entre le client et moi. Le réseau s'adresse via les agences Ideuzo et Matière Grise, et la décision se partage entre le centre et des adhérents indépendants.",
         task: "Je devais faire converger des interlocuteurs qui n'avaient ni le même calendrier ni les mêmes indicateurs vers une seule décision d'investissement.",
         action: [
-          "J'ai cartographié qui décide quoi avant de solliciter qui que ce soit, parce que sur un réseau décentralisé l'erreur classique est de parler au centre en croyant parler au décideur.",
-          "J'ai donné à chaque fonction interne une demande précise et datée plutôt qu'un contexte général, pour que personne n'ait à deviner ce que j'attendais.",
-          "J'ai maintenu une seule version des chiffres pour tout le monde, parce que deux tableaux qui ne disent pas la même chose suffisent à arrêter un dossier.",
-          "J'ai fait remonter les objections des agences au centre au lieu de les traiter séparément, ce qui a évité que la même question soit rouverte trois fois.",
-          "J'ai animé plus de 20 webinars touchant plus de 600 franchisés, parce que l'adoption locale se prépare avant la signature centrale et pas après.",
+          "J'ai cartographié qui décide quoi avant de solliciter qui que ce soit, parce que sur ce réseau le centre recommande et l'adhérent paie.",
+          "J'ai choisi de passer par les agences plutôt que d'aller au contact direct, qui aurait été plus rapide à court terme et aurait coûté la relation ensuite.",
+          "J'ai fait traiter la mécanique de facturation magasin par magasin en interne avant d'en parler au client, puis j'ai amené en rendez-vous la personne qui la portait.",
+          "J'ai tenu une seule version des chiffres pour le centre, les agences et moi, et j'ai abandonné la mienne quand la leur était mieux sourcée.",
         ],
         result:
-          "438 204 € closés le 18 mai 2026, et surtout un réseau passé de 101 986 € de bookings en 2023 à 547 277 € en 2026, donc l'effet ne s'est pas arrêté au deal. Ce schéma de travail transverse est devenu celui que j'applique par défaut sur mes réseaux.",
+          "438 204 € closés le 18 mai 2026, et un réseau passé de 101 986 € de bookings en 2023 à 547 277 € en 2026. Ce n'est pas un accord annuel, c'est la plus grosse opportunité unique de mon portefeuille.",
         learning:
-          "Sur un compte transverse, ce qui coûte le plus cher n'est pas le désaccord ouvert, c'est la divergence silencieuse entre deux versions des chiffres. Je la traite en premier, avant même de parler d'offre.",
+          "Ce qui coûte cher sur un dossier transverse n'est pas le désaccord ouvert, c'est la divergence silencieuse entre deux versions des chiffres.",
       },
       en: {
         situation:
-          "The 438,204 euro Système U deal, closed on 18 May 2026, was not settled between the client and me. It required the network's agencies, the head office and several internal functions that do not report to me to work together.",
-        task: "I had to bring together stakeholders with different calendars and different metrics towards a single investment decision.",
+          "The 438,204 euro Système U deal, closed on 18 May 2026, was not settled between the client and me. The network is served through the agencies Ideuzo and Matière Grise, and the decision is split between head office and independent members.",
+        task: "I had to bring stakeholders with different calendars and different metrics towards a single investment decision.",
         action: [
-          "I mapped who decides what before approaching anyone, because on a decentralised network the classic mistake is talking to head office and assuming you are talking to the decision maker.",
-          "I gave each internal function a precise, dated request rather than general context, so nobody had to guess what I needed.",
-          "I maintained one single version of the numbers for everyone, because two tables that disagree are enough to stall a deal.",
-          "I escalated the agencies' objections to head office rather than handling them separately, which stopped the same question being reopened three times.",
-          "I ran more than 20 webinars reaching over 600 franchisees, because local adoption is prepared before the central signature, not after.",
+          "I mapped who decides what before approaching anyone, because on this network head office recommends and the member pays.",
+          "I chose to go through the agencies rather than straight to the client, which would have been faster in the short term and would have cost the relationship afterwards.",
+          "I had the store by store invoicing mechanics settled internally before raising them with the client, then brought the person who owned them into the meeting.",
+          "I kept one single version of the numbers for head office, the agencies and me, and dropped mine when theirs was better sourced.",
         ],
         result:
-          "438,204 euros closed on 18 May 2026, and above all a network that went from 101,986 euros of bookings in 2023 to 547,277 euros in 2026, so the effect did not stop at the deal. That cross-functional pattern is now my default on my networks.",
+          "438,204 euros closed on 18 May 2026, and a network that went from 101,986 euros of bookings in 2023 to 547,277 euros in 2026. It is not an annual agreement, it is the largest single opportunity on my book.",
         learning:
-          "On a cross-functional account, the expensive thing is not open disagreement, it is a silent divergence between two versions of the numbers. I deal with that first, before even discussing the offer.",
+          "What costs you on a cross-functional deal is not open disagreement, it is a silent divergence between two versions of the numbers.",
+      },
+    },
+    script: {
+      fr: {
+        hook: "Je traite une équipe transverse comme un compte : je cartographie qui décide quoi, puis je fais une demande précise à chacun, jamais un appel à l'aide général.",
+        body: [
+          "Je commence par écrire qui décide, qui exécute et qui peut bloquer. Sur un réseau décentralisé, l'erreur classique est de parler au siège en croyant parler au décideur, alors que la dépense part des établissements. Ensuite je demande une chose datée, avec l'usage expliqué, plutôt qu'un contexte à lire.",
+          "Le deuxième principe est de régler les sujets internes avant qu'ils n'arrivent devant le client. Quand un réseau doit être facturé point de vente par point de vente, je cale la mécanique en tête à tête avec le recouvrement, puis j'amène cette personne en rendez-vous avec une solution déjà arbitrée. Le client voit une équipe, pas une négociation interne.",
+          "Le troisième point est celui qui me coûte le plus si je le néglige : une seule version des chiffres. Deux tableaux qui ne disent pas la même chose suffisent à arrêter un dossier, et l'arbitrage est réel, j'abandonne la version qui m'arrange quand celle d'une autre équipe est mieux sourcée. En échange, je rends toujours le résultat chiffré de ce que leur contribution a produit.",
+        ],
+        closing: "C'est la méthode, et j'ai un cas où elle a fait la différence si vous voulez l'exemple.",
+        keyBeats: [
+          "Cartographier avant de solliciter",
+          "Demande datée, pas du contexte",
+          "Régler en interne avant le client",
+          "Une seule version des chiffres",
+          "Rendre le résultat chiffré",
+        ],
+      },
+      en: {
+        hook: "I treat a cross-functional team like an account: I map who decides what, then I make a precise request to each person, never a general call for help.",
+        body: [
+          "I start by writing down who decides, who executes and who can block. On a decentralised network the classic mistake is talking to head office and believing you are talking to the decision maker, when the spend comes from the sites. Then I ask for one dated thing, with the use explained, rather than sending context to read.",
+          "The second principle is to settle internal issues before they reach the client. When a network has to be invoiced site by site, I work the mechanics through one to one with collections, then bring that person into the meeting with a solution already agreed. The client sees a team, not an internal negotiation.",
+          "The third point is the one that costs me most if I neglect it: one single version of the numbers. Two tables that disagree are enough to stall a deal, and the trade-off is real, I drop the version that suits me when another team's is better sourced. In exchange, I always come back with what their contribution produced, in figures.",
+        ],
+        closing: "That is the method, and I have a case where it made the difference if you want the example.",
+        keyBeats: [
+          "Map before asking",
+          "Dated request, not context",
+          "Settle internally first",
+          "One version of the numbers",
+          "Report the result back",
+        ],
       },
     },
     metrics: [
-      "Deal de 438 204 € closé le 18 mai 2026, réseau Système U via agences",
+      "Deal de 438 204 € closé le 18 mai 2026, réseau Système U via les agences Ideuzo et Matière Grise",
       "Système U : 101 986 € de bookings en 2023, 547 277 € en 2026",
-      "Plus de 20 webinars, plus de 600 franchisés touchés",
     ],
-    targetSeconds: 105,
+    targetSeconds: 88,
   },
 
   {
@@ -324,66 +355,66 @@ export const qLeadership: Question[] = [
       en: "Have you ever helped someone build their skills?",
     },
     whatTheyTest: [
-      "Si tu as une méthode reproductible ou seulement de la bonne volonté.",
+      "Si tu as un format reproductible, ou seulement de la bonne volonté.",
       "Si tu observes avant de conseiller.",
-      "Si la progression est mesurable chez l'autre, pas chez toi.",
-      "Si ce que tu as mis en place a survécu sans toi.",
+      "Si la progression se mesure chez l'autre, pas chez toi.",
+      "Si ce que tu as mis en place a tenu sans toi.",
     ],
     traps: [
-      "Te mettre au centre de l'histoire : c'est la progression de l'autre qui compte.",
+      "Te mettre au centre : c'est la progression de l'autre qui est notée.",
       "Donner cinq conseils à la fois, ce qui ne produit jamais de changement.",
       "Rester sur des qualités humaines sans critère observable.",
-      "Oublier de dire ce qui n'a pas marché avec quelqu'un que tu n'as pas réussi à faire progresser.",
+      "Laisser croire que tu as réussi avec tout le monde : prépare le cas où tu as échoué.",
     ],
     followUps: [
       {
         question: "Et quelqu'un que tu n'as pas réussi à faire progresser ?",
-        how: "Donne un vrai cas et ce que tu en as tiré. Un candidat qui réussit avec tout le monde n'est pas crédible.",
+        how: "Donne un cas réel et ce que tu en as tiré. Un candidat qui réussit avec tout le monde n'est pas crédible.",
       },
       {
         question: "Tu veux manager ?",
-        how: "Réponds par l'expérience : 25 professeurs recrutés et managés chez Cosmic Junior, ça t'a plu, et tu veux d'abord maîtriser le métier ici avant de le demander.",
+        how: "Réponds par l'expérience, 25 professeurs recrutés et managés, ça t'a plu, et dis que tu veux d'abord maîtriser le métier ici.",
       },
       {
-        question: "Comment tu mesures qu'une personne a progressé ?",
-        how: "Par le critère observable que tu as fixé au départ, pas par ton impression. Cite le critère que tu avais donné aux professeurs.",
+        question: "Comment mesures-tu qu'une personne a progressé ?",
+        how: "Par le critère fixé au départ, pas par ton impression. Cite celui des dix premières minutes.",
       },
     ],
     basis: "vecu-romance",
     basisNote:
-      "Le recrutement et le management de 25 professeurs chez Cosmic Junior, les plus de 3 000 cours délivrés, la trajectoire de 0 à 100 000 $ d'ARR en moins de huit mois et la couverture d'un book Inside Sales pendant six mois sont réels. La méthode pédagogique décrite, l'observation d'un cours entier, le critère des dix premières minutes et l'observation entre pairs, est reconstituée : remplace par ce que tu faisais réellement et, si tu as une personne précise en tête, nomme sa progression.",
+      "Les 25 professeurs recrutés et managés chez Cosmic Junior, les plus de 3 000 cours, le passage de 0 à 100 000 $ d'ARR en moins de huit mois et la couverture d'un book Inside Sales pendant six mois sont réels. La méthode décrite, l'observation d'un cours entier, le critère des dix premières minutes et l'observation entre pairs, est reconstituée : remplace par ce que tu faisais réellement et, si tu as une personne en tête, nomme sa progression.",
     answer: {
       fr: {
         situation:
-          "Chez Cosmic Junior, j'ai recruté et managé 25 professeurs pour délivrer plus de 3 000 cours de code à des enfants. Plusieurs étaient de très bons techniciens qui n'avaient jamais enseigné.",
-        task: "Je devais faire monter en compétence des gens dont le savoir-faire technique était acquis mais dont la pratique pédagogique ne l'était pas du tout.",
+          "Chez Cosmic Junior, l'entreprise que j'ai cofondée, j'ai recruté et managé 25 professeurs pour délivrer plus de 3 000 cours de code à des enfants. Plusieurs étaient d'excellents techniciens qui n'avaient jamais enseigné.",
+        task: "Je devais faire monter une pratique pédagogique chez des gens déjà compétents techniquement.",
         action: [
-          "J'ai observé un cours en entier avant de donner le moindre conseil, pour parler de faits précis et pas d'une impression générale.",
-          "J'ai réduit le feedback à une seule chose à changer par semaine, parce qu'une liste de cinq points ne produit aucun changement.",
-          "J'ai remplacé les objectifs vagues par un critère observable, par exemple faire produire quelque chose à l'enfant dans les dix premières minutes.",
-          "J'ai fait observer les meilleurs par les nouveaux, ce qui a transformé le sujet en pratique d'équipe au lieu d'un rapport de correction entre eux et moi.",
-          "J'ai réutilisé la même méthode chez Indeed en reprenant le book Inside Sales d'une collègue pendant six mois, en documentant ce que je faisais pour que la reprise soit possible après moi.",
+          "J'ai observé un cours entier avant de dire quoi que ce soit, parce qu'un conseil fondé sur une impression se discute, un conseil fondé sur un moment précis, non.",
+          "J'ai réduit mon retour à une seule chose à changer par semaine, alors que j'en avais cinq à dire, parce qu'une liste de cinq points ne produit aucun changement.",
+          "J'ai remplacé les objectifs vagues par un critère que la personne vérifie seule : l'enfant produit quelque chose dans les dix premières minutes.",
+          "J'ai fait observer les meilleurs par les nouveaux au lieu de corriger moi-même, pour que la qualité ne dépende plus de mon agenda.",
+          "J'ai gardé le même format en couvrant le book Inside Sales d'une collègue pendant six mois, en documentant à mesure pour que la reprise se fasse sans moi.",
         ],
         result:
-          "Les 25 professeurs ont délivré plus de 3 000 cours, et la société est passée de 0 à 100 000 $ d'ARR en moins de huit mois, ce qui n'aurait pas tenu avec une qualité pédagogique inégale. L'effet durable est la méthode elle-même : une chose à la fois, un critère observable, et l'observation entre pairs.",
+          "Les 25 professeurs ont tenu plus de 3 000 cours, et la société est passée de 0 à 100 000 $ d'ARR en moins de huit mois, ce qui ne tient pas avec une qualité inégale. Ce qui est resté est le format : une chose à la fois, un critère observable, l'observation entre pairs.",
         learning:
-          "On ne fait pas monter quelqu'un en lui disant ce qui ne va pas, on le fait en lui donnant un critère qu'il peut vérifier tout seul la fois suivante.",
+          "Je ne fais pas progresser quelqu'un en lui disant ce qui ne va pas, mais en lui donnant un critère qu'il peut vérifier seul la fois suivante.",
       },
       en: {
         situation:
-          "At Cosmic Junior I recruited and managed 25 teachers to deliver more than 3,000 coding classes to children. Several were excellent technically and had never taught.",
-        task: "I had to build skills in people whose technical knowledge was already there but whose teaching practice was not at all.",
+          "At Cosmic Junior, the company I co-founded, I recruited and managed 25 teachers to deliver more than 3,000 coding classes to children. Several were excellent technically and had never taught.",
+        task: "I had to build teaching practice in people whose technical skill was already there.",
         action: [
-          "I watched a full class before giving a single piece of advice, so I could talk about specific facts rather than a general impression.",
-          "I cut feedback down to one thing to change per week, because a list of five points produces no change at all.",
-          "I replaced vague goals with an observable criterion, for instance getting the child to produce something within the first ten minutes.",
-          "I had new teachers observe the best ones, which turned the topic into a team practice rather than a correction relationship between them and me.",
-          "I reused the same method at Indeed when I covered a colleague's Inside Sales book for six months, documenting what I did so someone could pick it up after me.",
+          "I watched a full class before saying anything, because advice based on an impression gets argued with, advice based on a specific moment does not.",
+          "I cut my feedback down to one thing to change per week, when I had five to give, because a list of five points produces no change at all.",
+          "I replaced vague goals with a criterion the person checks on their own: the child produces something within the first ten minutes.",
+          "I had new teachers observe the best ones instead of correcting everything myself, so quality no longer depended on my calendar.",
+          "I kept the same format when I covered a colleague's Inside Sales book for six months, documenting as I went so someone could pick it up without me.",
         ],
         result:
-          "The 25 teachers delivered more than 3,000 classes, and the company went from zero to $100,000 in ARR in under eight months, which would not have held with uneven teaching quality. The lasting effect is the method itself: one thing at a time, an observable criterion, and peer observation.",
+          "The 25 teachers delivered more than 3,000 classes, and the company went from zero to 100,000 dollars of ARR in under eight months, which does not hold with uneven quality. What stayed is the format: one thing at a time, an observable criterion, peer observation.",
         learning:
-          "You do not grow someone by telling them what is wrong, you grow them by giving them a criterion they can check on their own the next time.",
+          "You do not grow someone by telling them what is wrong, but by giving them a criterion they can check on their own the next time.",
       },
     },
     metrics: [
@@ -391,6 +422,6 @@ export const qLeadership: Question[] = [
       "0 à 100 K$ d'ARR en moins de 8 mois",
       "Couverture du book Inside Sales d'une collègue pendant 6 mois",
     ],
-    targetSeconds: 100,
+    targetSeconds: 93,
   },
 ];
